@@ -23,7 +23,7 @@ Font-Size Main = 14px;
 Color Main = #4a4a4a;
 Color Side = #d30044;
 Transition Duration = .2s;
-Border-Radius = 4px;
+Border-Radius = 5px;
 
 */
 
@@ -148,26 +148,26 @@ figcaption{
 
 ::-webkit-input-placeholder{
 	font-family: 'Iran';
-    font-size:15px;
-    color: #c8c8c8;
+    font-size:13px;
+    color: #b7b7b7;
 }
 
 :-moz-placeholder{
     font-family: 'Iran';
-    font-size:15px;
-    color: #c8c8c8;
+    font-size:13px;
+    color: #b7b7b7;
 }
 
 ::-moz-placeholder{
     font-family: 'Iran';
-    font-size:15px;
-    color: #c8c8c8;
+    font-size:13px;
+    color: #b7b7b7;
 }
 
 :-ms-input-placeholder{  
     font-family: 'Iran';
-    font-size:15px;
-    color: #c8c8c8;
+    font-size:13px;
+    color: #b7b7b7;
 }
 
 input:-webkit-autofill,
@@ -190,7 +190,7 @@ input,
 textarea,
 button{
 	font-family: 'Iran';
-	font-size:16px;
+	font-size:14px;
  	color:#4a4a4a;
 	outline:none;
 	background-color: #f6f6f6;
@@ -208,7 +208,7 @@ select{
 	height: 50px;
 	line-height: 50px;
 	font-family: 'Iran';
-	font-size:16px;
+	font-size:14px;
 	color:#4a4a4a;
 	padding:0 15px 0 40px;
 	outline: none;
@@ -295,17 +295,11 @@ button{
 	text-align: center;
 	padding:14px;
 	margin-top:15px;
-	border:1px solid #c99d27;
-	border-radius: 0;
+	cursor: pointer;
+	border-radius: 5px;
 	-webkit-transition:all .2s ease-in-out;
 	-moz-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
-}
-
-button svg{
-	vertical-align: middle !important;
-	font-size: 19px !important;
-	margin-left: 5px;
 }
 
 button:hover{
@@ -314,12 +308,12 @@ button:hover{
 }
 
 input[type="search"]{
-	font-size: 20px;
-	padding:0;
-	background-color: transparent;
+	height: 40px;
+	line-height: 40px;
+	padding:0 20px;
+	background-color: #ffffff;
 	border:none;
-	border-bottom:1px solid #c2c2c2;
-	border-radius: 0;
+	border-radius: 20px;
 }
 
 input[type="reset"]{
@@ -792,15 +786,15 @@ a.close{
 #wrapper.login-register{padding:115px 0 150px 0;}
 
 .frame{
-	max-width: 1220px;
+	max-width: 1000px;
 	padding: 0 10px;
 	margin:auto;
 }
 
 .frame.xxlarge{max-width: 1470px;}
-.frame.xlarge{max-width: 1330px;}
-.frame.large{max-width: 1230px;}
-.frame.medium{max-width: 980px;}
+.frame.xlarge{max-width: 1340px;}
+.frame.large{max-width: 1240px;}
+.frame.medium{max-width: 1120px;}
 .frame.small{max-width: 870px;}
 .frame.xsmall{max-width: 815px;}
 .frame.xxsmall{max-width: 430px;}
