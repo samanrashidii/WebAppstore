@@ -14,8 +14,6 @@
 
 .master-slider.before-init{}
 
-.master-slider img {max-width:none;}
-
 .ms-ie img{border:none;}
 .ms-ie8 * {opacity:inherit;filter:inherit;}
 .ms-ie7   {zoom:1;}
@@ -250,7 +248,8 @@
 .ms-staff-carousel{
 	max-width:1160px;
 	overflow: hidden;
-	margin: 25px auto 0 auto;
+	padding:15px 0;
+	margin:0 auto;
 	position: relative;
 }
 
