@@ -248,6 +248,7 @@
 .ms-staff-carousel{
 	max-width:1160px;
 	overflow: hidden;
+	text-align: center;
 	padding:15px 0;
 	margin:0 auto;
 	position: relative;
@@ -256,11 +257,6 @@
 .ms-staff-carousel .ms-view{
 	overflow:visible;
 	background-color: transparent;
-}
-
-.ms-staff-carousel .ms-nav-prev,
-.ms-staff-carousel .ms-nav-next {
-    display: none;
 }
 
 .ms-staff-carousel .ms-staff-info{
@@ -279,9 +275,46 @@
 	margin: 0 -8px;
 }
 
-.ms-staff-carousel.ms-round .ms-nav-prev,
-.ms-staff-carousel.ms-round .ms-nav-next {
-    display: none;
- }
+.ms-staff-carousel .ms-nav-prev{
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	padding:0;
+	color: transparent;
+	cursor: pointer;
+	user-select: none;
+	margin:15px 5px 0 5px;
+	background: url(../images/assets/nav-arrow-left.png) no-repeat center #f7941e;
+	border-radius: 50%;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+}
+
+.ms-staff-carousel .ms-nav-next{
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	padding:0;
+	color: transparent;
+	cursor: pointer;
+	user-select: none;
+	margin:15px 5px 0 5px;
+	background: url(../images/assets/nav-arrow-right.png) no-repeat center #f7941e;
+	border-radius: 50%;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+}
+
+.ms-staff-carousel .ms-nav-prev:hover,
+.ms-staff-carousel .ms-nav-next:hover{background-color:#f5bf3d;}
+
+.ms-staff-carousel .ms-nav-prev:active,
+.ms-staff-carousel .ms-nav-next:active{
+	-webkit-transform:translateY(1px);
+	-moz-transform:translateY(1px);
+	transform:translateY(1px);
+}
 
  .ms-inner-controls-cont{margin:auto;}
