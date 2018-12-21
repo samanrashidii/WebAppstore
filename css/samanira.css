@@ -49,7 +49,7 @@ body{min-height: 100%;}
 
 body{
 	direction: rtl;
-	line-height: 1.3;
+	line-height: 1.5;
 	font-family: 'Iran', Tahoma, sans-serif;
 	font-size:14px;
 	color:#4a4a4a;
@@ -90,7 +90,7 @@ h4,
 h5,
 h6{
 	font-family: 'Iran-Medium';
-	line-height: 1.3;
+	line-height: 1.7;
 	font-weight: normal;
 }
 
@@ -109,8 +109,8 @@ h5 a:hover,
 h6 a:hover{color:#f7941e;}
 
 p{
-	line-height: 1.9;
-	padding-top:18px;
+	line-height: 1.7;
+	padding-top:15px;
 }
 
 p.less-padding{padding-top:10px;}
@@ -800,7 +800,7 @@ a.close{
 
 .divider{
 	display: block;
-	width: calc(100% - 40px);
+	width: 100%;
 	height: 1px;
 	margin: 12px auto;
 	background-color: #eaeaea;
@@ -813,8 +813,6 @@ a.close{
 /* -- _Page Styles -- */
 
 .transparent-bg{background-color: transparent !important;}
-.site-bg{background-color: #f7941e;}
-.site-2-bg{background-color: #f55757;}
 .blue-bg{background-color:#368098;}
 .green-bg{background-color:#61bd61;}
 .dark-green-bg{background-color:#19674e;}
@@ -825,6 +823,20 @@ a.close{
 .grey-bg{background-color:#a7a7b4;}
 .black-bg{background-color:#121212;}
 .white-bg{background-color:#ffffff;}
+
+.site-bg{
+	background: -webkit-linear-gradient(right, #f7941e , #f5bf3d);
+    background: -o-linear-gradient(left, #f7941e, #f5bf3d);
+    background: -moz-linear-gradient(left, #f7941e, #f5bf3d);
+    background: linear-gradient(to left, #f7941e , #f5bf3d);
+}
+
+.site-2-bg{
+	background: -webkit-linear-gradient(right, #000000 , #2e2e2e);
+    background: -o-linear-gradient(left, #000000, #2e2e2e);
+    background: -moz-linear-gradient(left, #000000, #2e2e2e);
+    background: linear-gradient(to left, #000000 , #2e2e2e);
+}
 
 .pattern-bg{background: url('../images/assets/pattern.jpg');}
 

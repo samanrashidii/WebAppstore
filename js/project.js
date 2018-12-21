@@ -1,9 +1,10 @@
 $(document).ready(function(){
 
-// Operating Systems
+// Counter Up
 
-$('.operating-systems a').on('click', function(){
-	$(this).toggleClass('active');
+$('.counter-up').counterUp({
+    delay: 10,
+    time: 1000
 });
 
 // Sticky Sidebar
