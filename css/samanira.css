@@ -299,7 +299,7 @@ button{
 	text-align: center;
 	text-transform: uppercase;
 	padding:12px 10px;
-	margin-top:24px;
+	margin-top:20px;
 	cursor: pointer;
 	background:-webkit-linear-gradient(right, #f7941e , #f5bf3d);
 	background:-moz-linear-gradient(left, #f7941e, #f5bf3d);

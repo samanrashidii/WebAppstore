@@ -383,7 +383,7 @@
 	border-radius: 7px;
 }
 
-.login-register-box form{margin-top:30px;}
+.login-register-box form{margin-top:25px;}
 
 .login-register-box input{
 	background-color: #ffffff;
@@ -406,6 +406,79 @@
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 999;
+}
+
+.form-text{
+	font-size: 12px;
+	text-align: right;
+	padding-top:0;
+}
+
+.register-text{
+	padding-top:25px;
+	margin-top:25px;
+	border-top:1px solid #cacaca;
+}
+
+.choose-radio{
+	overflow: hidden;
+	margin-bottom:20px;
+	border-radius: 5px;
+}
+
+.choose-radio li{
+	position: relative;
+	float: right;
+	width:50%;
+}
+
+.choose-radio li input{display: none;}
+
+.choose-radio li label{
+	display: block;
+	text-align: right;
+	font-size: 13px;
+	color:#4e4e4e;
+	padding:14px 40px 14px 12px;
+	margin:0;
+	cursor: pointer;
+	user-select: none;
+	background-color: #ffffff;
+}
+
+.choose-radio li label::before{
+	content:'';
+	position: absolute;
+	top:16px;
+	right:10px;
+	width:16px;
+	height:16px;
+	border:1px solid #4a4a4a;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 50%;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+}
+
+.choose-radio li input:checked + label{color:#ffffff;}
+.choose-radio li input:checked + label::before{
+	border-color:#ffffff;
+	background:url('../images/assets/tick.png') no-repeat center #ffffff;
+}
+
+.choose-radio li:first-child input:checked + label{
+	background: -webkit-linear-gradient(top, #f7941e , #f5bf3d);
+    background: -moz-linear-gradient(bottom, #f7941e, #f5bf3d);
+    background: linear-gradient(to bottom, #f7941e , #f5bf3d);
+}
+
+.choose-radio li:last-child input:checked + label{
+	background:-webkit-linear-gradient(right, #365f95 , #5b8ed1);
+	background:-moz-linear-gradient(left, #365f95, #5b8ed1);
+	background:linear-gradient(to left, #365f95 , #5b8ed1);
 }
 
 /*   Added Styles by Back-end   */
