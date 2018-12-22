@@ -630,6 +630,18 @@ label.error{
 	background:linear-gradient(to left, #f5bf3d , #f7941e);
 }
 
+.bttn.type-2{
+	background:-webkit-linear-gradient(right, #365f95 , #5b8ed1);
+	background:-moz-linear-gradient(left, #365f95, #5b8ed1);
+	background:linear-gradient(to left, #365f95 , #5b8ed1);
+}
+
+.bttn.type-2:hover{
+	background:-webkit-linear-gradient(right, #5b8ed1 , #365f95);
+	background:-moz-linear-gradient(left, #5b8ed1, #365f95);
+	background:linear-gradient(to left, #5b8ed1 , #365f95);
+}
+
 .bttn.black{background-color: #000000;}
 
 .bttn.black:hover{
@@ -743,11 +755,11 @@ a.remove{
 
 a.close{
 	position: absolute;
-	top:10px;
-	left:10px;
+	top:15px;
+	left:15px;
 	display: block;
-	width: 10px;
-	height: 10px;
+	width: 12px;
+	height: 12px;
 	background: url('../images/assets/close.png') no-repeat center;
 	z-index: 10;
 }
@@ -763,7 +775,7 @@ a.close{
 	min-width: 320px;
 	width:100%;
 	min-height: 100%;
-	padding-top:100px;
+	padding-top:90px;
 }
 
 #wrapper.login-register{padding:115px 0 150px 0;}
