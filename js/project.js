@@ -16,7 +16,8 @@ $('.categories-inner').on('click', function(e){
   e.stopPropagation();
 });
 
-$('.categories-tab a').on('click', function(){
+$('.categories-tab a').on('click', function(e){
+	e.preventDefault();
 	var hrefTarget = $(this).attr('href');
 	$(this).addClass('active').siblings().removeClass('active');
 	$(hrefTarget).fadeIn().siblings().hide();
