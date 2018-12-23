@@ -415,7 +415,7 @@ label.error{
 	margin:12px 0;
 }
 
-.field-holder svg{
+.field-holder > svg{
 	position: absolute;
 	top:16px;
 	left:19px;
@@ -2500,7 +2500,7 @@ a.close{
 	}
 
 	.field-holder{margin:10px 0;}
-	.field-holder svg{top:17px;}
+	.field-holder > svg{top:17px;}
 
 	.checkbox-holder input[type="checkbox"] + label,
 	.radio-holder input[type="radio"] + label{font-size: 13px;}
