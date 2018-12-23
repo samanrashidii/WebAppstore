@@ -32,13 +32,17 @@ $('.counter-up').counterUp({
 
 // Sticky Sidebar
 
-if($(window).width() > 1200 && $('.sidebar').length > 0){
-    $('.sidebar-inside').sticky({
+if($(window).width() > 1200 && $('.static-sidebar').length > 0){
+    $('.static-sidebar ul').sticky({
         parent: '.main-content',
         top: 120,
         bottom: 20
     });
 }
+
+$('.static-sidebar li.active a').on('click', function(e){
+	e.preventDefault();
+});
 
 // Carousel Slider
 
