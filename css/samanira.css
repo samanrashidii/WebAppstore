@@ -112,7 +112,7 @@ h5 a:hover,
 h6 a:hover{color:#f7941e;}
 
 p{
-	line-height: 1.7;
+	line-height: 1.8;
 	padding-top:15px;
 }
 
@@ -152,25 +152,25 @@ figcaption{
 
 ::-webkit-input-placeholder{
 	font-family: 'Iran';
-    font-size:13px;
+    font-size:12px;
     color: #b7b7b7;
 }
 
 :-moz-placeholder{
     font-family: 'Iran';
-    font-size:13px;
+    font-size:12px;
     color: #b7b7b7;
 }
 
 ::-moz-placeholder{
     font-family: 'Iran';
-    font-size:13px;
+    font-size:12px;
     color: #b7b7b7;
 }
 
 :-ms-input-placeholder{  
     font-family: 'Iran';
-    font-size:13px;
+    font-size:12px;
     color: #b7b7b7;
 }
 

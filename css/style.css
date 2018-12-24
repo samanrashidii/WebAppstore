@@ -378,7 +378,7 @@
 	width:360px;
 	text-align: center;
 	padding:25px;
-	margin:auto;
+	margin:25px auto;
 	background:rgba(255,255,255,.8);
 	border-radius: 7px;
 }
@@ -389,6 +389,8 @@
 	background-color: #ffffff;
 	border-color:#bababa;
 }
+
+.login-register-box .captcha{border-color:#b3b3b3;}
 
 .login-register-box p:first-child{padding-top:0;}
 
@@ -483,15 +485,28 @@
 
 .static-banner{
 	position: relative;
-	height: 500px;
+	height: 570px;
+	margin-bottom: 20px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
 }
 
+.static-banner::after{
+	content:'';
+	position: absolute;
+	bottom:-1px;
+	left:0;
+	width:100%;
+	height: 105px;
+	z-index: 1111;
+	background: url('../images/assets/banner-shape.png') no-repeat center center;
+}
+
 .static-banner.about{background-image: url('../images/banner/about.jpg');}
 .static-banner.contact{background-image: url('../images/banner/contact.jpg');}
+.static-banner.faq{background-image: url('../images/banner/faq.jpg');}
 
 .static-banner h1{
 	display: inline-block;
@@ -627,11 +642,13 @@
 	color:#ffffff;
 	text-align: center;
 	background-color: #4a4a4a;
-	border-radius: 5px;
+	border-radius: 4px;
 }
 .refresh-captcha:hover{background-color:#2e2e2e;}
 
 .captcha input{margin-top:12px;}
+
+
 
 
 /*   Added Styles by Back-end   */

@@ -37,42 +37,49 @@
 
 /* Accordion */
 
+
+.ui-accordion{margin-bottom: 20px;}
 .ui-accordion .ui-accordion-header{
 	position: relative;
 	display: block;
 	min-height: 0;
-	font-size: 17px;
-	padding: 17px 15px 9px 15px;
-	margin: 8px 0 0 0;
+	font-size: 13px;
+	color:#4a4a4a;
+	text-transform: none;
+	padding: 17px 15px 15px 45px;
+	margin: 10px 0 0 0;
 	cursor: pointer;
-	border-top:1px solid #eaecf0;
+	user-select: none;
+	background-color: #ffffff;
+	border-radius: 5px;
 }
-.ui-accordion-header:first-child{border-top: none;}
+.ui-accordion .ui-accordion-header:first-child{margin-top:0;}
+.ui-accordion .ui-accordion-header.ui-state-active .ui-accordion-header-icon{background-image: url('../images/assets/minus.png');}
+.ui-accordion .ui-accordion-header.ui-state-active{color:#f7941e;}
 
-.ui-accordion .ui-accordion-icons{
-	padding-left: 0;
-	padding-right:0;
-}
 .ui-accordion .ui-accordion-icons .ui-accordion-icons{padding-left: 20px;}
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon{
 	position: absolute;
 	top: 50%;
-	right: 10px;
-	margin-top: -6px;
+	left: 15px;
+	width:15px;
+	height: 15px;
+	margin-top: -7.5px;
+	background:url('../images/assets/plus.png') no-repeat center;
 }
 
-.ui-accordion-header-icon.ui-icon-triangle-1-s{top:60% !important;}
-
 .ui-accordion .ui-accordion-content{
-	overflow: hidden;
 	height: auto;
-	padding: 5px 0 25px 0;
-	border-top: 0;
+	overflow: hidden;
+	font-size: 14px;
+	color:#2e2e2e;
+	padding: 18px 7px 5px 7px;
+	background-color: transparent;
 }
 
 .ui-accordion .ui-accordion-content p{
-	font-size: 15px;
-	color: #31343a;
+	font-size: 14px;
+	color: #2e2e2e;
 	padding: 0;
 }
 
@@ -709,9 +716,4 @@ body .ui-tooltip{border-width: 2px;}
 	height: 32px;
 	text-indent: -99999px;
 	border-radius: 2px;
-}
-
-.ui-state-default .ui-icon {
-	background: url("../images/assets/arrow-bottom.png") no-repeat center #0a9abd;
-	border:1px solid #0a9abd;
 }
