@@ -44,6 +44,12 @@ $('.static-sidebar li.active a').on('click', function(e){
 	e.preventDefault();
 });
 
+// Accordion
+
+$(function() {
+  $('.accordion').accordion({collapsible : true, active : 'none'});
+});
+
 // Carousel Slider
 
 $('.carousel-slider').masterslider({
