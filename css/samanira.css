@@ -853,14 +853,12 @@ a.close{
 
 .site-bg{
 	background: -webkit-linear-gradient(right, #f7941e , #f5bf3d);
-    background: -o-linear-gradient(left, #f7941e, #f5bf3d);
     background: -moz-linear-gradient(left, #f7941e, #f5bf3d);
     background: linear-gradient(to left, #f7941e , #f5bf3d);
 }
 
 .site-2-bg{
 	background: -webkit-linear-gradient(right, #000000 , #2e2e2e);
-    background: -o-linear-gradient(left, #000000, #2e2e2e);
     background: -moz-linear-gradient(left, #000000, #2e2e2e);
     background: linear-gradient(to left, #000000 , #2e2e2e);
 }
@@ -1511,8 +1509,7 @@ a.close{
 
 .pagination{
 	width: 100%;
-	margin: 10px 0;
-	padding: 25px 0 15px 0;
+	padding: 55px 0 10px 0;
 }
 
 .pagination ul{
@@ -1532,20 +1529,20 @@ a.close{
 	display: block;
 	width: 40px;
     height: 40px;
-	line-height: 41px;
-    font-size: 15px;
+	line-height: 42px;
+    font-size: 14px;
     color:#121212;
 	background-color: #ffffff;
-	border:1px solid #121212;
+	border:1px solid #f1f1f1;
+	border-radius: 50%;
 }
 
 .pagination ul li.active a{
 	color:#ffffff;
-	background-color: #121212;
+	background: -webkit-linear-gradient(right, #f7941e , #f5bf3d);
+    background: -moz-linear-gradient(left, #f7941e, #f5bf3d);
+    background: linear-gradient(to left, #f7941e , #f5bf3d);
 }
-
-.pagination ul li.prev a{background: url('../images/assets/prev.png') no-repeat center center #ffffff;}
-.pagination ul li.next a{background: url('../images/assets/next.png') no-repeat center center #ffffff;}
 
 .pagination ul li.etc a{
 	width: 25px;
@@ -1558,8 +1555,7 @@ a.close{
 .pagination ul li.next{margin: 0 6px;}
 
 .pagination ul li:not(.active):not(.etc) a:hover{
-	color: #f7941e;
-	border-color: #f7941e;
+	background-color: #eaeaea;
 }
 
 /* -- _Breadcrumb -- */
