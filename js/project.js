@@ -50,6 +50,12 @@ $(function() {
   $('.accordion').accordion({collapsible : true, active : 'none'});
 });
 
+// Filter Boxes
+
+$('.filter-title').on('click', function(){
+  $(this).toggleClass('active').siblings('.filter-inner-box').fadeToggle();
+});
+
 // Carousel Slider
 
 $('.carousel-slider').masterslider({
