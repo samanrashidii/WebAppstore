@@ -663,11 +663,68 @@
 	border-radius: 3px;
 }
 
-.search-page .application-box{
+.app-page .application-box{
 	display: inline-block;
-	margin:7px 5px;
+	margin:5px 2.5px;
 }
 
+.app-sidebar{
+	float: right;
+	width:17%;
+	margin-left: 2%;
+}
+
+.app-items{
+	float: right;
+	width:81%;
+}
+
+.filter-box:not(:last-child){margin-bottom: 12px;}
+
+.filter-title{
+	display: block;
+	font-size: 14px;
+	color:#4a4a4a;
+	padding:10px 10px 8px 10px;
+	background:url('../images/assets/plus-small.png') no-repeat 10px center;
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+.filter-title.active{
+	color:#ffffff;
+	background: url('../images/assets/minus-small.png') no-repeat 10px center, -webkit-linear-gradient(right, #f7941e , #f5bf3d);
+    background: url('../images/assets/minus-small.png') no-repeat 10px center, -moz-linear-gradient(left, #f7941e, #f5bf3d);
+    background: url('../images/assets/minus-small.png') no-repeat 10px center, linear-gradient(to left, #f7941e , #f5bf3d);
+}
+
+.filter-inner-box{
+	display: none;
+	padding-top:12px;
+}
+
+.filter-items .checkbox-holder{margin:3px 0;}
+
+.sort-box{
+	overflow: hidden;
+	margin-bottom: 15px;
+	border-radius: 5px;
+}
+
+.sort-title{
+	display: block;
+	font-size: 13px;
+	color:#4a4a4a;
+	padding:12px 10px 10px 10px;
+	background-color: #ffffff;
+	border-bottom:1px solid #f1f1f1;
+}
+
+.sort-inner-box{
+	padding:5px 12px;
+	background-color:#ffffff;
+}
+
+.sort-items .radio-holder{margin:7px 0;}
 
 /*   Added Styles by Back-end   */
 

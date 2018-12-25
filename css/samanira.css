@@ -529,9 +529,9 @@ label.error{
 .radio-holder input[type="radio"] + label{
 	position: relative;
 	display: inline-block;
-	font-size:14px;
+	font-size:12px;
 	color: #4a4a4a;
-	padding:4px 42px 4px 0;
+	padding:4px 28px 4px 0;
 	margin:0;
 	cursor: pointer;
 	user-select: none;
@@ -540,24 +540,24 @@ label.error{
 .checkbox-holder input[type="checkbox"] + label::before{
 	content: '';
 	position: absolute;
-	top: 0;
+	top: 3px;
 	right:2px;
-	width: 25px;
-	height: 25px;
-	background-color: #f6f6f6;
-	border-radius: 2px;
+	width: 18px;
+	height: 18px;
+	background-color: #ffffff;
+	border-radius: 3px;
 }
 
 .checkbox-holder input[type="checkbox"] + label::after{
 	content:'';
 	position: absolute;
-	top: 0;
+	top: 3px;
 	right: 2px;
-	width:25px;
-	height: 25px;
+	width:18px;
+	height: 18px;
 	opacity: 0;
 	background:url('../images/assets/tick-white.png') no-repeat center #f7941e;
-	border-radius: 2px;
+	border-radius: 3px;
 	-webkit-transition:all .2s ease-in-out;
 	-moz-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
@@ -568,12 +568,13 @@ label.error{
 .radio-holder input[type="radio"] + label::before{
 	content: '';
 	position: absolute;
-	top: 1px;
+	top: 3px;
 	right:2px;
-	width: 25px;
-	height: 25px;
+	width: 18px;
+	height: 18px;
 	background-color: #f6f6f6;
 	border-radius: 50%;
+	z-index: 2;
 	-webkit-transition:all .2s ease-in-out;
 	-moz-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
@@ -583,12 +584,13 @@ label.error{
 	content: '';
 	position: absolute;
 	top: 10px;
-	right: 11px;
-	width:7px;
-	height: 7px;
+	right: 9px;
+	width:4px;
+	height: 4px;
 	opacity: 0;
 	background-color: #ffffff;
 	border-radius: 50%;
+	z-index: 3;
 	-webkit-transition:all .2s ease-in-out;
 	-moz-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
