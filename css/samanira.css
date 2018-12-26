@@ -836,6 +836,8 @@ a.close{
 	background-color: #eaeaea;
 }
 
+.divider.large{margin:20px auto;}
+
 /********************
 ****** #COMMON ******
 *********************/
