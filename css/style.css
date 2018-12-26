@@ -517,7 +517,7 @@
 	background:url('../images/assets/title-shape.png') no-repeat center;
 }
 
-.static-banner.specific-page{height: 500px;}
+.static-banner.specific-page{height: 520px;}
 .static-banner.blog-page{height: auto;}
 .static-banner.specific-page .table-display{background:rgba(0,0,0,.35);}
 
@@ -530,6 +530,12 @@
 
 .specific-layer h2{
 	font-size: 40px;
+	color:#ffffff;
+	text-shadow: 0 0 4px #121212;
+}
+
+.specific-layer h3{
+	font-size: 30px;
 	color:#ffffff;
 	text-shadow: 0 0 4px #121212;
 }
@@ -814,6 +820,7 @@
 
 .blog-slider .ms-bullet.ms-bullet-selected{background-color:#f7941e;}
 
+.blog-listing{margin-top:20px;}
 .blog-listing > ul li{
 	float: right;
 	width:32%;
@@ -848,6 +855,12 @@
 }
 
 .blog-listing .pagination{padding:40px 0 10px 0;}
+
+span.date{
+	display: block;
+	color:#a1a1a1;
+	margin-bottom:20px;
+}
 
 
 /*   Added Styles by Back-end   */
