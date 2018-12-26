@@ -1,7 +1,5 @@
 ﻿/*   Main Styles by Front-end   */
 
-.body{min-height: 700px;}
-
 .header{
 	position: fixed;
 	top:0;
@@ -231,10 +229,15 @@
 .ads.type-2 a:first-child{margin-right: 0;}
 
 .footer{
+	position: absolute;
+	bottom:0;
+	left:0;
+	width:100%;
 	overflow: hidden;
 	color:#f6f6f6;
-	padding:40px 0;
+	padding:40px 0 39px 0;
 	background-color:#2e2e2e;
+	z-index: 10;
 }
 
 .footer ul{float: left;}
