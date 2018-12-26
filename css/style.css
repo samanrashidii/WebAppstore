@@ -148,7 +148,7 @@
 .top-box strong{display: block;}
 .top-box a.bttn{margin-top:25px;}
 
-.ms-slide .ms-slide-bgcont img{
+.carousel-slider .ms-slide .ms-slide-bgcont img{
 	width:90px !important;
 	height: 90px !important;
 	margin:auto !important;
@@ -259,7 +259,7 @@
 .news-text-box{
 	float: right;
 	width:50%;
-	padding:15px 35px 15px 15px;
+	padding:0 35px 0 15px;
 }
 
 .news-text-box a.bttn{margin-top:20px;}
@@ -518,6 +518,7 @@
 }
 
 .static-banner.specific-page{height: 500px;}
+.static-banner.blog-page{height: auto;}
 .static-banner.specific-page .table-display{background:rgba(0,0,0,.35);}
 
 .specific-layer{
@@ -764,7 +765,7 @@
 
 .category-listing ul li{
 	font-size: 12px;
-	margin:6px 0;
+	margin:8px 0;
 }
 
 .category-listing ul li.active a,
@@ -774,6 +775,80 @@
 .category-listing.games-category ul li a:hover{color:#365f95;}
 
 .category-listing ul li svg{width:22px !important;}
+
+.blog-slider .ms-slide .ms-layer{
+	font-size: 14px !important;
+	color:#ffffff;
+	text-align: center;
+}
+
+.blog-slider .ms-slide .ms-layer strong{
+	display: block;
+	font-size: 35px !important;
+	text-shadow: 0 0 5px #121212;
+}
+
+.blog-slider .ms-slide .ms-layer p{
+	text-shadow: 0 0 2px #121212;
+	padding:30px 0 ;
+}
+
+.blog-slider .ms-bullets{
+	position: absolute;
+	bottom:30px;
+	left:0;
+	width:100% !important;
+	text-align: center;
+	z-index: 99999;
+}
+
+.blog-slider .ms-bullet{
+	display: inline-block;
+	float: none;
+	width:12px;
+	height: 12px;
+	margin:0 3px;
+	background:rgba(255,255,255,.75);
+	border-radius: 50%;
+}
+
+.blog-slider .ms-bullet.ms-bullet-selected{background-color:#f7941e;}
+
+.blog-listing > ul li{
+	float: right;
+	width:32%;
+	overflow: hidden;
+	margin-right: 2%;
+	margin-bottom: 20px;
+	border-radius: 7px;
+}
+
+.blog-listing > ul li:nth-child(3n+1){margin-right: 0;}
+
+.blog-image a{display: block;}
+.blog-image a:hover{opacity: .85;}
+
+.blog-content{
+	font-size: 13px;
+	padding:15px;
+	background-color: #ffffff;
+}
+
+.blog-content p{padding-top:10px;}
+
+.blog-content span{
+	display: block;
+	color:#a4a4a4;
+	margin-top:10px;
+}
+
+.blog-content a.bttn{
+	display: block;
+	margin-top:20px;
+}
+
+.blog-listing .pagination{padding:40px 0 10px 0;}
+
 
 /*   Added Styles by Back-end   */
 

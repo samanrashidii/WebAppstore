@@ -1537,6 +1537,7 @@ a.close{
 	line-height: 42px;
     font-size: 14px;
     color:#121212;
+    user-select: none;
 	background-color: #ffffff;
 	border:1px solid #f1f1f1;
 	border-radius: 50%;
@@ -1551,7 +1552,9 @@ a.close{
 
 .pagination ul li.etc a{
 	width: 25px;
+	line-height: 37px;
 	color: #121212;
+	cursor: default;
 	background-color: transparent;
 	border-color: transparent;
 }

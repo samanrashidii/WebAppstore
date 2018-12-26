@@ -69,7 +69,7 @@ $('.carousel-slider').masterslider({
     space:10,
     wheel:false,
     controls : {
-        arrows : {autohide:false},
+        arrows : {autohide:false}
     }
 });
 
@@ -86,6 +86,22 @@ $('.carousel-items').owlCarousel({
   responsive:{
       600:{}
   }
+});
+
+// Slider //
+
+$('.blog-slider').masterslider({
+    width:1920,
+  	height:700,
+    fullwidth:true,
+    autoplay:true,
+    loop:true,
+    view:'flow',
+    speed:16,
+    view:'fade',
+    controls : {
+        bullets: {autohide:false}
+    }
 });
 
 });
