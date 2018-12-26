@@ -793,6 +793,7 @@ a.close{
 	width:100%;
 	min-height: 100%;
 	padding-top:90px;
+	padding-bottom: 100px;
 }
 
 #wrapper.login-register{padding:115px 0 150px 0;}
