@@ -1307,15 +1307,32 @@ a.close{
 
 /* -- _Tag -- */
 
-.web-tags a{
-	display: inline-block;
-	color:#ffffff;
-	padding:5px 12px;
-	margin:5px 3px;
-	background-color:#121212;
+.web-tags{
+	padding-top:25px;
+	margin-top:25px;
+	border-top:1px solid #e4e4e4;
 }
 
-.web-tags a:hover{background-color:#f7941e;}
+.web-tags a{
+	display: inline-block;
+	font-size: 13px;
+	color:#4a4a4a;
+	padding:6px 12px 4px 12px;
+	margin:3px 1px;
+	border:1px solid #4a4a4a;
+	border-radius: 4px;
+	-webkit-transition:none;
+	-moz-transition:none;
+	transition:none;
+}
+
+.web-tags a:hover{
+	color:#ffffff;
+	background: -webkit-linear-gradient(right, #f7941e , #f5bf3d);
+    background: -moz-linear-gradient(left, #f7941e, #f5bf3d);
+    background: linear-gradient(to left, #f7941e , #f5bf3d);
+	border-color:transparent;
+}
 
 .tag{
 	display: inline-block;
@@ -1571,9 +1588,9 @@ a.close{
 .breadcrumb{
 	position: relative;
 	width: 100%;
-	padding-bottom: 25px;
-	margin-bottom: 25px;
-	border-bottom:1px solid #ececec;
+	padding-bottom: 20px;
+	margin-bottom: 27px;
+	border-bottom:1px solid #e4e4e4;
 }
 
 .breadcrumb ul{
@@ -1583,21 +1600,21 @@ a.close{
 
 .breadcrumb ul li{
 	float: right;
-	color: #58595b;
+	color: #2e2e2e;
 }
 
 .breadcrumb ul li::before{
 	content:'';
 	display: inline-block;
-	width: 4px;
-	height: 6px;
-	margin:0 12px;
-	background: url('../images/assets/breadcrumb-arrow.png') no-repeat center;
+	width: 7px;
+	height: 8px;
+	margin:0 10px;
+	background: url('../images/assets/prev.png') no-repeat center;
 }
 
 .breadcrumb ul li:first-child::before{display: none;}
-.breadcrumb ul li a{color:#c99d27;}
-.breadcrumb ul li a:hover{color:#a27d1b;}
+.breadcrumb ul li a{color:#2e2e2e;}
+.breadcrumb ul li a:hover{color:#f7941e;}
 
 /* -- _Text Editors (change the style of all content comes from text editors) -- */
 
