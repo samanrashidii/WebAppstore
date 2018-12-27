@@ -56,6 +56,30 @@ $('.filter-title').on('click', function(){
   $(this).toggleClass('active').siblings('.filter-inner-box').fadeToggle();
 });
 
+// Add to Wishlist
+
+$('.add-to-wishlist').on('click', function(){
+	if($(this).hasClass('active')){
+		$(this).removeClass('active');
+		$(this).find('svg').attr('data-prefix', 'far');
+	} else{
+		$(this).addClass('active');
+		$(this).find('svg').attr('data-prefix', 'fas');
+	}
+});
+
+// Show More
+
+$('.show-more a').on('click', function(){
+  if($(this).hasClass('active')){
+		$(this).removeClass('active').parent().prev('.show-content').removeClass('active');
+		$(this).html('مشاهده بیشتر');
+	} else{
+		$(this).addClass('active').parent().prev('.show-content').addClass('active');
+		$(this).html('مشاهده کمتر');
+	}
+});
+
 // Carousel Slider
 
 $('.carousel-slider').masterslider({
@@ -82,6 +106,21 @@ $('.carousel-items').owlCarousel({
   dots:false,
   autoplay:false,
   loop:false,
+  margin:0,
+  responsive:{
+      600:{}
+  }
+});
+
+// App Gallery
+
+$('.app-gallery').owlCarousel({
+  autoWidth:true,
+  items:3,
+  nav:true,
+  dots:false,
+  autoplay:false,
+  loop:true,
   margin:0,
   responsive:{
       600:{}
