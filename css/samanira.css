@@ -659,6 +659,17 @@ label.error{
 	background:linear-gradient(to left, #5b8ed1 , #365f95);
 }
 
+.bttn.transparent{
+	min-width: 120px;
+	font-size: 13px;
+	color:#212121;
+	padding:8px;
+	background:transparent;
+	border:2px solid #212121;
+}
+
+.bttn.transparent:hover{background:#e4e4e4;}
+
 .bttn.black{background-color: #000000;}
 
 .bttn.black:hover{
