@@ -374,7 +374,7 @@ input[type="search"]:focus{padding-right: 24px;}
 input:not([type="submit"]):focus + svg,
 select:focus + svg{color:#4a4a4a;}
 
-input[type="search"]:focus{border-color:#121212 !important;}
+input[type="search"]:focus{border-color:#2e2e2e !important;}
 
 input[type="submit"]:hover,
 input[type="submit"]:focus{background-color: #af0038;}
