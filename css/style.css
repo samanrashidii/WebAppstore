@@ -521,6 +521,11 @@ svg[data-icon="windows"]{color: #0078d7;}
 .static-banner.blog-page{height: auto;}
 .static-banner.specific-page .table-display{background:rgba(0,0,0,.35);}
 
+.static-banner.dashboard{
+	height: 340px;
+	background:#e7e7e7;
+}
+
 .specific-layer{
 	font-size: 19px;
 	color:#f7941e;
@@ -734,6 +739,14 @@ svg[data-icon="windows"]{color: #0078d7;}
 	padding-top:12px;
 }
 
+.filter-items{
+	max-height: 214px;
+	overflow-y: auto;
+	padding:5px 10px;
+	border:1px solid #e4e4e4;
+	border-radius: 5px;
+}
+
 .filter-items .checkbox-holder{margin:3px 0;}
 
 .sort-box{
@@ -764,14 +777,16 @@ svg[data-icon="windows"]{color: #0078d7;}
 }
 
 .category-listing ul{
-	padding:10px;
+	max-height: 228px;
+	overflow-y: auto;
+	padding:5px 10px;
 	border:1px solid #e4e4e4;
 	border-radius: 5px;
 }
 
 .category-listing ul li{
 	font-size: 12px;
-	margin:8px 0;
+	margin:12px 0;
 }
 
 .category-listing ul li.active a,
@@ -1009,6 +1024,12 @@ span.date{
 .app-details svg{
 	font-size: 17px;
 	margin:0 3px;
+}
+
+.app-permissions .static-content ul{padding-right: 0;}
+.app-permissions .static-content ul li{
+	font-size: 12px;
+	margin:5px 0 !important;
 }
 
 .show-content{
