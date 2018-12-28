@@ -109,6 +109,28 @@ $('.show-more a').on('click', function(){
 	}
 });
 
+// Filter Search
+
+if($('.search_filters').length > 0){
+
+	$('.filter-items li').each(function(){
+		var labelText = $(this).find('label').text().toLowerCase();
+		$(this).find('label').attr('data-name',labelText);
+	});
+
+	$('.search_filters').on('keyup', function() {
+		var searchVal = $(this).val().toLowerCase();
+		var filterItems = $(this).parents('.filter-inner-box').find('li');
+
+		if (searchVal != '') {
+			filterItems.hide();
+			$(this).parents('.filter-inner-box').find('label[data-name^="' + searchVal + '"]').parents('li').show();
+		} else {
+			filterItems.show();
+		}
+	});
+}
+
 // Carousel Slider
 
 $('.carousel-slider').masterslider({
