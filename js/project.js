@@ -68,6 +68,35 @@ $('.add-to-wishlist').on('click', function(){
 	}
 });
 
+// Comment Options
+
+$('.comment-options a').on('click', function(){
+	if($(this).hasClass('active')){
+		$(this).removeClass('active');
+		$(this).find('svg').attr('data-prefix', 'far');
+	} else{
+		$(this).addClass('active');
+		$(this).find('svg').attr('data-prefix', 'fas');
+	}
+});
+
+// Star Rating
+
+$('.your-rating span').on('mouseenter', function(){
+  if(!$(this).parents('.your-rating').hasClass('selected')){
+    $(this).prevAll().addClass('active');
+    $(this).addClass('active').nextAll().removeClass('active');
+  }
+}).on('click', function(){
+  $(this).addClass('selected').nextAll().removeClass('selected');
+  $(this).prevAll().addClass('selected');
+  $('.your_rating_number').val($('.your-rating span.selected').index(this)+1);
+});
+
+$('.your-rating').on('mouseleave', function(){
+  $(this).children('span').removeClass('active');
+});
+
 // Show More
 
 $('.show-more a').on('click', function(){
