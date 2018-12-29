@@ -131,7 +131,9 @@
 					<div class="table-display">
 						<div class="table-cell-display vertical-aligned center-aligned">
 							<div class="dashboard-banner-layer">
-								
+								<img src="images/users/user-1.png" alt="" />
+								<strong>سامان رشیدی</strong>
+								<span>اعتبار: <i>44000</i></span>
 							</div><!-- dashboard-banner-layer -->
 						</div><!-- table-cell-display end -->
 					</div><!-- table-display end -->
@@ -149,7 +151,80 @@
 
 						<div class="main-content has-clear-fix">
 
-							
+							<div class="dashboard user">
+								<div class="dashboard-tabs">
+									<ul class="has-clear-fix">
+										<li class="active"><a href="dashboard.html"><i class="fal fa-id-card"></i> داشبورد</a></li>
+										<li><a href="dashboard-wishlist.html"><i class="fal fa-heart"></i> علاقه مندی ها</a></li>
+										<li><a href="dashboard-history.html"><i class="fal fa-cloud-download-alt"></i> تاریخچه دانلود</a></li>
+										<li><a href="dashboard-reviews.html"><i class="fal fa-comments"></i> نظرات</a></li>
+										<li><a href="dashboard-credit.html"><i class="fal fa-coins"></i> اعتبار</a></li>
+									</ul>
+									<a class="exit" href="#">خروج</a>
+								</div><!-- dashboard-tabs end -->
+								<div class="section-box">
+									<div class="section-box-content">
+										<div class="my-account-box">
+											<form action="#" method="POST" name="edit_profile" class="edit_profile" accept-charset="UTF-8">
+												<ul>
+													<li>
+														<strong>نام:</strong>
+														<span><input type="text" name="profile_firstname" value="سامان" /></span>
+													</li>
+													<li>
+														<strong>نام خانوادگی :</strong>
+														<span><input type="text" name="profile_lastname" value="رشیدی" /></span>
+													</li>
+													<li>
+														<strong>جنسیت :</strong>
+														<span>
+															<span class="radio-holder">
+																<input type="radio" name="profile_gender" id="male" value="male" checked/>
+																<label for="male">مرد</label>
+															</span><!-- radio-holder end -->
+															<span class="radio-holder">
+																<input type="radio" name="profile_gender" id="female" value="female" />
+																<label for="female">زن</label>
+															</span><!-- radio-holder end -->
+														</span>
+													</li>
+													<li>
+														<strong>رمز عبور جدید:</strong>
+														<span><input type="password" name="profile_password" /></span>
+													</li>
+													<li>
+														<strong>تکرار رمز عبور جدید:</strong>
+														<span><input type="password" name="profile_password_confirm" /></span>
+													</li>
+													<li>
+														<strong>آدرس ایمیل :</strong>
+														<span><input type="email" name="profile_email" class="reverse-input" value="samanrashidi44@gmail.com" /></span>
+													</li>
+													<li>
+														<strong>شماره موبایل :</strong>
+														<span><input type="tel" name="profile_tel" class="tel_number number-field reverse-input" value="09128996990" readonly /></span>
+													</li>
+													<li>
+														<strong>عکس پروفایل :</strong>
+														<span>
+															<span class="upload-bttn">
+																<input type="file" name="profile_picture" id="profile_picture" accept="image/*" />
+																<label for="profile_picture">+ آپلود عکس جدید</label>
+															</span>
+															<span class="file-name">samanrashidi44.png</span>
+														</span>
+													</li>
+													<li>
+														<div class="left-aligned">
+															<button type="submit">اعمال تغییرات</button>
+														</div><!-- left-aligned end -->
+													</li>
+												</ul>
+											</form>
+										</div><!-- my-account-box end -->
+									</div><!-- section-box-content end -->
+								</div><!-- section-box end -->
+							</div><!-- dashboard end -->
 									
 						</div><!-- main-content end -->
 					</div><!-- frame end -->
