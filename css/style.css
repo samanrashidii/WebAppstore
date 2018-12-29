@@ -523,7 +523,7 @@ svg[data-icon="windows"]{color: #0078d7;}
 
 .static-banner.dashboard{
 	height: 340px;
-	background:#e7e7e7;
+	background: #e7e7e7;
 }
 
 .specific-layer{
@@ -1328,6 +1328,127 @@ span.date{
 	background: -webkit-linear-gradient(right, #ed5855 , #fe7875);
     background: -moz-linear-gradient(left, #ed5855, #fe7875);
     background: linear-gradient(to left, #ed5855 , #fe7875);
+}
+
+.dashboard{padding:20px 0;}
+
+.dashboard-tabs{
+	position: relative;
+	padding-left: 100px;
+}
+
+.dashboard-tabs ul li{
+	float: right;
+	margin:0 4px;
+}
+
+.dashboard-tabs ul li a{
+	display: block;
+	font-size: 14px;
+	color:#121212;
+	text-align: center;
+	padding:14px 10px;
+}
+
+.dashboard-tabs ul li a svg{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+	margin-left: 5px;
+}
+.dashboard-tabs ul li:first-child{margin-right: 0;}
+.dashboard-tabs ul li a:hover{color:#f7941e;}
+
+.dashboard-tabs ul li.active a{
+	min-width: 100px;
+	color:#f7941e;
+	background-color:#ffffff;
+	border-radius: 9px 9px 0 0;
+}
+
+.dashboard-tabs a.exit{
+	position: absolute;
+	top:14px;
+	left: 10px;
+	font-family: 'Iran-Medium';
+	font-size: 13px;
+	color:#e56262;
+}
+
+.dashboard .section-box{border-top-right-radius: 0;}
+
+.dashboard-banner-layer img{
+	width: 150px;
+	padding:5px;
+	border:3px solid #f7941e;
+	border-radius: 50%;
+}
+
+.dashboard-banner-layer strong{
+	display: block;
+	font-family: 'Iran-Medium';
+	font-size: 22px;
+	color:#121212;
+	margin-top:15px;
+}
+
+.dashboard-banner-layer span{
+	display: block;
+	font-size: 13px;
+	color:#4f4f4f;
+	margin-top:8px;
+}
+
+.dashboard-banner-layer span i{
+	font-family: 'Iran-Medium';
+	font-style: normal;
+	color:#f7941e;
+}
+
+.my-account-box ul li{margin:14px 0;}
+.my-account-box ul li:first-child{margin-top:0;}
+.my-account-box ul li:last-child{margin-bottom: 0;}
+
+.my-account-box ul li > strong{
+	display: inline-block;
+	vertical-align: middle;
+	width:130px;
+	font-family: 'Iran-Medium';
+	font-size: 11px;
+}
+
+.my-account-box ul li > span{
+	display: inline-block;
+	vertical-align: middle;
+	color:#3079AB;
+}
+
+.my-account-box ul li img{
+	display: inline-block;
+	vertical-align: middle;
+	width: 80px !important;
+	height: 80px !important;
+	margin:0;
+	border:2px solid #3e474f;
+	border-radius: 4px;
+}
+
+.my-account-box input,
+.my-account-box select,
+.my-account-box .ui-selectmenu-button{min-width: 300px;}
+.my-account-box input{padding:0 20px;}
+.my-account-box input.tel_number{cursor: not-allowed;}
+
+.my-account-box button{
+	display: inline-block;
+	max-width: 200px;
+	margin-top:40px;
+}
+
+.my-account-box .radio-holder{
+	display: inline-block;
+	width:auto;
+	margin:0 0 0 10px;
 }
 
 
