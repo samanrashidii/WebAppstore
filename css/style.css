@@ -1372,10 +1372,12 @@ span.date{
 	left: 10px;
 	font-family: 'Iran-Medium';
 	font-size: 13px;
-	color:#e56262;
+	color:#fb6464;
 }
+.dashboard-tabs a.exit:hover{color:#f53b3b;}
 
 .dashboard .section-box{border-top-right-radius: 0;}
+.dashboard .section-box-content{padding:50px 30px 30px 30px;}
 
 .dashboard-banner-layer img{
 	width: 150px;
