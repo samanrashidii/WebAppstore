@@ -1479,6 +1479,22 @@ span.date{
     box-shadow: 0 0 5px #c1c1c1;
 }
 
+.my-review-box{
+	position: relative;
+	padding-right: 170px;
+	margin-bottom: 20px;
+}
+
+.my-review-box:last-child{margin-bottom: 10px;}
+.my-review-box .comment-box{margin-bottom: 0;}
+.my-review-box .comment-content{font-size: 13px;}
+
+.my-review-box .application-box{
+	position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
 
 /*   Added Styles by Back-end   */
 
