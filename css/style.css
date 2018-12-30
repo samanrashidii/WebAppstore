@@ -170,7 +170,7 @@
 .application-box{width:150px;}
 .carousel-slider .application-box{margin:auto;}
 .carousel-items .application-box{margin:0 6.5px;}
-.application-box a{
+.application-box a:not(.add-to-wishlist){
 	position: relative;
 	display: block;
 	text-align: center;
@@ -179,21 +179,21 @@
 	border-radius: 5px;
 }
 
-.application-box a svg{
+.application-box a:not(.add-to-wishlist) svg{
 	position: absolute;
 	top:7px;
 	font-size: 18px;
 }
 
-.application-box a svg:nth-of-type(1){left:7px;}
-.application-box a svg:nth-of-type(2){left:32px;}
-.application-box a svg:nth-of-type(3){left:57px;}
+.application-box a:not(.add-to-wishlist) svg:nth-of-type(1){left:7px;}
+.application-box a:not(.add-to-wishlist) svg:nth-of-type(2){left:32px;}
+.application-box a:not(.add-to-wishlist) svg:nth-of-type(3){left:57px;}
 
 svg[data-icon="android"]{color: #a4c639;}
 svg[data-icon="apple"]{color: #000000;}
 svg[data-icon="windows"]{color: #0078d7;}
 
-.application-box a:hover{
+.application-box a:not(.add-to-wishlist):hover{
 	-webkit-box-shadow: 0 0 20px #d4d4d4;
 	-moz-box-shadow: 0 0 20px #d4d4d4;
 	box-shadow: 0 0 20px #d4d4d4;
@@ -947,9 +947,11 @@ span.date{
     color: #4a4a4a;
     text-align: center;
     background-color: #ffffff;
-    box-shadow: 0 0 10px #c1c1c1;
     border-radius: 50%;
     z-index: 10;
+    -webkit-box-shadow: 0 0 8px #c1c1c1;
+    -moz-box-shadow: 0 0 8px #c1c1c1;
+    box-shadow: 0 0 8px #c1c1c1;
 }
 
 .add-to-wishlist.active{
@@ -1360,7 +1362,7 @@ span.date{
 .dashboard-tabs ul li a:hover{color:#f7941e;}
 
 .dashboard-tabs ul li.active a{
-	min-width: 100px;
+	min-width: 135px;
 	color:#f7941e;
 	background-color:#ffffff;
 	border-radius: 9px 9px 0 0;
@@ -1451,6 +1453,30 @@ span.date{
 	display: inline-block;
 	width:auto;
 	margin:0 0 0 10px;
+}
+
+.my-account-box .checkbox-holder input[type="checkbox"] + label{font-size: 13px;}
+
+.my-account-box .application-box{
+	position: relative;
+	display: inline-block;
+	margin:18px 15px;
+}
+
+.my-account-box .application-box a:not(.add-to-wishlist){border:1px solid #e4e4e4;}
+
+.my-account-box .pagination{padding:35px 0 10px 0;}
+
+.my-account-box .add-to-wishlist{
+	top: -12px;
+    right: -12px;
+    width: 36px;
+    height: 36px;
+    line-height: 42px;
+    font-size: 14px;
+    -webkit-box-shadow: 0 0 5px #c1c1c1;
+    -moz-box-shadow: 0 0 5px #c1c1c1;
+    box-shadow: 0 0 5px #c1c1c1;
 }
 
 

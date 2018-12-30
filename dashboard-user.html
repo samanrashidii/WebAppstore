@@ -154,7 +154,7 @@
 							<div class="dashboard user">
 								<div class="dashboard-tabs">
 									<ul class="has-clear-fix">
-										<li class="active"><a href="dashboard.html"><i class="fal fa-id-card"></i> داشبورد</a></li>
+										<li class="active"><a href="dashboard-user.html"><i class="fal fa-id-card"></i> داشبورد</a></li>
 										<li><a href="dashboard-wishlist.html"><i class="fal fa-heart"></i> علاقه مندی ها</a></li>
 										<li><a href="dashboard-history.html"><i class="fal fa-cloud-download-alt"></i> تاریخچه دانلود</a></li>
 										<li><a href="dashboard-reviews.html"><i class="fal fa-comments"></i> نظرات</a></li>
@@ -190,11 +190,11 @@
 													</li>
 													<li>
 														<strong>رمز عبور جدید:</strong>
-														<span><input type="password" name="profile_password" /></span>
+														<span><input type="password" class="reverse-input" name="profile_password" /></span>
 													</li>
 													<li>
 														<strong>تکرار رمز عبور جدید:</strong>
-														<span><input type="password" name="profile_password_confirm" /></span>
+														<span><input type="password" class="reverse-input" name="profile_password_confirm" /></span>
 													</li>
 													<li>
 														<strong>آدرس ایمیل :</strong>
@@ -211,7 +211,16 @@
 																<input type="file" name="profile_picture" id="profile_picture" accept="image/*" />
 																<label for="profile_picture">+ آپلود عکس جدید</label>
 															</span>
-															<span class="file-name">user_1.png</span>
+															<span class="file-name">user-1.png</span>
+														</span>
+													</li>
+													<li>
+														<strong>خبرنامه هفتگی :</strong>
+														<span>
+															<span class="checkbox-holder">
+																<input type="checkbox" name="newsletter" id="newsletter" value="yes" />
+																<label for="newsletter">مایل به دریافت خبرنامه هستم.</label>
+															</span><!-- checkbox-holder end -->
 														</span>
 													</li>
 													<li>
