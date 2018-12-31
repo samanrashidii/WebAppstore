@@ -207,7 +207,7 @@ $('.number-field').numeric();
 
 // Inline Upload Button Show Text
 
-$('#profile_picture').on('change', function ()
+$('#profile_picturem, #app_logo').on('change', function ()
 {
     for (var i = 0; i < this.files.length; i++)
     {
@@ -215,6 +215,66 @@ $('#profile_picture').on('change', function ()
         $('span.file-name').text(fileName);
     }
 });
+
+// Multiple
+
+$(document).on('change', '#app_images', function(e) {
+            var images = this.files;
+            var $input = $(this);;
+            
+            if(images.length > 0) {
+                // Clear current images
+                $(document).find('.uploaded-gallery-box ul li.new').remove();
+                
+                // Set new images
+                for( var i = 0; i < images.length; i++) {
+                    var reader = new FileReader();
+                    reader.file = images[i];
+                    
+                    reader.onload = function (event) {
+                        var $parent = $input.parent().parent();
+                        var $li = $('<li>')
+                                .addClass('new')
+                                .css({
+                            height : '120px',
+                            width : '120px',
+                            display : 'inline-block', 
+                            margin : '10px'
+                        });
+                        
+                        var $img = $('<img>')
+                                .attr({
+                                    src : event.target.result,
+                                    class : 'event-gallery-sortable-item-move'
+                                });
+                        
+                        var $remove = $('<a>')
+                                .addClass('remove-gallery-image')
+                                .css({
+                                    position : 'relative'
+                                })
+                                .html('X');
+                        
+                        var $hidden_input = $('<input>')
+                                .attr({
+                                    type : 'hidden',
+                                    name : 'images[]',
+                                    value : this.file.name
+                                })
+                                .css({
+                                    display : 'none'
+                                });
+                        
+                        $hidden_input.appendTo($li);
+                        $img.appendTo($li);
+                        $remove.appendTo($li);
+                        $li.appendTo($parent.find('.uploaded-gallery-box ul'));
+                    };
+                    reader.readAsDataURL(images[i]);
+                }
+                
+            }
+        });
 
 // Cookie
 
