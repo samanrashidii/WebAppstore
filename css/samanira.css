@@ -1635,6 +1635,7 @@ a.close{
 	background: -webkit-linear-gradient(right, #f7941e , #f5bf3d);
     background: -moz-linear-gradient(left, #f7941e, #f5bf3d);
     background: linear-gradient(to left, #f7941e , #f5bf3d);
+    border:none;
 }
 
 .pagination ul li.etc a{
@@ -1649,9 +1650,7 @@ a.close{
 .pagination ul li.prev,
 .pagination ul li.next{margin: 0 6px;}
 
-.pagination ul li:not(.active):not(.etc) a:hover{
-	background-color: #eaeaea;
-}
+.pagination ul li:not(.active):not(.etc) a:hover{background-color: #f1f1f1;}
 
 /* -- _Breadcrumb -- */
 
