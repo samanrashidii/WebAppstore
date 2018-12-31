@@ -145,7 +145,7 @@
 						<div class="breadcrumb">
 							<ul>
 								<li><a href="#">خانه</a></li>
-								<li>حساب کاربری</li>
+								<li>داشبورد برنامه نویس</li>
 							</ul>
 						</div><!-- breadcrumb end -->
 
@@ -154,7 +154,8 @@
 							<div class="dashboard user">
 								<div class="dashboard-tabs">
 									<ul class="has-clear-fix">
-										<li class="active"><a href="dashboard-user.html"><i class="fal fa-id-card"></i> حساب کاربری</a></li>
+										<li class="active"><a href="dashboard-developer.html"><i class="fal fa-laptop-code"></i> داشبورد</a></li>
+										<li><a href="dashboard-user.html"><i class="fal fa-id-card"></i> حساب کاربری</a></li>
 										<li><a href="dashboard-wishlist.html"><i class="fal fa-heart"></i> علاقه مندی ها</a></li>
 										<li><a href="dashboard-history.html"><i class="fal fa-cloud-download-alt"></i> تاریخچه دانلود</a></li>
 										<li><a href="dashboard-reviews.html"><i class="fal fa-comments"></i> نظرات</a></li>
@@ -165,67 +166,136 @@
 								<div class="section-box">
 									<div class="section-box-content">
 										<div class="my-account-box">
-											<form action="#" method="POST" name="edit_profile" class="edit_profile" accept-charset="UTF-8">
+											<form action="#" method="POST" name="upload_app" class="upload_app" accept-charset="UTF-8">
 												<ul>
 													<li>
-														<strong>نام:</strong>
-														<span><input type="text" name="profile_firstname" value="سامان" /></span>
+														<strong>نام برنامه:</strong>
+														<span><input type="text" name="app_name" /></span>
 													</li>
 													<li>
-														<strong>نام خانوادگی :</strong>
-														<span><input type="text" name="profile_lastname" value="رشیدی" /></span>
-													</li>
-													<li>
-														<strong>جنسیت :</strong>
+														<strong>نوع برنامه :</strong>
 														<span>
 															<span class="radio-holder">
-																<input type="radio" name="profile_gender" id="male" value="male" checked/>
-																<label for="male">مرد</label>
+																<input type="radio" name="app_category" id="application" value="application" checked/>
+																<label for="application">اپلیکیشن</label>
 															</span><!-- radio-holder end -->
 															<span class="radio-holder">
-																<input type="radio" name="profile_gender" id="female" value="female" />
-																<label for="female">زن</label>
+																<input type="radio" name="app_category" id="game" value="game" />
+																<label for="game">بازی</label>
 															</span><!-- radio-holder end -->
 														</span>
 													</li>
 													<li>
-														<strong>رمز عبور جدید:</strong>
-														<span><input type="password" class="reverse-input" name="profile_password" /></span>
+														<strong>دسته بندی :</strong>
+														<span>
+															<select name="app_category">
+																<option value="">آموزشی</option>
+																<option value="">استراتژی</option>
+																<option value="">اکشن</option>
+																<option value="">امتیازی</option>
+																<option value="">تفننی</option>
+																<option value="">خانوادگی</option>
+																<option value="">رانندگی</option>
+																<option value="">شبیه‌سازی</option>
+																<option value="">کلمات و دانستنی‌ها</option>
+																<option value="">ماجرایی</option>
+																<option value="">معمایی</option>
+																<option value="">ورزشی</option>
+															</select>
+														</span>
 													</li>
 													<li>
-														<strong>تکرار رمز عبور جدید:</strong>
-														<span><input type="password" class="reverse-input" name="profile_password_confirm" /></span>
+														<strong>نوع پلتفرم:</strong>
+														<span class="choose-platform">
+															<span class="checkbox-holder">
+																<input type="checkbox" name="app_platform" id="apple" value="apple" />
+																<label for="apple"><i class="fab fa-apple"></i></label>
+															</span><!-- checkbox-holder end -->
+															<span class="checkbox-holder">
+																<input type="checkbox" name="app_platform" id="android" value="android" />
+																<label for="android"><i class="fab fa-android"></i></label>
+															</span><!-- checkbox-holder end -->
+															<span class="checkbox-holder">
+																<input type="checkbox" name="app_platform" id="windows" value="windows" />
+																<label for="windows"><i class="fab fa-windows"></i></label>
+															</span><!-- checkbox-holder end -->
+														</span>
 													</li>
 													<li>
-														<strong>آدرس ایمیل :</strong>
-														<span><input type="email" name="profile_email" class="reverse-input" value="samanrashidi44@gmail.com" /></span>
+														<strong>درباره برنامه:</strong>
+														<div class="text-editor has-small-y-margin">
+															<img class="text-editor-image" src="images/developers/rich-text-editor.gif" alt="" />
+														</div><!-- text-editor end -->
 													</li>
 													<li>
-														<strong>شماره موبایل :</strong>
-														<span><input type="tel" name="profile_tel" class="tel_number number-field reverse-input" value="09128996990" readonly /></span>
+														<strong>دسترسی ها:</strong>
+														<div class="text-editor has-small-y-margin">
+															<img class="text-editor-image" src="images/developers/rich-text-editor.gif" alt="" />
+														</div><!-- text-editor end -->
 													</li>
 													<li>
-														<strong>عکس پروفایل :</strong>
+														<strong>لوگو (128 * 128) :</strong>
 														<span>
 															<span class="upload-bttn">
-																<input type="file" name="profile_picture" id="profile_picture" accept="image/*" />
-																<label for="profile_picture">+ آپلود عکس جدید</label>
+																<input type="file" name="app_logo" id="app_logo" accept="image/*" />
+																<label for="app_logo">+ آپلود لوگوی برنامه</label>
 															</span>
-															<span class="file-name">user-1.png</span>
+															<span class="file-name">brawl-stars.png</span>
 														</span>
+													</li>
+													<li>
+														<strong>عکس ها (900 * 675) :</strong>
+														<span>
+															<span class="upload-bttn">
+																<input type="file" name="app_images" id="app_images" accept="image/*" multiple />
+																<label for="app_images">+ آپلود اسکرین شات های برنامه</label>
+															</span>
+														</span>
+														<div class="uploaded-gallery-box">
+						                                    <ul>
+						                                        <li>
+						                                            <img src="http://halachina.dev.edoramedia.com/assets/event/2018/11/22/7/gallery/80x80_gallery_image_1542898125367137087.jpg" class="event-gallery-sortable-item-move ui-sortable-handle">
+						                                            
+						                                            <div class="checkbox-holder">
+						                                                <input type="checkbox" name="remove_gallery_image[]" value="QEozJRcVpC2RpG88-iz4Kg~~" id="remove_gallery_image14">
+						                                                <label for="remove_gallery_image14">X</label>
+						                                            </div><!-- checkbox-holder end -->
+						                                            <input type="hidden" name="images[]" value="0Gbo7y1bvbhAXHjLdRyEjQ~~">
+						                                        </li>
+						                                        <li>
+						                                            <img src="http://halachina.dev.edoramedia.com/assets/event/2018/11/22/7/gallery/80x80_gallery_image_1542898126693975071.jpg" class="event-gallery-sortable-item-move ui-sortable-handle">
+						                                            
+						                                            <div class="checkbox-holder">
+						                                                <input type="checkbox" name="remove_gallery_image[]" value="QzWcYtqQC5Pcjr0Kn6ji4A~~" id="remove_gallery_image15">
+						                                                <label for="remove_gallery_image15">X</label>
+						                                            </div><!-- checkbox-holder end -->
+						                                            <input type="hidden" name="images[]" value="p6JrvxFk2c6RXaD0GUxf5g~~">
+						                                        </li>
+						                                        <li>
+						                                            <img src="http://halachina.dev.edoramedia.com/assets/event/2018/11/22/7/gallery/80x80_gallery_image_1542898126191543621.jpg" class="event-gallery-sortable-item-move ui-sortable-handle">
+						                                            
+						                                            <div class="checkbox-holder">
+						                                                <input type="checkbox" name="remove_gallery_image[]" value="rTgZ_bwFROA1qvbreXK_vg~~" id="remove_gallery_image16">
+						                                                <label for="remove_gallery_image16">X</label>
+						                                            </div><!-- checkbox-holder end -->
+						                                            <input type="hidden" name="images[]" value="GqCEkt9Jt6LTy6wcZaAaRg~~">
+						                                        </li>
+						                                    </ul>
+						                                </div><!-- uploaded-photo-box end -->
+						                            </div>
 													</li>
 													<li>
 														<strong>خبرنامه هفتگی :</strong>
 														<span>
 															<span class="checkbox-holder">
-																<input type="checkbox" name="newsletter" id="newsletter" value="yes" />
-																<label for="newsletter">مایل به دریافت خبرنامه هستم.</label>
+																<input type="checkbox" name="terms_and_conditions" id="terms_and_conditions" value="yes" />
+																<label for="terms_and_conditions">تمامی <a href="static.html" target="_blank">قوانین و ضوابط</a> را خوانده ام و قبول دارم.</label>
 															</span><!-- checkbox-holder end -->
 														</span>
 													</li>
 													<li>
-														<div class="left-aligned">
-															<button type="submit">اعمال تغییرات</button>
+														<div class="right-aligned">
+															<button type="submit"><i class="fas fa-cloud-upload"></i> آپلود برنامه</button>
 														</div><!-- left-aligned end -->
 													</li>
 												</ul>
