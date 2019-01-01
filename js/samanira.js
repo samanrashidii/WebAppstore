@@ -205,76 +205,106 @@ $('.number-field').numeric();
 
 // });
 
-// Inline Upload Button Show Text
+// Images Upload
 
-$('#profile_picturem, #app_logo').on('change', function ()
-{
-    for (var i = 0; i < this.files.length; i++)
-    {
-        var fileName = this.files[i].name;
-        $('span.file-name').text(fileName);
+$(document).on('change', '#app_images, #profile_picture, #app_logo, #app_banner', function(e) {
+  var images = this.files;
+  var $input = $(this);
+  
+  if(images.length > 0) {
+    // Clear current images
+    $(this).parents('li').find('.uploaded-gallery-box ul li.new').remove();
+    
+    // Set new images
+    for( var i = 0; i < images.length; i++) {
+      var reader = new FileReader();
+      reader.file = images[i];
+      var fileName = this.files[i].name;
+      
+      reader.onload = function (event) {
+        var $parent = $input.parents('li');
+        var $li = $('<li>').addClass('new');
+      
+        var $img = $('<img>').attr({src : event.target.result}).addClass('uploaded-image');
+        
+        var $remove = $('<a>').attr('href', 'javascript:void(0)').addClass('remove-gallery-image');
+        
+        var $hidden_input = $('<input>')
+        .attr({
+            type : 'hidden',
+            name : 'images[]',
+            value : this.file.name
+        })
+        .css({
+            display : 'none'
+        });
+
+        $parent.find('span.file-name').text(fileName);
+        
+        $hidden_input.appendTo($li);
+        $img.appendTo($li);
+        $remove.appendTo($li);
+        $li.appendTo($parent.find('.uploaded-gallery-box ul'));
+      };
+      reader.readAsDataURL(images[i]);
     }
+  }
 });
 
-// Multiple
+$(document).on('click', 'a.remove-gallery-image', function(e) {
+    e.preventDefault();
+    $(this).parents('li').find('span.file-name').html(' ');
+    $(this).parent('li').remove();
+});
 
-$(document).on('change', '#app_images', function(e) {
-            var images = this.files;
-            var $input = $(this);;
-            
-            if(images.length > 0) {
-                // Clear current images
-                $(document).find('.uploaded-gallery-box ul li.new').remove();
-                
-                // Set new images
-                for( var i = 0; i < images.length; i++) {
-                    var reader = new FileReader();
-                    reader.file = images[i];
-                    
-                    reader.onload = function (event) {
-                        var $parent = $input.parent().parent();
-                        var $li = $('<li>')
-                                .addClass('new')
-                                .css({
-                            height : '120px',
-                            width : '120px',
-                            display : 'inline-block', 
-                            margin : '10px'
-                        });
-                        
-                        var $img = $('<img>')
-                                .attr({
-                                    src : event.target.result,
-                                    class : 'event-gallery-sortable-item-move'
-                                });
-                        
-                        var $remove = $('<a>')
-                                .addClass('remove-gallery-image')
-                                .css({
-                                    position : 'relative'
-                                })
-                                .html('X');
-                        
-                        var $hidden_input = $('<input>')
-                                .attr({
-                                    type : 'hidden',
-                                    name : 'images[]',
-                                    value : this.file.name
-                                })
-                                .css({
-                                    display : 'none'
-                                });
-                        
-                        $hidden_input.appendTo($li);
-                        $img.appendTo($li);
-                        $remove.appendTo($li);
-                        $li.appendTo($parent.find('.uploaded-gallery-box ul'));
-                    };
-                    reader.readAsDataURL(images[i]);
-                }
-                
-            }
+// Files Upload
+
+$(document).on('change', '#app_files', function(e) {
+  var $files = this.files;
+  var $input = $(this);
+  
+  if($files.length > 0) {
+    // Clear current images
+    $(this).parents('li').find('.uploaded-files ul li.new').remove();
+    
+    // Set new images
+    for( var i = 0; i < $files.length; i++) {
+      var reader = new FileReader();
+      reader.file = $files[i];
+      var fileName = this.files[i].name;
+      
+      reader.onload = function (event) {
+        var $parent = $input.parents('li');
+        var $li = $('<li>').addClass('new');
+      
+        var $uploadedFileName = $('<span>').addClass('upoaded-file-name').html(fileName);
+        
+        var $remove = $('<a>').attr('href', 'javascript:void(0)').addClass('remove-file');
+        
+        var $hidden_input = $('<input>')
+        .attr({
+            type : 'hidden',
+            name : 'files[]',
+            value : this.file.name
+        })
+        .css({
+            display : 'none'
         });
+        
+        $hidden_input.appendTo($li);
+        $remove.appendTo($li);
+        $uploadedFileName.appendTo($li);
+        $li.appendTo($parent.find('.uploaded-files ul'));
+      };
+      reader.readAsDataURL($files[i]);
+    }
+  }
+});
+
+$(document).on('click', 'a.remove-file', function(e) {
+    e.preventDefault();
+    $(this).parent('li').remove();
+});
 
 // Cookie
 
