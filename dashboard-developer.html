@@ -151,10 +151,183 @@
 
 						<div class="main-content has-clear-fix">
 
+							<div class="overlay" id="changeApp">
+								<div class="inner-overlay">
+									<div class="overlay-box">
+										<div class="inner-overlay-box">
+											<a class="close overlay-close" href="javascript:void(0)"></a>
+											<div class="my-account-box">
+												<div class="upload-app-box">
+													<form action="#" method="POST" name="upload_app" class="upload_app" accept-charset="UTF-8">
+														<ul>
+															<li>
+																<strong>نام برنامه:</strong>
+																<span><input type="text" name="app_name" value="Brawl Stars" /></span>
+															</li>
+															<li>
+																<strong>نوع برنامه :</strong>
+																<span>
+																	<span class="radio-holder">
+																		<input type="radio" name="app_category" id="application" value="application"/>
+																		<label for="application">اپلیکیشن</label>
+																	</span><!-- radio-holder end -->
+																	<span class="radio-holder">
+																		<input type="radio" name="app_category" id="game" value="game" checked/>
+																		<label for="game">بازی</label>
+																	</span><!-- radio-holder end -->
+																</span>
+															</li>
+															<li>
+																<strong>دسته بندی :</strong>
+																<span>
+																	<select name="app_category">
+																		<option value="">آموزشی</option>
+																		<option value="" selected>استراتژی</option>
+																		<option value="">اکشن</option>
+																		<option value="">امتیازی</option>
+																		<option value="">تفننی</option>
+																		<option value="">خانوادگی</option>
+																		<option value="">رانندگی</option>
+																		<option value="">شبیه‌سازی</option>
+																		<option value="">کلمات و دانستنی‌ها</option>
+																		<option value="">ماجرایی</option>
+																		<option value="">معمایی</option>
+																		<option value="">ورزشی</option>
+																	</select>
+																</span>
+															</li>
+															<li>
+																<strong>نوع پلتفرم:</strong>
+																<span class="choose-platform">
+																	<span class="checkbox-holder">
+																		<input type="checkbox" name="app_platform" id="apple" value="apple" checked/>
+																		<label for="apple"><i class="fab fa-apple"></i></label>
+																	</span><!-- checkbox-holder end -->
+																	<span class="checkbox-holder">
+																		<input type="checkbox" name="app_platform" id="android" value="android" checked/>
+																		<label for="android"><i class="fab fa-android"></i></label>
+																	</span><!-- checkbox-holder end -->
+																	<span class="checkbox-holder">
+																		<input type="checkbox" name="app_platform" id="windows" value="windows" />
+																		<label for="windows"><i class="fab fa-windows"></i></label>
+																	</span><!-- checkbox-holder end -->
+																</span>
+															</li>
+															<li>
+																<strong>نسخه:</strong>
+																<span><input type="text" name="app_version" class="reverse-input" value="1.032" /></span>
+															</li>
+															<li>
+																<strong>درباره برنامه:</strong>
+																<div class="text-editor has-small-y-margin">
+																	<img class="text-editor-image" src="images/developers/rich-text-editor.gif" alt="" />
+																</div><!-- text-editor end -->
+															</li>
+															<li>
+																<strong>دسترسی ها:</strong>
+																<div class="text-editor has-small-y-margin">
+																	<img class="text-editor-image" src="images/developers/rich-text-editor.gif" alt="" />
+																</div><!-- text-editor end -->
+															</li>
+															<li>
+																<strong>لوگو (128 * 128) :</strong>
+																<span>
+																	<span class="upload-bttn">
+																		<input type="file" name="app_logo" id="app_logo" accept="image/*" />
+																		<label for="app_logo">+ آپلود لوگوی برنامه</label>
+																	</span>
+																	<span class="file-name">brawl-stars.png</span>
+																</span>
+																<div class="uploaded-gallery-box">
+								                                    <ul>
+								                                        <li><input type="hidden" name="images[]" value="game-18.png"><img src="images/games/game-18.png" class="uploaded-image" alt="" /><a href="javascript:void(0)" class="remove-gallery-image"></a>
+								                                        </li>
+								                                    </ul>
+								                                </div><!-- uploaded-photo-box end -->
+															</li>
+															<li>
+																<strong>بنر صفحه (900 * 2000) :</strong>
+																<span>
+																	<span class="upload-bttn">
+																		<input type="file" name="app_banner" id="app_banner" accept="image/*" />
+																		<label for="app_banner">+ آپلود بنر صفحه برنامه</label>
+																	</span>
+																	<span class="file-name">specific-banner.jpg</span>
+																</span>
+																<div class="uploaded-gallery-box">
+								                                    <ul>
+								                                        <li><input type="hidden" name="images[]" value="specific-app.jpg"><img src="images/banner/specific-app.jpg" class="uploaded-image" alt="" /><a href="javascript:void(0)" class="remove-gallery-image"></a>
+								                                        </li>
+								                                    </ul>
+								                                </div><!-- uploaded-photo-box end -->
+															</li>
+															<li>
+																<strong>عکس ها (450 * 600) :</strong>
+																<span>
+																	<span class="upload-bttn">
+																		<input type="file" name="app_images" id="app_images" accept="image/*" multiple />
+																		<label for="app_images">+ آپلود اسکرین شات های برنامه</label>
+																	</span>
+																</span>
+																<div class="uploaded-gallery-box">
+								                                    <ul>
+								                                        <li><input type="hidden" name="images[]" value="specific-image-1.jpg"><img src="images/specific/specific-image-1.jpg" class="uploaded-image" alt="" /><a href="javascript:void(0)" class="remove-gallery-image"></a>
+								                                        </li>
+								                                        <li><input type="hidden" name="images[]" value="specific-image-2.jpg"><img src="images/specific/specific-image-2.jpg" class="uploaded-image" alt="" /><a href="javascript:void(0)" class="remove-gallery-image"></a>
+								                                        </li>
+								                                        <li><input type="hidden" name="images[]" value="specific-image-3.jpg"><img src="images/specific/specific-image-3.jpg" class="uploaded-image" alt="" /><a href="javascript:void(0)" class="remove-gallery-image"></a>
+								                                        </li>
+								                                        <li><input type="hidden" name="images[]" value="specific-image-4.jpg"><img src="images/specific/specific-image-4.jpg" class="uploaded-image" alt="" /><a href="javascript:void(0)" class="remove-gallery-image"></a>
+								                                        </li>
+								                                        <li><input type="hidden" name="images[]" value="specific-image-5.jpg"><img src="images/specific/specific-image-5.jpg" class="uploaded-image" alt="" /><a href="javascript:void(0)" class="remove-gallery-image"></a>
+								                                        </li>
+								                                    </ul>
+								                                </div><!-- uploaded-photo-box end -->
+															</li>
+															<li>
+																<strong>فایل برنامه :</strong>
+																<span>
+																	<span class="upload-bttn">
+																		<input type="file" name="app_files" id="app_files" multiple />
+																		<label for="app_files">+ آپلود فایل (های) برنامه</label>
+																	</span>
+																</span>
+																<div class="uploaded-files">
+								                                    <ul>
+								                                        <li><input type="hidden" name="files[]" value="brawl-stars.apk"><a href="javascript:void(0)" class="remove-file"></a><span class="upoaded-file-name">brawl-stars.apk</span>
+								                                        </li>
+								                                        <li><input type="hidden" name="files[]" value="brawl-stars.ipa"><a href="javascript:void(0)" class="remove-file"></a><span class="upoaded-file-name">brawl-stars.ipa</span>
+								                                        </li>
+								                                    </ul>
+								                                </div><!-- uploaded-files end -->
+															</li>
+															<li>
+																<span>
+																	<span class="checkbox-holder">
+																		<input type="checkbox" name="terms_and_conditions" id="terms_and_conditions" value="yes" />
+																		<label for="terms_and_conditions">تمامی <a href="static.html" target="_blank">قوانین و ضوابط</a> را خوانده ام و قبول دارم.</label>
+																	</span><!-- checkbox-holder end -->
+																</span>
+															</li>
+															<li>
+																<div class="right-aligned">
+																	<button type="submit"><i class="fas fa-cloud-upload"></i> آپلود برنامه</button>
+																</div><!-- left-aligned end -->
+															</li>
+														</ul>
+													</form>
+												</div><!-- upload-app-box end -->
+											</div><!-- my-account-box end -->
+										</div><!-- inner-overlay-box end -->
+									</div><!-- overlay-box end -->
+								</div><!-- inner-overlay end -->
+							</div><!-- overlay active end -->
+
 							<div class="dashboard user">
 								<div class="dashboard-tabs">
 									<ul class="has-clear-fix">
 										<li class="active"><a href="dashboard-developer.html"><i class="fal fa-laptop-code"></i> داشبورد</a></li>
+										<li><a href="dashboard-upload.html"><i class="fal fa-upload"></i> آپلود برنامه</a></li>
 										<li><a href="dashboard-user.html"><i class="fal fa-id-card"></i> حساب کاربری</a></li>
 										<li><a href="dashboard-wishlist.html"><i class="fal fa-heart"></i> علاقه مندی ها</a></li>
 										<li><a href="dashboard-history.html"><i class="fal fa-cloud-download-alt"></i> تاریخچه دانلود</a></li>
@@ -166,148 +339,168 @@
 								<div class="section-box">
 									<div class="section-box-content">
 										<div class="my-account-box">
-											<div class="upload-app-box">
-												<form action="#" method="POST" name="upload_app" class="upload_app" accept-charset="UTF-8">
-													<ul>
-														<li>
-															<strong>نام برنامه:</strong>
-															<span><input type="text" name="app_name" /></span>
-														</li>
-														<li>
-															<strong>نوع برنامه :</strong>
-															<span>
-																<span class="radio-holder">
-																	<input type="radio" name="app_category" id="application" value="application" checked/>
-																	<label for="application">اپلیکیشن</label>
-																</span><!-- radio-holder end -->
-																<span class="radio-holder">
-																	<input type="radio" name="app_category" id="game" value="game" />
-																	<label for="game">بازی</label>
-																</span><!-- radio-holder end -->
-															</span>
-														</li>
-														<li>
-															<strong>دسته بندی :</strong>
-															<span>
-																<select name="app_category">
-																	<option value="">آموزشی</option>
-																	<option value="">استراتژی</option>
-																	<option value="">اکشن</option>
-																	<option value="">امتیازی</option>
-																	<option value="">تفننی</option>
-																	<option value="">خانوادگی</option>
-																	<option value="">رانندگی</option>
-																	<option value="">شبیه‌سازی</option>
-																	<option value="">کلمات و دانستنی‌ها</option>
-																	<option value="">ماجرایی</option>
-																	<option value="">معمایی</option>
-																	<option value="">ورزشی</option>
-																</select>
-															</span>
-														</li>
-														<li>
-															<strong>نوع پلتفرم:</strong>
-															<span class="choose-platform">
-																<span class="checkbox-holder">
-																	<input type="checkbox" name="app_platform" id="apple" value="apple" />
-																	<label for="apple"><i class="fab fa-apple"></i></label>
-																</span><!-- checkbox-holder end -->
-																<span class="checkbox-holder">
-																	<input type="checkbox" name="app_platform" id="android" value="android" />
-																	<label for="android"><i class="fab fa-android"></i></label>
-																</span><!-- checkbox-holder end -->
-																<span class="checkbox-holder">
-																	<input type="checkbox" name="app_platform" id="windows" value="windows" />
-																	<label for="windows"><i class="fab fa-windows"></i></label>
-																</span><!-- checkbox-holder end -->
-															</span>
-														</li>
-														<li>
-															<strong>درباره برنامه:</strong>
-															<div class="text-editor has-small-y-margin">
-																<img class="text-editor-image" src="images/developers/rich-text-editor.gif" alt="" />
-															</div><!-- text-editor end -->
-														</li>
-														<li>
-															<strong>دسترسی ها:</strong>
-															<div class="text-editor has-small-y-margin">
-																<img class="text-editor-image" src="images/developers/rich-text-editor.gif" alt="" />
-															</div><!-- text-editor end -->
-														</li>
-														<li>
-															<strong>لوگو (128 * 128) :</strong>
-															<span>
-																<span class="upload-bttn">
-																	<input type="file" name="app_logo" id="app_logo" accept="image/*" />
-																	<label for="app_logo">+ آپلود لوگوی برنامه</label>
-																</span>
-																<span class="file-name"></span>
-															</span>
-															<div class="uploaded-gallery-box">
-							                                    <ul>
-							                                        
-							                                    </ul>
-							                                </div><!-- uploaded-photo-box end -->
-														</li>
-														<li>
-															<strong>بنر صفحه (900 * 2000) :</strong>
-															<span>
-																<span class="upload-bttn">
-																	<input type="file" name="app_banner" id="app_banner" accept="image/*" />
-																	<label for="app_banner">+ آپلود بنر صفحه برنامه</label>
-																</span>
-																<span class="file-name"></span>
-															</span>
-															<div class="uploaded-gallery-box">
-							                                    <ul>
-							                                        
-							                                    </ul>
-							                                </div><!-- uploaded-photo-box end -->
-														</li>
-														<li>
-															<strong>عکس ها (450 * 600) :</strong>
-															<span>
-																<span class="upload-bttn">
-																	<input type="file" name="app_images" id="app_images" accept="image/*" multiple />
-																	<label for="app_images">+ آپلود اسکرین شات های برنامه</label>
-																</span>
-															</span>
-															<div class="uploaded-gallery-box">
-							                                    <ul>
-							                                        
-							                                    </ul>
-							                                </div><!-- uploaded-photo-box end -->
-														</li>
-														<li>
-															<strong>فایل برنامه :</strong>
-															<span>
-																<span class="upload-bttn">
-																	<input type="file" name="app_files" id="app_files" multiple />
-																	<label for="app_files">+ آپلود فایل (های) برنامه</label>
-																</span>
-															</span>
-															<div class="uploaded-files">
-							                                    <ul>
-							                                        
-							                                    </ul>
-							                                </div><!-- uploaded-files end -->
-														</li>
-														<li>
-															<span>
-																<span class="checkbox-holder">
-																	<input type="checkbox" name="terms_and_conditions" id="terms_and_conditions" value="yes" />
-																	<label for="terms_and_conditions">تمامی <a href="static.html" target="_blank">قوانین و ضوابط</a> را خوانده ام و قبول دارم.</label>
-																</span><!-- checkbox-holder end -->
-															</span>
-														</li>
-														<li>
-															<div class="right-aligned">
-																<button type="submit"><i class="fas fa-cloud-upload"></i> آپلود برنامه</button>
-															</div><!-- left-aligned end -->
-														</li>
-													</ul>
-												</form>
-											</div><!-- upload-app-box end -->
+
+											<div class="developer-status has-bottom-margin center-aligned">
+												<div>
+													<i class="fas fa-rocket"></i>
+													<span>تعداد برنامه های شما</span>
+													<strong class="counter-up">6</strong>
+												</div>
+												<div>
+													<i class="fas fa-download"></i>
+													<span>تعداد دانلود</span>
+													<strong class="counter-up">8137</strong>
+												</div>
+												<div>
+													<i class="fas fa-coins"></i>
+													<span>مقدار اعتبار دریافتی</span>
+													<strong class="counter-up">15644000</strong>
+												</div>
+											</div><!-- developer-status end -->
+											
+											<div class="title">
+												<h5>برنامه های شما</h5>
+											</div><!-- title end -->
+
+											<div class="download-history">
+												<div class="table responsive">
+													<table>
+														<thead>
+															<tr>
+																<th>#</th>
+																<th>برنامه</th>
+																<th>تاریخ</th>
+																<th>تعداد دانلود</th>
+																<th>اعتبار دریافتی</th>
+																<th>&nbsp;</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td>1</td>
+																<td>
+																	<div class="history-app-info">
+																		<a href="specific-app.html"><img src="images/apps/app-9.png" alt=""/></a>
+																		<a href="specific-app.html">Telewebion</a>
+											                        </div><!-- history-app-info end -->
+																</td>
+																<td>
+																	<span>97/09/22</span>
+																</td>
+																<td>
+																	<span>2312</span>
+																</td>
+																<td>
+																	<span>453100</span>
+																</td>
+																<td>
+																	<a class="bttn overlay-bttn" href="#changeApp">تغییر در برنامه</a>
+																</td>
+															</tr>
+															<tr>
+																<td>2</td>
+																<td>
+																	<div class="history-app-info">
+																		<a href="specific-app.html"><img src="images/games/game-18.png" alt=""/></a>
+																		<a href="specific-app.html">Clash Royale</a>
+											                        </div><!-- history-app-info end -->
+																</td>
+																<td>
+																	<span>97/08/30</span>
+																</td>
+																<td>
+																	<span>235</span>
+																</td>
+																<td>
+																	<span>2000</span>
+																</td>
+																<td>
+																	<a class="bttn overlay-bttn" href="#changeApp">تغییر در برنامه</a>
+																</td>
+															</tr>
+															<tr>
+																<td>3</td>
+																<td>
+																	<div class="history-app-info">
+																		<a href="specific-app.html"><img src="images/apps/app-15.png" alt=""/></a>
+																		<a href="specific-app.html">غذاکده</a>
+											                        </div><!-- history-app-info end -->
+																</td>
+																<td>
+																	<span>97/08/06</span>
+																</td>
+																<td>
+																	<span>3546</span>
+																</td>
+																<td>
+																	<span>50000</span>
+																</td>
+																<td>
+																	<a class="bttn overlay-bttn" href="#changeApp">تغییر در برنامه</a>
+																</td>
+															</tr>
+															<tr>
+																<td>4</td>
+																<td>
+																	<div class="history-app-info">
+																		<a href="specific-app.html"><img src="images/games/game-14.png" alt=""/></a>
+																		<a href="specific-app.html">بیلیارد حرفه ای</a>
+											                        </div><!-- history-app-info end -->
+																</td>
+																<td>
+																	<span>97/07/11</span>
+																</td>
+																<td>
+																	<span>155</span>
+																</td>
+																<td>
+																	<span>0</span>
+																</td>
+																<td>
+																	<a class="bttn overlay-bttn" href="#changeApp">تغییر در برنامه</a>
+																</td>
+															</tr>
+															<tr>
+																<td>5</td>
+																<td>
+																	<div class="history-app-info">
+																		<a href="specific-app.html"><img src="images/apps/app-14.png" alt=""/></a>
+																		<a href="specific-app.html">طب درد زانو</a>
+											                        </div><!-- history-app-info end -->
+																</td>
+																<td>
+																	<span>97/06/19</span>
+																</td>
+																<td>
+																	<span>444</span>
+																</td>
+																<td>
+																	<span>0</span>
+																</td>
+																<td>
+																	<a class="bttn overlay-bttn" href="#changeApp">تغییر در برنامه</a>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div><!-- download-history end -->
+
+				                            <div class="pagination">
+					                            <ul>
+					                                <li class="prev"><a href="javascript:void(0)"><i class="far fa-angle-right"></i></a></li>
+					                                <li class="active"><a href="javascript:void(0)">۱</a></li>
+					                                <li><a href="javascript:void(0)">۲</a></li>
+					                                <li class="next"><a href="javascript:void(0)"><i class="far fa-angle-left"></i></a></li>
+					                            </ul>
+					                        </div><!-- pagination end -->
+
+					                        <div class="add-application">
+												<h5>اضافه کردن برنامه</h5>
+												<p>شما می توانید برنامه های نوشته شده خود را آپلود کنید و آن را در اختیار دیگران قرار بدهید. لطفا در هنگام آپلود تمامی فلید های مورد نظر را پر نمایید.</p>
+												<a class="bttn has-medium-top-margin" href="dashboard-upload.html"><i class="far fa-plus"></i> اضافه کردن برنامه</a>
+											</div><!-- add-application end -->
+
 										</div><!-- my-account-box end -->
 									</div><!-- section-box-content end -->
 								</div><!-- section-box end -->
