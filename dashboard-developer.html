@@ -166,140 +166,148 @@
 								<div class="section-box">
 									<div class="section-box-content">
 										<div class="my-account-box">
-											<form action="#" method="POST" name="upload_app" class="upload_app" accept-charset="UTF-8">
-												<ul>
-													<li>
-														<strong>نام برنامه:</strong>
-														<span><input type="text" name="app_name" /></span>
-													</li>
-													<li>
-														<strong>نوع برنامه :</strong>
-														<span>
-															<span class="radio-holder">
-																<input type="radio" name="app_category" id="application" value="application" checked/>
-																<label for="application">اپلیکیشن</label>
-															</span><!-- radio-holder end -->
-															<span class="radio-holder">
-																<input type="radio" name="app_category" id="game" value="game" />
-																<label for="game">بازی</label>
-															</span><!-- radio-holder end -->
-														</span>
-													</li>
-													<li>
-														<strong>دسته بندی :</strong>
-														<span>
-															<select name="app_category">
-																<option value="">آموزشی</option>
-																<option value="">استراتژی</option>
-																<option value="">اکشن</option>
-																<option value="">امتیازی</option>
-																<option value="">تفننی</option>
-																<option value="">خانوادگی</option>
-																<option value="">رانندگی</option>
-																<option value="">شبیه‌سازی</option>
-																<option value="">کلمات و دانستنی‌ها</option>
-																<option value="">ماجرایی</option>
-																<option value="">معمایی</option>
-																<option value="">ورزشی</option>
-															</select>
-														</span>
-													</li>
-													<li>
-														<strong>نوع پلتفرم:</strong>
-														<span class="choose-platform">
-															<span class="checkbox-holder">
-																<input type="checkbox" name="app_platform" id="apple" value="apple" />
-																<label for="apple"><i class="fab fa-apple"></i></label>
-															</span><!-- checkbox-holder end -->
-															<span class="checkbox-holder">
-																<input type="checkbox" name="app_platform" id="android" value="android" />
-																<label for="android"><i class="fab fa-android"></i></label>
-															</span><!-- checkbox-holder end -->
-															<span class="checkbox-holder">
-																<input type="checkbox" name="app_platform" id="windows" value="windows" />
-																<label for="windows"><i class="fab fa-windows"></i></label>
-															</span><!-- checkbox-holder end -->
-														</span>
-													</li>
-													<li>
-														<strong>درباره برنامه:</strong>
-														<div class="text-editor has-small-y-margin">
-															<img class="text-editor-image" src="images/developers/rich-text-editor.gif" alt="" />
-														</div><!-- text-editor end -->
-													</li>
-													<li>
-														<strong>دسترسی ها:</strong>
-														<div class="text-editor has-small-y-margin">
-															<img class="text-editor-image" src="images/developers/rich-text-editor.gif" alt="" />
-														</div><!-- text-editor end -->
-													</li>
-													<li>
-														<strong>لوگو (128 * 128) :</strong>
-														<span>
-															<span class="upload-bttn">
-																<input type="file" name="app_logo" id="app_logo" accept="image/*" />
-																<label for="app_logo">+ آپلود لوگوی برنامه</label>
+											<div class="upload-app-box">
+												<form action="#" method="POST" name="upload_app" class="upload_app" accept-charset="UTF-8">
+													<ul>
+														<li>
+															<strong>نام برنامه:</strong>
+															<span><input type="text" name="app_name" /></span>
+														</li>
+														<li>
+															<strong>نوع برنامه :</strong>
+															<span>
+																<span class="radio-holder">
+																	<input type="radio" name="app_category" id="application" value="application" checked/>
+																	<label for="application">اپلیکیشن</label>
+																</span><!-- radio-holder end -->
+																<span class="radio-holder">
+																	<input type="radio" name="app_category" id="game" value="game" />
+																	<label for="game">بازی</label>
+																</span><!-- radio-holder end -->
 															</span>
-															<span class="file-name">brawl-stars.png</span>
-														</span>
-													</li>
-													<li>
-														<strong>عکس ها (900 * 675) :</strong>
-														<span>
-															<span class="upload-bttn">
-																<input type="file" name="app_images" id="app_images" accept="image/*" multiple />
-																<label for="app_images">+ آپلود اسکرین شات های برنامه</label>
+														</li>
+														<li>
+															<strong>دسته بندی :</strong>
+															<span>
+																<select name="app_category">
+																	<option value="">آموزشی</option>
+																	<option value="">استراتژی</option>
+																	<option value="">اکشن</option>
+																	<option value="">امتیازی</option>
+																	<option value="">تفننی</option>
+																	<option value="">خانوادگی</option>
+																	<option value="">رانندگی</option>
+																	<option value="">شبیه‌سازی</option>
+																	<option value="">کلمات و دانستنی‌ها</option>
+																	<option value="">ماجرایی</option>
+																	<option value="">معمایی</option>
+																	<option value="">ورزشی</option>
+																</select>
 															</span>
-														</span>
-														<div class="uploaded-gallery-box">
-						                                    <ul>
-						                                        <li>
-						                                            <img src="http://halachina.dev.edoramedia.com/assets/event/2018/11/22/7/gallery/80x80_gallery_image_1542898125367137087.jpg" class="event-gallery-sortable-item-move ui-sortable-handle">
-						                                            
-						                                            <div class="checkbox-holder">
-						                                                <input type="checkbox" name="remove_gallery_image[]" value="QEozJRcVpC2RpG88-iz4Kg~~" id="remove_gallery_image14">
-						                                                <label for="remove_gallery_image14">X</label>
-						                                            </div><!-- checkbox-holder end -->
-						                                            <input type="hidden" name="images[]" value="0Gbo7y1bvbhAXHjLdRyEjQ~~">
-						                                        </li>
-						                                        <li>
-						                                            <img src="http://halachina.dev.edoramedia.com/assets/event/2018/11/22/7/gallery/80x80_gallery_image_1542898126693975071.jpg" class="event-gallery-sortable-item-move ui-sortable-handle">
-						                                            
-						                                            <div class="checkbox-holder">
-						                                                <input type="checkbox" name="remove_gallery_image[]" value="QzWcYtqQC5Pcjr0Kn6ji4A~~" id="remove_gallery_image15">
-						                                                <label for="remove_gallery_image15">X</label>
-						                                            </div><!-- checkbox-holder end -->
-						                                            <input type="hidden" name="images[]" value="p6JrvxFk2c6RXaD0GUxf5g~~">
-						                                        </li>
-						                                        <li>
-						                                            <img src="http://halachina.dev.edoramedia.com/assets/event/2018/11/22/7/gallery/80x80_gallery_image_1542898126191543621.jpg" class="event-gallery-sortable-item-move ui-sortable-handle">
-						                                            
-						                                            <div class="checkbox-holder">
-						                                                <input type="checkbox" name="remove_gallery_image[]" value="rTgZ_bwFROA1qvbreXK_vg~~" id="remove_gallery_image16">
-						                                                <label for="remove_gallery_image16">X</label>
-						                                            </div><!-- checkbox-holder end -->
-						                                            <input type="hidden" name="images[]" value="GqCEkt9Jt6LTy6wcZaAaRg~~">
-						                                        </li>
-						                                    </ul>
-						                                </div><!-- uploaded-photo-box end -->
-						                            </div>
-													</li>
-													<li>
-														<strong>خبرنامه هفتگی :</strong>
-														<span>
-															<span class="checkbox-holder">
-																<input type="checkbox" name="terms_and_conditions" id="terms_and_conditions" value="yes" />
-																<label for="terms_and_conditions">تمامی <a href="static.html" target="_blank">قوانین و ضوابط</a> را خوانده ام و قبول دارم.</label>
-															</span><!-- checkbox-holder end -->
-														</span>
-													</li>
-													<li>
-														<div class="right-aligned">
-															<button type="submit"><i class="fas fa-cloud-upload"></i> آپلود برنامه</button>
-														</div><!-- left-aligned end -->
-													</li>
-												</ul>
-											</form>
+														</li>
+														<li>
+															<strong>نوع پلتفرم:</strong>
+															<span class="choose-platform">
+																<span class="checkbox-holder">
+																	<input type="checkbox" name="app_platform" id="apple" value="apple" />
+																	<label for="apple"><i class="fab fa-apple"></i></label>
+																</span><!-- checkbox-holder end -->
+																<span class="checkbox-holder">
+																	<input type="checkbox" name="app_platform" id="android" value="android" />
+																	<label for="android"><i class="fab fa-android"></i></label>
+																</span><!-- checkbox-holder end -->
+																<span class="checkbox-holder">
+																	<input type="checkbox" name="app_platform" id="windows" value="windows" />
+																	<label for="windows"><i class="fab fa-windows"></i></label>
+																</span><!-- checkbox-holder end -->
+															</span>
+														</li>
+														<li>
+															<strong>درباره برنامه:</strong>
+															<div class="text-editor has-small-y-margin">
+																<img class="text-editor-image" src="images/developers/rich-text-editor.gif" alt="" />
+															</div><!-- text-editor end -->
+														</li>
+														<li>
+															<strong>دسترسی ها:</strong>
+															<div class="text-editor has-small-y-margin">
+																<img class="text-editor-image" src="images/developers/rich-text-editor.gif" alt="" />
+															</div><!-- text-editor end -->
+														</li>
+														<li>
+															<strong>لوگو (128 * 128) :</strong>
+															<span>
+																<span class="upload-bttn">
+																	<input type="file" name="app_logo" id="app_logo" accept="image/*" />
+																	<label for="app_logo">+ آپلود لوگوی برنامه</label>
+																</span>
+																<span class="file-name"></span>
+															</span>
+															<div class="uploaded-gallery-box">
+							                                    <ul>
+							                                        
+							                                    </ul>
+							                                </div><!-- uploaded-photo-box end -->
+														</li>
+														<li>
+															<strong>بنر صفحه (900 * 2000) :</strong>
+															<span>
+																<span class="upload-bttn">
+																	<input type="file" name="app_banner" id="app_banner" accept="image/*" />
+																	<label for="app_banner">+ آپلود بنر صفحه برنامه</label>
+																</span>
+																<span class="file-name"></span>
+															</span>
+															<div class="uploaded-gallery-box">
+							                                    <ul>
+							                                        
+							                                    </ul>
+							                                </div><!-- uploaded-photo-box end -->
+														</li>
+														<li>
+															<strong>عکس ها (450 * 600) :</strong>
+															<span>
+																<span class="upload-bttn">
+																	<input type="file" name="app_images" id="app_images" accept="image/*" multiple />
+																	<label for="app_images">+ آپلود اسکرین شات های برنامه</label>
+																</span>
+															</span>
+															<div class="uploaded-gallery-box">
+							                                    <ul>
+							                                        
+							                                    </ul>
+							                                </div><!-- uploaded-photo-box end -->
+														</li>
+														<li>
+															<strong>فایل برنامه :</strong>
+															<span>
+																<span class="upload-bttn">
+																	<input type="file" name="app_files" id="app_files" multiple />
+																	<label for="app_files">+ آپلود فایل (های) برنامه</label>
+																</span>
+															</span>
+															<div class="uploaded-files">
+							                                    <ul>
+							                                        
+							                                    </ul>
+							                                </div><!-- uploaded-files end -->
+														</li>
+														<li>
+															<span>
+																<span class="checkbox-holder">
+																	<input type="checkbox" name="terms_and_conditions" id="terms_and_conditions" value="yes" />
+																	<label for="terms_and_conditions">تمامی <a href="static.html" target="_blank">قوانین و ضوابط</a> را خوانده ام و قبول دارم.</label>
+																</span><!-- checkbox-holder end -->
+															</span>
+														</li>
+														<li>
+															<div class="right-aligned">
+																<button type="submit"><i class="fas fa-cloud-upload"></i> آپلود برنامه</button>
+															</div><!-- left-aligned end -->
+														</li>
+													</ul>
+												</form>
+											</div><!-- upload-app-box end -->
 										</div><!-- my-account-box end -->
 									</div><!-- section-box-content end -->
 								</div><!-- section-box end -->

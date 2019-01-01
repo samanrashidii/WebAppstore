@@ -1427,7 +1427,7 @@ span.date{
 	color:#3079AB;
 }
 
-.my-account-box ul li img:not(.text-editor-image){
+.my-account-box ul li img:not(.uploaded-image):not(.text-editor-image){
 	display: inline-block;
 	vertical-align: middle;
 	width: 80px !important;
@@ -1592,6 +1592,62 @@ span.condition svg{
 }
 
 .choose-platform .checkbox-holder{margin-left: 15px;}
+
+.upload-app-box{
+	max-width: 622px;
+	padding:25px;
+	border:1px dashed #a4a4a4;
+	border-radius: 9px;
+}
+
+.upload-app-box button{
+	display: block;
+	max-width: 100%;
+	margin-top:25px;
+}
+
+.uploaded-gallery-box,
+.uploaded-files{margin-top:20px;}
+
+.uploaded-gallery-box ul li{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin:7px !important;
+}
+
+.uploaded-files ul li{margin:10px 0;}
+
+.uploaded-gallery-box ul li img{
+	width:100px !important;
+	border-radius: 5px;
+}
+
+span.upoaded-file-name{color:#2e2e2e !important;}
+
+a.remove-gallery-image{
+	position: absolute;
+    top: 3px;
+    right: 3px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('../images/assets/remove.png') no-repeat center center #ffffff;
+    border-radius: 50%;
+    z-index: 6;
+}
+
+a.remove-file{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin:-3px 0 0 10px;
+    background: url('../images/assets/remove-white.png') no-repeat center center #e64629;
+    border:;
+    border-radius: 50%;
+    z-index: 6;
+}
 
 /*   Added Styles by Back-end   */
 
