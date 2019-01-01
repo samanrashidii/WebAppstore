@@ -90,11 +90,11 @@ $('.overlay-bttn').on('click', function(){
   var bttnID = $
 (this).attr('href');
   $(bttnID).toggleClass('active');
-  $('body').addClass('hidden-overflow');
+  $('body').addClass('mobile-scrollable');
 });
 $('.overlay-close').on('click', function(){
   $(this).parents('.overlay').removeClass('active');
-  $('body').removeClass('hidden-overflow');
+  $('body').removeClass('mobile-scrollable');
   remove_hash_from_url();
   if($('.video-box').length > 0){
     $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
@@ -103,7 +103,7 @@ $('.overlay-close').on('click', function(){
 
 $('.overlay').on('click', function(){
   $(this).removeClass('active');
-  $('body').removeClass('hidden-overflow');
+  $('body').removeClass('mobile-scrollable');
   remove_hash_from_url();
   if($('.video-box').length > 0){
     $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
@@ -234,9 +234,6 @@ $(document).on('change', '#app_images, #profile_picture, #app_logo, #app_banner'
             type : 'hidden',
             name : 'images[]',
             value : this.file.name
-        })
-        .css({
-            display : 'none'
         });
 
         $parent.find('span.file-name').text(fileName);
@@ -252,6 +249,12 @@ $(document).on('change', '#app_images, #profile_picture, #app_logo, #app_banner'
 });
 
 $(document).on('click', 'a.remove-gallery-image', function(e) {
+    e.preventDefault();
+    $(this).parents('li').find('span.file-name').html(' ');
+    $(this).parent('li').remove();
+});
+
+$('a.remove-gallery-image').on('click', function(e) {
     e.preventDefault();
     $(this).parents('li').find('span.file-name').html(' ');
     $(this).parent('li').remove();
@@ -286,9 +289,6 @@ $(document).on('change', '#app_files', function(e) {
             type : 'hidden',
             name : 'files[]',
             value : this.file.name
-        })
-        .css({
-            display : 'none'
         });
         
         $hidden_input.appendTo($li);
@@ -302,6 +302,11 @@ $(document).on('change', '#app_files', function(e) {
 });
 
 $(document).on('click', 'a.remove-file', function(e) {
+    e.preventDefault();
+    $(this).parent('li').remove();
+});
+
+$('a.remove-file').on('click', function(e) {
     e.preventDefault();
     $(this).parent('li').remove();
 });

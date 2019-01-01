@@ -507,6 +507,7 @@ label.error{
 	direction: ltr;
 	display: inline-block;
 	vertical-align: middle;
+	font-size: 12px;
 	color:#3e474f;
 	margin-right: 10px;
 }
@@ -690,6 +691,7 @@ label.error{
 	text-align: center;
 	text-transform: uppercase;
 	padding:14px 10px;
+	user-select: none;
 	background:-webkit-linear-gradient(right, #f7941e , #f5bf3d);
 	background:-moz-linear-gradient(left, #f7941e, #f5bf3d);
 	background:linear-gradient(to left, #f7941e , #f5bf3d);
@@ -841,13 +843,17 @@ a.remove{
 
 a.close{
 	position: absolute;
-	top:15px;
-	left:15px;
-	display: block;
-	width: 12px;
-	height: 12px;
-	background: url('../images/assets/close.png') no-repeat center;
-	z-index: 10;
+    top: -11px;
+    right: -10px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url(../images/assets/remove.png) no-repeat center #ffffff;
+    border-radius: 50%;
+    z-index: 10;
+    -webkit-box-shadow: 0 0 5px #4a4a4a;
+    -moz-box-shadow: 0 0 5px #4a4a4a;
+    box-shadow: 0 0 5px #4a4a4a;
 }
 
 /********************
@@ -1297,8 +1303,8 @@ a.close{
 	overflow-y:auto;
 	visibility: hidden;
 	opacity: 0;
-	background: rgba(0,0,0, .8);
-	z-index: 9999999;
+	background: rgba(0,0,0, .75);
+	z-index: 999999999;
 	-webkit-transition:all .2s ease-in-out;
 	-moz-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
@@ -1319,15 +1325,16 @@ a.close{
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
-	padding:20px;
+	padding:50px 25px;
 }
 
 .inner-overlay-box{
 	position: relative;
-	max-width: 780px;
-	padding:15px;
+	max-width: 622px;
+	padding:25px;
 	margin:auto;
 	background-color: #ffffff;
+	border-radius: 9px;
 }
 
 /* -- _List Items -- */
@@ -1817,8 +1824,16 @@ a.close{
 	padding:12px;
 }
 
-.table a{color:#2e2e2e;}
-.table td a:hover{color:#f7941e;}
+.table a:not(.bttn){color:#2e2e2e;}
+.table td a(.bttn):hover{color:#f7941e;}
+
+.table a.bttn{
+	float: left;
+	min-width: 100px;
+	font-size: 12px;
+	padding:8px 5px;
+	border-radius: 4px;
+}
 
 .table th{
 	font-family: 'Iran-Medium';
@@ -2669,11 +2684,6 @@ a.close{
 	.rspv.has-4-4-4-column > .card-box{margin-bottom: 10px !important;}
 
 	.pagination ul{width: 100% !important;}
-
-	a.close{
-		top:5px;
-		left:5px;
-	}
 
 	#map_canvas{height: 220px;}
 
