@@ -14,6 +14,7 @@
     	================================================== -->
 		<link rel="stylesheet" type="text/css" href="css/samanira.css" media="screen"/>
 		<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/svg.css" media="screen"/>
 		<link rel="stylesheet" type="text/css" href="css/masterslider.css" media="screen"/>
 		<link rel="stylesheet" type="text/css" href="css/carousel.css" media="screen"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
@@ -24,6 +25,9 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/core.plugins.js"></script>
 		<script src="js/icons.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/snap.svg-min.js"></script>
 		<script src="js/jquery.sticky.min.js"></script>
 		<script src="js/masterslider.min.js"></script>
 		<script src="js/masterslider.staff.carousel.js"></script>
@@ -35,9 +39,9 @@
 		<script src="js/project.js"></script>
 
 		<!--[if lt IE 9]>
-		<script src="js/html5shiv.js"></script>
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 		<![endif]--> 
+
 	</head>
 	<body>
 		<div id="wrapper">
@@ -200,7 +204,7 @@
 											<div class="text-box">
 												<i>تا به امروز</i>
 												<span class="counter-up">9752</span>
-												<strong>برنامه آماده دانلود<br /> در وب سایت</strong>
+												<strong>برنامه آماده دانلود در وب سایت</strong>
 											</div><!-- text-box end -->
 										</div><!-- table-cell-display end -->
 									</div><!-- table-display end -->
@@ -232,9 +236,13 @@
 									<div class="table-display">
 										<div class="table-cell-display vertical-aligned center-aligned">
 											<div class="top-box">
-												<i class="fal fa-code"></i>
+												<i class="fal fa-laptop-code"></i>
 												<strong>اگر برنامه نویس هستید همین الان می توانید برنامه خود را آپلود کنید.</strong>
-												<a class="bttn" href="dashboard-developer.html">ورود به پنل برنامه نویسان</a>
+												<a class="bttn" href="dashboard-developer.html">
+													<span class="bttn-content">
+													پنل برنامه نویسان
+													</span>
+												</a>
 											</div><!-- top-box end -->
 										</div><!-- table-cell-display end -->
 									</div><!-- table-display end -->
@@ -268,7 +276,9 @@
 
 						<div class="main-content">
 
-							<h3 class="title">۱۵ برنامه برتر این ماه</h3>
+							<div class="title">
+								<h3><i class="fas fa-trophy-alt"></i> ۱۵ برنامه برتر این ماه</h3>
+							</div><!-- title end -->
 
 							<div class="app-section-box">
 								<div class="ms-staff-carousel">
@@ -540,8 +550,15 @@
 				                    </div><!-- master-slider end -->
 				                </div><!-- ms-staff-carousel end -->
 				            </div><!-- app-section-box end -->
-
-				            <h3 class="title">بیشترین دانلود ها</h3>
+							
+							<div class="title">
+								<h3><i class="fas fa-cloud-download"></i> بیشترین دانلود ها</h3>
+								<a class="bttn" href="#">
+									<span class="bttn-content">
+									مشاهده بیشتر <i class="far fa-long-arrow-alt-left"></i>
+									</span>
+								</a>
+							</div><!-- title end -->
 
 							<div class="app-section-box">
 								<div class="carousel-items">
@@ -733,9 +750,6 @@
 
 								</div><!-- carousel-items end -->
 
-								<div class="see-more">
-									<a class="bttn" href="#">مشاهده بیشتر <i class="far fa-long-arrow-alt-left"></i></a>
-								</div><!-- see-more end -->
 							</div><!-- app-section-box end -->
 
 							<div class="app-section-box">

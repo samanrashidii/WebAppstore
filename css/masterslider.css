@@ -249,7 +249,6 @@
 	max-width:1160px;
 	overflow: hidden;
 	text-align: center;
-	padding:15px 0;
 	margin:0 auto;
 	position: relative;
 }
@@ -283,8 +282,8 @@
 	color: transparent;
 	cursor: pointer;
 	user-select: none;
-	margin:15px 5px 0 5px;
-	background: url(../images/assets/nav-arrow-left.png) no-repeat center #f7941e;
+	margin:40px 5px 0 5px;
+	background: url(../images/assets/nav-arrow-left.png) no-repeat center #212121;
 	border-radius: 50%;
 	-webkit-transition:all .2s ease-in-out;
 	-moz-transition:all .2s ease-in-out;
@@ -299,8 +298,8 @@
 	color: transparent;
 	cursor: pointer;
 	user-select: none;
-	margin:15px 5px 0 5px;
-	background: url(../images/assets/nav-arrow-right.png) no-repeat center #f7941e;
+	margin:40px 5px 0 5px;
+	background: url(../images/assets/nav-arrow-right.png) no-repeat center #212121;
 	border-radius: 50%;
 	-webkit-transition:all .2s ease-in-out;
 	-moz-transition:all .2s ease-in-out;
@@ -308,13 +307,18 @@
 }
 
 .ms-staff-carousel .ms-nav-prev:hover,
-.ms-staff-carousel .ms-nav-next:hover{background-color:#f5bf3d;}
+.ms-staff-carousel .ms-nav-next:hover{
+	background-color:#f7941e;
+	-webkit-transform:scale(1.1,1.1);
+	-moz-transform:scale(1.1,1.1);
+	transform:scale(1.1,1.1);
+}
 
 .ms-staff-carousel .ms-nav-prev:active,
 .ms-staff-carousel .ms-nav-next:active{
-	-webkit-transform:translateY(1px);
-	-moz-transform:translateY(1px);
-	transform:translateY(1px);
+	-webkit-transform:scale(.9,.9);
+	-moz-transform:scale(.9,.9);
+	transform:scale(.9,.9);
 }
 
  .ms-inner-controls-cont{margin:auto;}
