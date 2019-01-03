@@ -204,8 +204,8 @@ if($('.search_filters').length > 0){
 
 $('.carousel-slider').masterslider({
     loop:true,
-    width:182,
-    height:230,
+    width:232,
+    height:280,
     speed:20,
     autoplay:true,
     view:'flow',
