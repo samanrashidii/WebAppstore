@@ -280,6 +280,17 @@ svg[data-icon="windows"]{color: #0078d7;}
 	transition:all .2s ease-in-out;
 }
 
+.master-slider .application-box::before{
+	content:'';
+	position: absolute;
+	top:5px;
+	right:15px;
+	width: 50px;
+	height: 50px;
+	background:url('../images/icons/trophy.png') no-repeat center;
+	z-index: 10;
+}
+
 .master-slider .application-box a:hover{border-color:#f7941e;}
 .master-slider .application-box a:hover strong{background-color:#f7941e;}
 
@@ -362,6 +373,8 @@ svg[data-icon="windows"]{color: #0078d7;}
 	position: absolute;
 	left:0;
 	bottom: 0;
+	-webkit-box-shadow: 0 20px 40px #9a9a9a;
+	-moz-box-shadow: 0 20px 40px #9a9a9a;
 	box-shadow: 0 20px 40px #9a9a9a;
 	-webkit-transform-origin: 100% 100%;
 	-moz-transform-origin: 100% 100%;
@@ -374,7 +387,11 @@ svg[data-icon="windows"]{color: #0078d7;}
 	transition: box-shadow 350ms;
 }
 
-.csstransforms3d .movie:hover::after{box-shadow: 20px -5px 50px rgba(0,0,0,0.3);}
+.csstransforms3d .app-front:hover::after{
+	-webkit-box-shadow: 20px 0px 40px #9a9a9a;
+	-moz-box-shadow: 20px 0px 40px #9a9a9a;
+	box-shadow: 20px 0px 40px #9a9a9a;
+}
 
 .info header{
 	height: 100px;
@@ -383,7 +400,10 @@ svg[data-icon="windows"]{color: #0078d7;}
 	background-size: cover;
 }
 
-.info p{padding-top:0;}
+.info p{
+	line-height: 1.5;
+	padding-top:0;
+}
 
 .info a.bttn{
 	display: block;
@@ -427,7 +447,10 @@ svg[data-icon="windows"]{color: #0078d7;}
 }
 
 .ads a{display: block;}
-.ads a:hover{opacity: .9;}
+.ads a:hover{
+	-webkit-animation: scalingXY .4s ease-in-out;
+	animation: scalingXY .4s ease-in-out;
+}
 .ads img{border-radius: 7px;}
 
 .ads.type-2 a{
@@ -454,14 +477,21 @@ svg[data-icon="windows"]{color: #0078d7;}
 	display: inline-block;
 	margin-right: 15px;
 }
-.footer ul li a:hover{color:#f7941e;}
+.footer ul li a{display: block;}
+.footer ul li a:hover{
+	color:#f7941e;
+	-webkit-transform:scale(.9,.9);
+	-moz-transform:scale(.9,.9);
+	transform:scale(.9,.9);
+}
 
+.news-box{padding-top:20px;}
 .news-image-box{
 	float: right;
 	width:50%;
 }
 
-.news-image-box img{border-radius: 5px;}
+.news-image-box img{border-radius: 7px;}
 .news-image-box a{display: block;}
 .news-image-box a:hover{opacity: .9;}
 
@@ -472,6 +502,9 @@ svg[data-icon="windows"]{color: #0078d7;}
 }
 
 .news-text-box a.bttn{margin-top:20px;}
+
+.news-box.reverse .news-image-box{float: left;}
+.news-box.reverse .news-text-box{padding:0 0 0 35px;}
 
 .categories{
 	position: fixed;
