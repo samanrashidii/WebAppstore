@@ -291,31 +291,7 @@ input[type="submit"].auto{
 	margin-top:15px;
 }
 
-button{
-	position: relative;
-	display: block;
-	width:100%;
-	font-size: 14px;
-	color:#ffffff;
-	text-align: center;
-	text-transform: uppercase;
-	padding:12px 10px;
-	margin-top:20px;
-	cursor: pointer;
-	background:-webkit-linear-gradient(right, #f7941e , #f5bf3d);
-	background:-moz-linear-gradient(left, #f7941e, #f5bf3d);
-	background:linear-gradient(to left, #f7941e , #f5bf3d);
-	border-radius: 5px;
-	-webkit-transition:all .2s ease-in-out;
-	-moz-transition:all .2s ease-in-out;
-	transition:all .2s ease-in-out;
-}
-
-button:hover{
-	background:-webkit-linear-gradient(right, #f5bf3d , #f7941e);
-	background:-moz-linear-gradient(left, #f5bf3d, #f7941e);
-	background:linear-gradient(to left, #f5bf3d , #f7941e);
-}
+button.bttn{margin-top:20px;}
 
 button svg{
 	display: inline-block;
@@ -368,17 +344,14 @@ address{font-style: normal;}
 
 input:not([type="submit"]):focus,
 textarea:focus,
-select:focus{border-color:#4a4a4a;}
+select:focus{border-color:#121212;}
 
 input[type="search"]:focus{padding-right: 24px;}
 
 input:not([type="submit"]):focus + svg,
-select:focus + svg{color:#4a4a4a;}
+select:focus + svg{color:#121212;}
 
 input[type="search"]:focus{border-color:#2e2e2e !important;}
-
-input[type="submit"]:hover,
-input[type="submit"]:focus{background-color: #af0038;}
 
 /* -- _Validation -- */
 
@@ -425,6 +398,11 @@ label.error{
 	-webkit-transition:all .2s ease-in-out;
 	-moz-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
+}
+
+.field-holder input:focus + svg{
+	-webkit-animation: scaling .4s ease-in-out;
+	animation: scaling .4s ease-in-out;
 }
 
 .reverse-input{direction: ltr;}
