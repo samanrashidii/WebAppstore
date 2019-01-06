@@ -134,6 +134,18 @@
 	100%{-webkit-transform:scale(1,1);}
 }
 
+@keyframes scaling2X{
+	0%{transform:scale(1,1);}
+	50%{transform:scale(1.3,1.3);}
+	100%{transform:scale(1,1);}
+}
+
+@-webkit-keyframes scalingXX{
+	0%{-webkit-transform:scale(1,1);}
+	50%{-webkit-transform:scale(1.3,1.3);}
+	100%{-webkit-transform:scale(1,1);}
+}
+
 @keyframes scalingRev{
 	0%{transform:scale(1,1);}
 	50%{transform:scale(1.1,1.1);}
@@ -448,17 +460,19 @@ svg[data-icon="windows"]{color: #0078d7;}
 
 .ads a{display: block;}
 .ads a:hover{
-	-webkit-animation: scalingXY .4s ease-in-out;
-	animation: scalingXY .4s ease-in-out;
+	-webkit-transform:scale(.9,.9);
+	-moz-transform:scale(.9,.9);
+	transform:scale(.9,.9);
 }
-.ads img{border-radius: 7px;}
+.ads img,
+.ads .item{border-radius: 7px;}
 
-.ads.type-2 a{
+.ads.type-2 > div{
 	float: right;
 	width:49%;
 	margin-right: 2%;
 }
-.ads.type-2 a:first-child{margin-right: 0;}
+.ads.type-2 > div:first-child{margin-right: 0;}
 
 .footer{
 	position: absolute;
