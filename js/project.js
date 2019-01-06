@@ -220,16 +220,13 @@ $('.carousel-slider').masterslider({
 // Carousel Items
 
 $('.carousel-items').owlCarousel({
-  autoWidth:true,
-  items:6,
-  nav:true,
-  dots:false,
-  autoplay:false,
-  loop:false,
-  margin:0,
-  responsive:{
-      600:{}
-  }
+  items:1,
+  nav:false,
+  dots:true,
+  autoplay:true,
+  loop:true,
+  margin:10,
+  speed:20
 });
 
 // App Gallery

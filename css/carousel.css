@@ -51,10 +51,10 @@ display: none; }
 .owl-carousel .owl-dot {
 display: inline-block;
 vertical-align: middle;
-width: 10px;
-height: 10px;
+width: 9px;
+height: 9px;
 margin: 0 4px !important;
-background: #e3e3e3;
+background: #121212;
 border-radius: 50%;
 -webkit-transition: all .2s ease-in-out;
 -moz-transition: all .2s ease-in-out;
@@ -66,7 +66,9 @@ cursor: hand;
 -ms-user-select: none;
 user-select: none; }
 .owl-carousel .owl-dot.active{
-  background-color: #d30044;
+  background-color: #f7941e;
+  -webkit-animation: scalingXX .4s ease-in-out;
+  animation: scalingXX .4s ease-in-out;
 }
 .owl-carousel .owl-nav .owl-prev,
 .owl-carousel .owl-nav .owl-next{
