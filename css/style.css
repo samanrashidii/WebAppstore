@@ -1667,7 +1667,7 @@ span.date{
 .dashboard-banner-layer img{
 	width: 150px;
 	padding:5px;
-	border:3px solid #f7941e;
+	border:3px solid #121212;
 	border-radius: 50%;
 }
 
@@ -1680,21 +1680,30 @@ span.date{
 }
 
 .dashboard-banner-layer span{
-	display: block;
-	font-size: 13px;
-	color:#4f4f4f;
-	margin-top:8px;
+	display: inline-block;
+    font-size: 13px;
+    color: #121212;
+    margin-top: 12px;
+    padding: 10px 15px 7px 15px;
+    background: -webkit-linear-gradient(right, #e4af18 , #fcc62d);
+    background: -moz-linear-gradient(left, #e4af18, #fcc62d);
+    background: linear-gradient(to left, #e4af18 , #fcc62d);
+    border-radius: 5px;
 }
 
 .dashboard-banner-layer span i{
+	display: inline-block;
 	font-family: 'Iran-Medium';
 	font-style: normal;
-	color:#f7941e;
+	color:#ffffff;
+	margin-right: 4px;
 }
 
 .my-account-box ul li{margin:14px 0;}
 .my-account-box ul li:first-child{margin-top:0;}
 .my-account-box ul li:last-child{margin-bottom: 0;}
+
+.my-account-box .pagination ul li{margin:10px 2px;}
 
 .my-account-box ul li > strong{
 	display: inline-block;
@@ -1824,14 +1833,13 @@ span.date{
 	min-width: 0;
 	width: 150px;
 	text-align: center;
-	margin-left: 7px;
+	margin-left: 15px;
 }
 
 .add-credit button{
 	display: inline-block;
 	vertical-align: middle;
 	width: 150px;
-	padding:11px 10px;
 	margin-top:0;
 }
 

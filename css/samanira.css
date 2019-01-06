@@ -1606,7 +1606,7 @@ a.close{
     display: inline-block;
     vertical-align: middle;  
     text-align: center;
-    margin: 0 1px;
+    margin: 0 2px;
 }
 
 .pagination ul li a{
@@ -1620,6 +1620,8 @@ a.close{
 	background-color: #ffffff;
 	border-radius: 50%;
 }
+
+.section-box .pagination ul li a{background-color:#f6f6f6;}
 
 .pagination ul li.active a{
 	color:#ffffff;
