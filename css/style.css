@@ -1836,6 +1836,11 @@ span.date{
 	margin-left: 15px;
 }
 
+.add-credit input:focus{
+	-webkit-animation: scalingXY .4s ease-in-out;
+	animation: scalingXY .4s ease-in-out;
+}
+
 .add-credit button{
 	display: inline-block;
 	vertical-align: middle;
