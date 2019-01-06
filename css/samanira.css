@@ -1633,14 +1633,13 @@ a.close{
 
 .pagination ul li a{
 	display: block;
-	width: 40px;
-    height: 40px;
-	line-height: 42px;
+	width: 36px;
+    height: 36px;
+	line-height: 40px;
     font-size: 14px;
     color:#121212;
     user-select: none;
 	background-color: #ffffff;
-	border:1px solid #f1f1f1;
 	border-radius: 50%;
 }
 
@@ -1663,8 +1662,19 @@ a.close{
 
 .pagination ul li.prev,
 .pagination ul li.next{margin: 0 6px;}
+.pagination ul li.prev a,
+.pagination ul li.next a{
+	line-height: 42px;
+	font-size: 15px;
+}
 
-.pagination ul li:not(.active):not(.etc) a:hover{background-color: #f1f1f1;}
+.pagination ul li:not(.active):not(.etc) a:hover{
+	color:#ffffff;
+	background-color:#121212;
+	-webkit-transform:scale(1.1,1.1);
+	-moz-transform:scale(1.1,1.1);
+	transform:scale(1.1,1.1);
+}
 
 /* -- _Breadcrumb -- */
 
