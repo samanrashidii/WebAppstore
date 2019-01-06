@@ -50,7 +50,12 @@
     border-radius: 50%;
 }
 
-.search button:hover{background: #000000 !important;}
+.search button:hover{
+	background: #000000 !important;
+	-webkit-transform:scale(.9,.9);
+	-moz-transform:scale(.9,.9);
+	transform:scale(.9,.9);
+}
 
 .search button svg{
 	font-size: 15px !important;
@@ -79,6 +84,9 @@
 	color:#ffffff;
 	background-color: #000000;
 	border-color:#000000;
+	-webkit-transform:scale(.9,.9);
+	-moz-transform:scale(.9,.9);
+	transform:scale(.9,.9);
 }
 
 .main-banner .section{
@@ -1099,11 +1107,15 @@ svg[data-icon="windows"]{color: #0078d7;}
 	width:12px;
 	height: 12px;
 	margin:0 3px;
-	background:rgba(255,255,255,.75);
+	background:rgba(10,10,10,.6);
 	border-radius: 50%;
 }
 
-.blog-slider .ms-bullet.ms-bullet-selected{background-color:#f7941e;}
+.blog-slider .ms-bullet.ms-bullet-selected{
+	background-color: #f7941e;
+    -webkit-animation: scalingXX .4s ease-in-out;
+    animation: scalingXX .4s ease-in-out;
+}
 
 .blog-listing{margin-top:20px;}
 .blog-listing > ul li{
@@ -1128,16 +1140,13 @@ svg[data-icon="windows"]{color: #0078d7;}
 
 .blog-content p{padding-top:10px;}
 
-.blog-content span{
+.blog-content > span{
 	display: block;
 	color:#a4a4a4;
 	margin-top:10px;
 }
 
-.blog-content a.bttn{
-	display: block;
-	margin-top:20px;
-}
+.blog-content a.bttn{margin-top:20px;}
 
 .blog-listing .pagination{padding:40px 0 10px 0;}
 
