@@ -990,6 +990,16 @@ svg[data-icon="windows"]{color: #0078d7;}
 	width:81%;
 }
 
+.app-items-wrapper{
+	padding:40px 20px;
+	margin-top:-15px;
+	background-color:#f6f6f6;
+	border-radius: 9px;
+	-webkit-box-shadow: inset 0 0 25px #ebebeb;
+	-moz-box-shadow: inset 0 0 25px #ebebeb;
+	box-shadow: inset 0 0 25px #ebebeb;
+}
+
 .filter-box:not(:last-child){margin-bottom: 12px;}
 
 .filter-title{
@@ -1748,18 +1758,12 @@ span.date{
 
 .my-account-box .checkbox-holder input[type="checkbox"] + label{font-size: 13px;}
 
-.my-account-box .application-box{
-	position: relative;
-	display: inline-block;
-	margin:18px 15px;
-}
-
-.my-account-box .application-box a:not(.add-to-wishlist){
+.my-review-box .application-box a:not(.add-to-wishlist){
 	padding:30px 22px 50px 22px;
 	border:2px solid #212121;
 }
 
-.my-account-box .application-box a:not(.add-to-wishlist) strong{
+.my-review-box .application-box a:not(.add-to-wishlist) strong{
 	position: absolute;
 	bottom: 0;
     left: 0;
@@ -1774,10 +1778,10 @@ span.date{
 	transition:all .2s ease-in-out;
 }
 
-.my-account-box .application-box a:hover{border-color:#f7941e;}
-.my-account-box .application-box a:hover strong{background-color:#f7941e;}
+.my-review-box .application-box a:hover{border-color:#f7941e;}
+.my-review-box .application-box a:hover strong{background-color:#f7941e;}
 
-.my-account-box .application-box a:not(.add-to-wishlist) svg{
+.my-review-box .application-box a:not(.add-to-wishlist) svg{
 	top:8px;
 	left:11px;
 	font-size: 22px;
