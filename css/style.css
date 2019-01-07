@@ -1733,7 +1733,6 @@ span.date{
 .my-account-box select,
 .my-account-box .ui-selectmenu-button{min-width: 300px;}
 .my-account-box input{padding:0 20px;}
-.my-account-box input.tel_number{cursor: not-allowed;}
 
 .my-account-box button{
 	display: inline-block;
