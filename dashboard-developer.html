@@ -225,16 +225,59 @@
 															</li>
 															<li>
 																<strong>دسترسی ها:</strong>
-																<div class="text-editor has-small-y-margin">
-																	<img class="text-editor-image" src="images/developers/rich-text-editor.gif" alt="" />
-																</div><!-- text-editor end -->
+																<span class="permissions">
+																	<span class="checkbox-holder">
+																		<input type="checkbox" name="permissions" id="per_1" value="per_1" checked/>
+																		<label for="per_1">خواندن کارت حافظه</label>
+																	</span><!-- checkbox-holder end -->
+																	<span class="checkbox-holder">
+																		<input type="checkbox" name="permissions" id="per_2" value="per_2" checked/>
+																		<label for="per_2">تغییر یا حذف محتویات کارت حافظه</label>
+																	</span><!-- checkbox-holder end -->
+																	<span class="checkbox-holder">
+																		<input type="checkbox" name="permissions" id="per_3" value="per_3" checked/>
+																		<label for="per_3">دریافت اطلاعات از اینترنت</label>
+																	</span><!-- checkbox-holder end -->
+																	<span class="checkbox-holder">
+																		<input type="checkbox" name="permissions" id="per_4" value="per_4" />
+																		<label for="per_4">ممانعت از به خواب رفتن دستگاه</label>
+																	</span><!-- checkbox-holder end -->
+																	<span class="checkbox-holder">
+																		<input type="checkbox" name="permissions" id="per_5" value="per_5" checked/>
+																		<label for="per_5">کنترل لرزش</label>
+																	</span><!-- checkbox-holder end -->
+																	<span class="checkbox-holder">
+																		<input type="checkbox" name="permissions" id="per_6" value="per_6" />
+																		<label for="per_6">ترسیم روی برنامه‌های دیگر</label>
+																	</span><!-- checkbox-holder end -->
+																	<span class="checkbox-holder">
+																		<input type="checkbox" name="permissions" id="per_7" value="per_7" />
+																		<label for="per_7">خدمات پرداخت مارکت</label>
+																	</span><!-- checkbox-holder end -->
+																	<span class="checkbox-holder">
+																		<input type="checkbox" name="permissions" id="per_8" value="per_8" checked/>
+																		<label for="per_8">یافتن حساب‌ها در دستگاه</label>
+																	</span><!-- checkbox-holder end -->
+																	<span class="checkbox-holder">
+																		<input type="checkbox" name="permissions" id="per_9" value="per_9" checked/>
+																		<label for="per_9">مشاهدهٔ اتصالات Wi-Fi</label>
+																	</span><!-- checkbox-holder end -->
+																	<span class="checkbox-holder">
+																		<input type="checkbox" name="permissions" id="per_10" value="per_10" checked/>
+																		<label for="per_10">مشاهدهٔ اتصالات شبکه</label>
+																	</span><!-- checkbox-holder end -->
+																	<span class="checkbox-holder">
+																		<input type="checkbox" name="permissions" id="per_11" value="per_11" />
+																		<label for="per_11">دسترسی کامل به اینترنت</label>
+																	</span><!-- checkbox-holder end -->
+																</span><!-- permissions end -->
 															</li>
 															<li>
 																<strong>لوگو (128 * 128) :</strong>
 																<span>
 																	<span class="upload-bttn">
 																		<input type="file" name="app_logo" id="app_logo" accept="image/*" />
-																		<label for="app_logo">+ آپلود لوگوی برنامه</label>
+																		<label for="app_logo">+ تغییر لوگوی برنامه</label>
 																	</span>
 																	<span class="file-name">brawl-stars.png</span>
 																</span>
@@ -250,7 +293,7 @@
 																<span>
 																	<span class="upload-bttn">
 																		<input type="file" name="app_banner" id="app_banner" accept="image/*" />
-																		<label for="app_banner">+ آپلود بنر صفحه برنامه</label>
+																		<label for="app_banner">+ تغییر بنر صفحه برنامه</label>
 																	</span>
 																	<span class="file-name">specific-banner.jpg</span>
 																</span>
@@ -266,7 +309,7 @@
 																<span>
 																	<span class="upload-bttn">
 																		<input type="file" name="app_images" id="app_images" accept="image/*" multiple />
-																		<label for="app_images">+ آپلود اسکرین شات های برنامه</label>
+																		<label for="app_images">+ تغییر اسکرین شات های برنامه</label>
 																	</span>
 																</span>
 																<div class="uploaded-gallery-box">
@@ -289,7 +332,7 @@
 																<span>
 																	<span class="upload-bttn">
 																		<input type="file" name="app_files" id="app_files" multiple />
-																		<label for="app_files">+ آپلود فایل (های) برنامه</label>
+																		<label for="app_files">+ تغییر فایل (های) برنامه</label>
 																	</span>
 																</span>
 																<div class="uploaded-files">
@@ -311,7 +354,11 @@
 															</li>
 															<li>
 																<div class="right-aligned">
-																	<button type="submit"><i class="fas fa-cloud-upload"></i> آپلود برنامه</button>
+																	<button class="bttn" type="submit">
+																		<span class="bttn-content">
+																			<i class="fas fa-cloud-upload"></i> تغییر برنامه
+																		</span>
+																	</button>
 																</div><!-- left-aligned end -->
 															</li>
 														</ul>
