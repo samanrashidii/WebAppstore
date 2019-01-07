@@ -335,6 +335,12 @@ input[type="file"]{
 	z-index: 5;
 }
 
+input[disabled]{
+	color:#656565 !important;
+	cursor: not-allowed !important;
+	background-color:#e2e2e2 !important;
+}
+
 input.has-icon{padding-right: 40px;}
 input.datepicker{cursor: pointer;}
 
