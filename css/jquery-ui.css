@@ -44,18 +44,22 @@
 	display: block;
 	min-height: 0;
 	font-size: 13px;
-	color:#4a4a4a;
+	color:#212121;
 	text-transform: none;
 	padding: 17px 15px 15px 45px;
 	margin: 10px 0 0 0;
 	cursor: pointer;
 	user-select: none;
 	background-color: #ffffff;
+	border:1px solid #212121;
 	border-radius: 5px;
 }
 .ui-accordion .ui-accordion-header:first-child{margin-top:0;}
 .ui-accordion .ui-accordion-header.ui-state-active .ui-accordion-header-icon{background-image: url('../images/assets/minus.png');}
-.ui-accordion .ui-accordion-header.ui-state-active{color:#f7941e;}
+.ui-accordion .ui-accordion-header.ui-state-active{
+	color:#f7941e;
+	border-color:transparent;
+}
 
 .ui-accordion .ui-accordion-icons .ui-accordion-icons{padding-left: 20px;}
 .ui-accordion .ui-accordion-header .ui-accordion-header-icon{
