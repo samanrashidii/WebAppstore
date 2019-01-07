@@ -992,13 +992,14 @@ svg[data-icon="windows"]{color: #0078d7;}
 
 .app-items-wrapper{
 	padding:40px 20px;
-	margin-top:-15px;
 	background-color:#f6f6f6;
 	border-radius: 9px;
 	-webkit-box-shadow: inset 0 0 25px #ebebeb;
 	-moz-box-shadow: inset 0 0 25px #ebebeb;
 	box-shadow: inset 0 0 25px #ebebeb;
 }
+
+.my-account-box .app-items-wrapper{margin-top:-15px;}
 
 .filter-box:not(:last-child){margin-bottom: 12px;}
 
