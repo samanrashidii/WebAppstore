@@ -1756,7 +1756,34 @@ span.date{
 	margin:18px 15px;
 }
 
-.my-account-box .application-box a:not(.add-to-wishlist){border:1px solid #e4e4e4;}
+.my-account-box .application-box a:not(.add-to-wishlist){
+	padding:30px 22px 50px 22px;
+	border:2px solid #212121;
+}
+
+.my-account-box .application-box a:not(.add-to-wishlist) strong{
+	position: absolute;
+	bottom: 0;
+    left: 0;
+    font-size: 12px;
+	color: #ffffff;
+    width: 100%;
+    padding: 9px 5px 7px 5px;
+    margin-top:0;
+    background-color: #212121;
+    -webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+}
+
+.my-account-box .application-box a:hover{border-color:#f7941e;}
+.my-account-box .application-box a:hover strong{background-color:#f7941e;}
+
+.my-account-box .application-box a:not(.add-to-wishlist) svg{
+	top:8px;
+	left:11px;
+	font-size: 22px;
+}
 
 .my-account-box .pagination{padding:35px 0 10px 0;}
 
@@ -1786,6 +1813,7 @@ span.date{
 	position: absolute;
     top: 0;
     right: 0;
+    width: 155px;
     margin: 0;
 }
 
