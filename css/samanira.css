@@ -1827,8 +1827,6 @@ a.close{
 	float: left;
 	min-width: 100px;
 	font-size: 12px;
-	padding:8px 5px;
-	border-radius: 4px;
 }
 
 .table th{
