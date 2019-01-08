@@ -1421,6 +1421,9 @@ a.close:hover{
 	-webkit-transition:none;
 	-moz-transition:none;
 	transition:none;
+	-webkit-transition:transform .2s ease-in-out;
+	-moz-transition:transform .2s ease-in-out;
+	transition:transform .2s ease-in-out;
 }
 
 .web-tags a:hover{
@@ -1429,6 +1432,9 @@ a.close:hover{
     background: -moz-linear-gradient(left, #f7941e, #f5bf3d);
     background: linear-gradient(to left, #f7941e , #f5bf3d);
 	border-color:transparent;
+	-webkit-transform:scale(.9,.9);
+	-moz-transform:scale(.9,.9);
+	transform:scale(.9,.9);
 }
 
 .tag{
