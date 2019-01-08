@@ -131,6 +131,12 @@ if($('.search_filters').length > 0){
 	});
 }
 
+// Nice Scroll
+
+$(".filter-items, .category-listing ul").niceScroll({
+  scrollbarid:'onlyScroll'
+});
+
 // Carousel Slider
 
 $('.carousel-slider').masterslider({
