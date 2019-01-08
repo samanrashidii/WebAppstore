@@ -166,21 +166,6 @@ $('.carousel-items').owlCarousel({
   speed:20
 });
 
-// App Gallery
-
-$('.app-gallery').owlCarousel({
-  autoWidth:true,
-  items:3,
-  nav:true,
-  dots:false,
-  autoplay:false,
-  loop:true,
-  margin:0,
-  responsive:{
-      600:{}
-  }
-});
-
 // Slider //
 
 $('.blog-slider').masterslider({

@@ -154,7 +154,7 @@
 
 							<div class="specific-app">
 								<div class="specific-app-header has-clear-fix">
-									<img src="images/specific/specific-game.png" alt="" />
+									<img class="app-specific-logo" src="images/specific/specific-game.png" alt="" />
 									<div class="app-info">
 										<strong>Brawl Stars</strong>
 										<div class="star-box">
@@ -174,7 +174,7 @@
 			                        <div class="app-details">
 										<table>
 											<tr>
-												<td>پلتفرم های قابل دانلود</td>
+												<td><img src="images/icons/device.svg" alt="">پلتفرم های قابل دانلود</td>
 												<td>
 													<i class="fab fa-android"></i>
 					                        		<i class="fab fa-apple"></i>
@@ -182,19 +182,19 @@
 					                        	</td>
 											</tr>
 											<tr>
-												<td>حجم</td>
+												<td><img src="images/icons/cloud.svg" alt=""> حجم</td>
 												<td><span class="reverse-direction">48.5 MB</span></td>
 											</tr>
 											<tr>
-												<td>نسخه</td>
+												<td><img src="images/icons/folder.svg" alt=""> نسخه</td>
 												<td>1.031</td>
 											</tr>
 											<tr>
-												<td>آخرین بروز رسانی</td>
+												<td><img src="images/icons/pencil.svg" alt=""> آخرین بروز رسانی</td>
 												<td>96/05/15</td>
 											</tr>
 											<tr>
-												<td>تعداد دانلود</td>
+												<td><img src="images/icons/clip.svg" alt=""> تعداد دانلود</td>
 												<td>8651</td>
 											</tr>
 										</table>
@@ -203,11 +203,13 @@
 								</div><!-- specific-app-header end -->
 								<div class="specific-app-content">
 									<div class="app-gallery">
-										<a href="javascript:void(0)"><img src="images/specific/specific-image-1.jpg" alt=""/></a>
-										<a href="javascript:void(0)"><img src="images/specific/specific-image-2.jpg" alt=""/></a>
-										<a href="javascript:void(0)"><img src="images/specific/specific-image-3.jpg" alt=""/></a>
-										<a href="javascript:void(0)"><img src="images/specific/specific-image-4.jpg" alt=""/></a>
-										<a href="javascript:void(0)"><img src="images/specific/specific-image-5.jpg" alt=""/></a>
+										<ul id="st-stack" class="st-stack-raw">
+											<li><div class="st-item"><img src="images/specific/specific-image-1.jpg"/></div></li>
+											<li><div class="st-item"><img src="images/specific/specific-image-2.jpg"/></div></li>
+											<li><div class="st-item"><img src="images/specific/specific-image-3.jpg"/></div></li>
+											<li><div class="st-item"><img src="images/specific/specific-image-4.jpg"/></div></li>
+											<li><div class="st-item"><img src="images/specific/specific-image-5.jpg"/></div></li>
+										</ul>
 									</div><!-- app-gallery end -->
 									<div class="app-description show-content">
 										<div class="static-content">
@@ -232,7 +234,11 @@
 									</div><!-- app-description end -->
 
 									<div class="show-more">
-										<a class="bttn transparent" href="javascript:void(0)">مشاهده بیشتر</a>
+										<a class="bttn" href="javascript:void(0)">
+											<span class="bttn-content">
+											مشاهده بیشتر
+											</span>
+										</a>
 									</div><!-- show-more end -->
 
 									<div class="app-permissions has-medium-y-padding">
@@ -359,7 +365,11 @@
 
 											<div class="load-more has-top-margin center-aligned">
 												<img src="images/assets/loader.svg" alt="" />
-												<a class="bttn transparent" href="javascript:void(0)">مشاهده بیشتر</a>
+												<a class="bttn" href="javascript:void(0)">
+													<span class="bttn-content">
+													مشاهده بیشتر
+													</span>
+												</a>
 											</div><!-- load-more end -->
 
 											<div class="write-review has-top-margin">
@@ -410,6 +420,16 @@
 			</footer><!-- footer end -->
 			
 		</div><!-- wrapper end -->
+
+<!-- Only for Specific App Page -->
+<link rel="stylesheet" type="text/css" href="css/stackslider.css" media="screen"/>
+<script src="js/modernizr.stack.js"></script>
+<script src="js/jquery.stackslider.js"></script>		
+<script>
+	$( function() {	
+		$( '#st-stack' ).stackslider();
+	});
+</script>
 
 	</body>
 </html>

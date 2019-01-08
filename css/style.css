@@ -1221,12 +1221,12 @@ span.date{
 
 .specific-app-header{
 	position: relative;
-	min-height: 190px;
+	min-height: 165px;
 	text-align: right;
-	padding:10px 155px 0 10px;
+	padding:0 155px 0 0;
 }
 
-.specific-app-header img{
+.app-specific-logo{
 	position: absolute;
 	top:25px;
 	right: 0;
@@ -1286,10 +1286,12 @@ span.date{
 .download-app a.bttn{
 	min-width: 90px;
 	font-size: 12px;
-	padding:7px;
-	margin:12px 0 0 1px;
-	border-radius: 3px;
+	margin:12px 0 0 2px;
+	border-radius: 4px;
 }
+
+.download-app a.bttn::before,
+.download-app a.bttn::after{display: none;}
 
 .download-app a.bttn svg{
 	font-size: 20px;
@@ -1335,19 +1337,29 @@ span.date{
 
 .app-details{
 	float: left;
-	width:220px;
+	width:270px;
+	padding:5px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #a4a4a4;
 }
 
 .app-details table td{
 	font-size: 12px;
 	color:#4a4a4a;
 	padding:5.5px;
-	border:1px solid #e4e4e4;
+	
 }
 
 .app-details table tr td:nth-child(2){
 	color:#121212;
-	text-align: center;
+	text-align: left;
+}
+
+.app-details img{
+	display: inline-block;
+	vertical-align: middle;
+	width:20px !important;
+	margin-left: 2px;
 }
 
 .app-details svg{
@@ -1373,25 +1385,6 @@ span.date{
 	text-align: center;
 	padding:20px 0;
 }
-
-.app-gallery a{
-	display: block;
-	max-width: 300px;
-	overflow: hidden;
-	margin:0 5px;
-	cursor: default;
-	border-radius: 5px;
-}
-
-.app-gallery.owl-carousel .owl-stage-outer{
-	padding:5px 0;
-	margin-bottom: 25px;
-}
-
-.app-gallery.owl-carousel .owl-nav .owl-prev{left:-50px;}
-.app-gallery.owl-carousel .owl-nav .owl-next{right:-50px;}
-.app-gallery.owl-carousel .owl-nav .owl-prev:hover,
-.app-gallery.owl-carousel .owl-nav .owl-next:hover{background-color: rgba(0,0,0,.8);}
 
 .comment-box{
 	position: relative;
