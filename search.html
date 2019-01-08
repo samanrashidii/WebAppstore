@@ -31,6 +31,7 @@
 		<script src="js/carousel.min.js"></script>
 		<script src="js/jquery.waypoints.js"></script>
 		<script src="js/jquery.counterup.min.js"></script>
+		<script src="js/nicescroll.min.js"></script>
 		<script src="js/icons.js"></script>
 		<script src="js/samanira.js"></script>
 		<script src="js/project.js"></script>
@@ -189,494 +190,374 @@
 												</div><!-- sort-inner-box end -->
 											</div><!-- sort-box end -->
 
-											<div class="filter-box">
-												<a class="filter-title" href="javascript:void(0)">سیستم عامل</a>
-												<div class="filter-inner-box">
-													<ul class="filter-items">
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="filter_option_1" id="filter_1" value="" />
-																<label for="filter_1">Android</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="filter_option_1" id="filter_2" value="" />
-																<label for="filter_2">iOS</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="filter_option_1" id="filter_3" value="" />
-																<label for="filter_3">Windows</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-													</ul>
-												</div><!-- filter-inner-box end -->
-											</div><!-- filter-box end -->
+											<div class="filters">
+												<div class="filters-inner">
 
-											<div class="filter-box">
-												<a class="filter-title" href="javascript:void(0)">نوع برنامه</a>
-												<div class="filter-inner-box">
-													<ul class="filter-items">
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="filter_option_2" id="filter_4" value="" />
-																<label for="filter_4">اپلیکیشن</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="filter_option_2" id="filter_5" value="" />
-																<label for="filter_5">بازی</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-													</ul>
-												</div><!-- filter-inner-box end -->
-											</div><!-- filter-box end -->
+													<div class="filter-box">
+														<a class="filter-title" href="javascript:void(0)">سیستم عامل</a>
+														<div class="filter-inner-box">
+															<ul class="filter-items">
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="filter_option_1" id="filter_1" value="" />
+																		<label for="filter_1">Android</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="filter_option_1" id="filter_2" value="" />
+																		<label for="filter_2">iOS</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="filter_option_1" id="filter_3" value="" />
+																		<label for="filter_3">Windows</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+															</ul>
+														</div><!-- filter-inner-box end -->
+													</div><!-- filter-box end -->
 
-											<div class="filter-box">
-												<a class="filter-title" href="javascript:void(0)">برند سازنده</a>
-												<div class="filter-inner-box">
-													<ul class="filter-items">
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="filter_option_3" id="filter_6" value="" />
-																<label for="filter_6">سیب</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="filter_option_3" id="filter_7" value="" />
-																<label for="filter_7">Supercell</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="filter_option_3" id="filter_8" value="" />
-																<label for="filter_8">Google</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="filter_option_3" id="filter_9" value="" />
-																<label for="filter_9">بازی نما</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-													</ul>
-												</div><!-- filter-inner-box end -->
-											</div><!-- filter-box end -->
+													<div class="filter-box">
+														<a class="filter-title" href="javascript:void(0)">نوع برنامه</a>
+														<div class="filter-inner-box">
+															<ul class="filter-items">
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="filter_option_2" id="filter_4" value="" />
+																		<label for="filter_4">اپلیکیشن</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="filter_option_2" id="filter_5" value="" />
+																		<label for="filter_5">بازی</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+															</ul>
+														</div><!-- filter-inner-box end -->
+													</div><!-- filter-box end -->
 
-											<div class="filter-box">
-												<a class="filter-title active" href="javascript:void(0)">دسته بندی ها</a>
-												<div class="filter-inner-box" style="display:block;">
-													<input type="search" name="search_filters" class="search_filters" placeholder="جستجوی دسته بندی" />
-													<ul class="filter-items">
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="category_filter" id="filter_10" value="" />
-																<label for="filter_10">آموزشی</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="category_filter" id="filter_11" value="" />
-																<label for="filter_11">ورزشی</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="category_filter" id="filter_12" value="" />
-																<label for="filter_12">خانوادگی</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="category_filter" id="filter_13" value="" />
-																<label for="filter_13">آشپزی</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="category_filter" id="filter_14" value="" />
-																<label for="filter_14">موسیقی</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="category_filter" id="filter_15" value="" />
-																<label for="filter_15">فیلم و عکس</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="category_filter" id="filter_16" value="" />
-																<label for="filter_16">استراتژی</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="category_filter" id="filter_17" value="" />
-																<label for="filter_17">معمایی</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="category_filter" id="filter_18" value="" />
-																<label for="filter_18">شبکه اجتماعی</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="category_filter" id="filter_19" value="" />
-																<label for="filter_19">مذهبی</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="category_filter" id="filter_20" value="" />
-																<label for="filter_20">خبرها و نشریات</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="category_filter" id="filter_21" value="" />
-																<label for="filter_21">رفت و آمد</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="category_filter" id="filter_22" value="" />
-																<label for="filter_22">کسب و کار</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-														<li>
-															<div class="checkbox-holder">
-																<input type="checkbox" name="category_filter" id="filter_23" value="" />
-																<label for="filter_23">ابزارها</label>
-															</div><!-- checkbox-holder end -->
-														</li>
-													</ul>
-												</div><!-- filter-inner-box end -->
-											</div><!-- filter-box end -->
+													<div class="filter-box">
+														<a class="filter-title" href="javascript:void(0)">برند سازنده</a>
+														<div class="filter-inner-box">
+															<ul class="filter-items">
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="filter_option_3" id="filter_6" value="" />
+																		<label for="filter_6">سیب</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="filter_option_3" id="filter_7" value="" />
+																		<label for="filter_7">Supercell</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="filter_option_3" id="filter_8" value="" />
+																		<label for="filter_8">Google</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="filter_option_3" id="filter_9" value="" />
+																		<label for="filter_9">بازی نما</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+															</ul>
+														</div><!-- filter-inner-box end -->
+													</div><!-- filter-box end -->
+
+													<div class="filter-box">
+														<a class="filter-title active" href="javascript:void(0)">دسته بندی ها</a>
+														<div class="filter-inner-box" style="display:block;">
+															<input type="search" name="search_filters" class="search_filters" placeholder="جستجوی دسته بندی" />
+															<ul class="filter-items">
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="category_filter" id="filter_10" value="" />
+																		<label for="filter_10">آموزشی</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="category_filter" id="filter_11" value="" />
+																		<label for="filter_11">ورزشی</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="category_filter" id="filter_12" value="" />
+																		<label for="filter_12">خانوادگی</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="category_filter" id="filter_13" value="" />
+																		<label for="filter_13">آشپزی</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="category_filter" id="filter_14" value="" />
+																		<label for="filter_14">موسیقی</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="category_filter" id="filter_15" value="" />
+																		<label for="filter_15">فیلم و عکس</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="category_filter" id="filter_16" value="" />
+																		<label for="filter_16">استراتژی</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="category_filter" id="filter_17" value="" />
+																		<label for="filter_17">معمایی</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="category_filter" id="filter_18" value="" />
+																		<label for="filter_18">شبکه اجتماعی</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="category_filter" id="filter_19" value="" />
+																		<label for="filter_19">مذهبی</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="category_filter" id="filter_20" value="" />
+																		<label for="filter_20">خبرها و نشریات</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="category_filter" id="filter_21" value="" />
+																		<label for="filter_21">رفت و آمد</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="category_filter" id="filter_22" value="" />
+																		<label for="filter_22">کسب و کار</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+																<li>
+																	<div class="checkbox-holder">
+																		<input type="checkbox" name="category_filter" id="filter_23" value="" />
+																		<label for="filter_23">ابزارها</label>
+																	</div><!-- checkbox-holder end -->
+																</li>
+															</ul>
+														</div><!-- filter-inner-box end -->
+													</div><!-- filter-box end -->
+													
+												</div><!-- filters-inner end -->
+											</div><!-- filters end -->
 
 										</div><!-- app-filters end -->
 									</aside>
 								</div><!-- app-sidebar end -->
 
 								<div class="app-items">
-									<div class="app-items-wrapper">
-										<div class="application-box">
-											<a href="#">
-				                            	<img src="images/games/game-1.png" alt=""/>
-				                            	<div class="star-box">
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                        </div><!-- star-box end -->
-						                        <strong>Badminton League</strong>
-						                        <i class="fab fa-android"></i>
-						                        <i class="fab fa-apple"></i>
-					                        </a>
-			                            </div><!-- application-box end -->
-
-			                            <div class="application-box">
-											<a href="#">
-				                            	<img src="images/games/game-2.png" alt=""/>
-				                            	<div class="star-box">
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span>&nbsp;</span>
-						                        </div><!-- star-box end -->
-						                        <strong>Chess League</strong>
-						                        <i class="fab fa-android"></i>
-						                        <i class="fab fa-apple"></i>
-					                        </a>
-			                            </div><!-- application-box end -->
-
-			                            <div class="application-box">
-											<a href="#">
-				                            	<img src="images/games/game-3.png" alt=""/>
-				                            	<div class="star-box">
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span>&nbsp;</span>
-						                            <span>&nbsp;</span>
-						                        </div><!-- star-box end -->
-						                        <strong>بازی اکشن</strong>
-						                        <i class="fab fa-android"></i>
-					                        </a>
-			                            </div><!-- application-box end -->  
-
-			                            <div class="application-box">
-											<a href="#">
-				                            	<img src="images/games/game-4.png" alt=""/>
-				                            	<div class="star-box">
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span>&nbsp;</span>
-						                        </div><!-- star-box end -->
-						                        <strong>Music Master</strong>
-						                        <i class="fab fa-apple"></i>
-					                        </a>
-			                            </div><!-- application-box end -->    
-
-			                            <div class="application-box">
-											<a href="#">
-				                            	<img src="images/games/game-5.png" alt=""/>
-				                            	<div class="star-box">
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span>&nbsp;</span>
-						                        </div><!-- star-box end -->
-						                        <strong>افسانه جنگجو</strong>
-						                        <i class="fab fa-android"></i>
-					                        </a>
-			                            </div><!-- application-box end -->    
-
-			                            <div class="application-box">
-											<a href="#">
-				                            	<img src="images/games/game-6.png" alt=""/>
-				                            	<div class="star-box">
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span>&nbsp;</span>
-						                            <span>&nbsp;</span>
-						                        </div><!-- star-box end -->
-						                        <strong>هخامنشیان</strong>
-						                        <i class="fab fa-android"></i>
-						                        <i class="fab fa-windows"></i>
-					                        </a>
-			                            </div><!-- application-box end -->    
-
-			                            <div class="application-box">
-											<a href="#">
-				                            	<img src="images/games/game-7.png" alt=""/>
-				                            	<div class="star-box">
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                        </div><!-- star-box end -->
-						                        <strong>Footboll</strong>
-						                        <i class="fab fa-android"></i>
-					                        </a>
-			                            </div><!-- application-box end -->   
-
-			                            <div class="application-box">
-											<a href="#">
-				                            	<img src="images/games/game-8.png" alt=""/>
-				                            	<div class="star-box">
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                        </div><!-- star-box end -->
-						                        <strong>Plant vs Zombies</strong>
-						                        <i class="fab fa-android"></i>
-						                        <i class="fab fa-apple"></i>
-						                        <i class="fab fa-windows"></i>
-					                        </a>
-			                            </div><!-- application-box end -->
-
-			                            <div class="application-box">
-											<a href="#">
-				                            	<img src="images/games/game-9.png" alt=""/>
-				                            	<div class="star-box">
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                        </div><!-- star-box end -->
-						                        <strong>Ninja Warrior</strong>
-						                        <i class="fab fa-android"></i>
-						                        <i class="fab fa-apple"></i>
-					                        </a>
-			                            </div><!-- application-box end -->
-
-			                            <div class="application-box">
-											<a href="#">
-				                            	<img src="images/games/game-10.png" alt=""/>
-				                            	<div class="star-box">
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span>&nbsp;</span>
-						                        </div><!-- star-box end -->
-						                        <strong>توپ و دیوار</strong>
-						                        <i class="fab fa-windows"></i>
-					                        </a>
-			                            </div><!-- application-box end -->
-
-			                            <div class="application-box">
-											<a href="#">
-				                            	<img src="images/games/game-11.png" alt=""/>
-				                            	<div class="star-box">
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span>&nbsp;</span>
-						                        </div><!-- star-box end -->
-						                        <strong>Fireball</strong>
-						                        <i class="fab fa-android"></i>
-					                        </a>
-			                            </div><!-- application-box end -->
-
-			                            <div class="application-box">
-											<a href="#">
-				                            	<img src="images/games/game-12.png" alt=""/>
-				                            	<div class="star-box">
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span>&nbsp;</span>
-						                            <span>&nbsp;</span>
-						                        </div><!-- star-box end -->
-						                        <strong>Prince of Persia</strong>
-						                        <i class="fab fa-android"></i>
-					                        </a>
-			                            </div><!-- application-box end -->
-
-			                            <div class="application-box">
-											<a href="#">
-				                            	<img src="images/games/game-13.png" alt=""/>
-				                            	<div class="star-box">
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span>&nbsp;</span>
-						                        </div><!-- star-box end -->
-						                        <strong>کوتوله های جنگجو</strong>
-						                        <i class="fab fa-apple"></i>
-					                        </a>
-			                            </div><!-- application-box end -->
-
-			                            <div class="application-box">
-											<a href="#">
-				                            	<img src="images/games/game-14.png" alt=""/>
-				                            	<div class="star-box">
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                        </div><!-- star-box end -->
-						                        <strong>بیلیارد حرفه ای</strong>
-						                        <i class="fab fa-android"></i>
-						                        <i class="fab fa-apple"></i>
-						                        <i class="fab fa-windows"></i>
-					                        </a>
-			                            </div><!-- application-box end -->
-
-			                            <div class="application-box">
-											<a href="#">
-				                            	<img src="images/games/game-15.png" alt=""/>
-				                            	<div class="star-box">
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span>&nbsp;</span>
-						                        </div><!-- star-box end -->
-						                        <strong>Shoot Master</strong>
-						                        <i class="fab fa-windows"></i>
-					                        </a>
-			                            </div><!-- application-box end -->  
-
-			                            <div class="application-box">
-											<a href="#">
-				                            	<img src="images/games/game-16.png" alt=""/>
-				                            	<div class="star-box">
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span>&nbsp;</span>
-						                        </div><!-- star-box end -->
-						                        <strong>نجات سرباز</strong>
-						                        <i class="fab fa-android"></i>
-					                        </a>
-			                            </div><!-- application-box end -->    
-
-			                            <div class="application-box">
-											<a href="#">
-				                            	<img src="images/games/game-17.png" alt=""/>
-				                            	<div class="star-box">
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                        </div><!-- star-box end -->
-						                        <strong>Clash of Clans</strong>
-						                        <i class="fab fa-android"></i>
-						                        <i class="fab fa-apple"></i>
-					                        </a>
-			                            </div><!-- application-box end -->    
-
-			                            <div class="application-box">
-											<a href="#">
-				                            	<img src="images/games/game-18.png" alt=""/>
-				                            	<div class="star-box">
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                        </div><!-- star-box end -->
-						                        <strong>Clash Royale</strong>
-						                        <i class="fab fa-android"></i>
-						                        <i class="fab fa-apple"></i>
-					                        </a>
-			                            </div><!-- application-box end -->    
-
-			                            <div class="application-box">
-											<a href="#">
-				                            	<img src="images/games/game-19.png" alt=""/>
-				                            	<div class="star-box">
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span>&nbsp;</span>
-						                            <span>&nbsp;</span>
-						                        </div><!-- star-box end -->
-						                        <strong>Future Robots</strong>
-						                        <i class="fab fa-android"></i>
-						                        <i class="fab fa-windows"></i>
-					                        </a>
-			                            </div><!-- application-box end -->   
-
-			                            <div class="application-box">
-											<a href="#">
-				                            	<img src="images/games/game-20.png" alt=""/>
-				                            	<div class="star-box">
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span class="active">&nbsp;</span>
-						                            <span>&nbsp;</span>
-						                        </div><!-- star-box end -->
-						                        <strong>Happy Goo</strong>
-						                        <i class="fab fa-windows"></i>
-					                        </a>
-			                            </div><!-- application-box end -->
-			                        </div><!-- app-items-wrapper end -->
+									<div class="section-box">
+										<div class="section-box-content">
+											<div class="app-items-wrapper">
+												<div class="app-boxes has-carousel has-clear-fix center-aligned">
+													<div class="app-box item">
+														<div class="app-front">
+															<div class="poster">
+																<div class="application-box">
+									                            	<img src="images/apps/app-1.png" alt=""/>
+									                            	<div class="star-box">
+											                            <span class="active">&nbsp;</span>
+											                            <span class="active">&nbsp;</span>
+											                            <span class="active">&nbsp;</span>
+											                            <span class="active">&nbsp;</span>
+											                            <span class="active">&nbsp;</span>
+											                        </div><!-- star-box end -->
+											                        <strong>Perfect Ideas</strong>
+											                        <i class="fab fa-android"></i>
+									                            </div><!-- application-box end -->
+															</div><!-- poster end -->
+															<div class="info">
+																<header style="background-image: url(images/specific/specific-image-1.jpg);"></header>
+																<div class="info-inner">
+																	<p>نبرد با دوستان یا انفرادی در سراسر حالت های مختلف بازی در کمتر از سه دقیقه. باز کردن و ارتقاء ده ها تن از Brawlers با توانایی های فوق العاده قدرتمند.</p>
+																	<a class="bttn" href="#">
+																		<span class="bttn-content">
+																		بیشتر بخوانید
+																		</span>
+																	</a>
+																</div><!-- info-inner end -->
+															</div><!-- info end -->
+														</div><!-- app-front end -->
+													</div><!-- app-box end -->
+													<div class="app-box item">
+														<div class="app-front">
+															<div class="poster">
+																<div class="application-box">
+									                            	<img src="images/apps/app-2.png" alt=""/>
+									                            	<div class="star-box">
+											                            <span class="active">&nbsp;</span>
+											                            <span class="active">&nbsp;</span>
+											                            <span>&nbsp;</span>
+											                            <span>&nbsp;</span>
+											                            <span>&nbsp;</span>
+											                        </div><!-- star-box end -->
+											                        <strong>املاک آناناس</strong>
+											                        <i class="fab fa-android"></i>
+									                            </div><!-- application-box end -->
+															</div><!-- poster end -->
+															<div class="info">
+																<header style="background-image: url(images/specific/specific-image-2.jpg);"></header>
+																<div class="info-inner">
+																	<p>نبرد با دوستان یا انفرادی در سراسر حالت های مختلف بازی در کمتر از سه دقیقه. باز کردن و ارتقاء ده ها تن از Brawlers با توانایی های فوق العاده قدرتمند.</p>
+																	<a class="bttn" href="#">
+																		<span class="bttn-content">
+																		بیشتر بخوانید
+																		</span>
+																	</a>
+																</div><!-- info-inner end -->
+															</div><!-- info end -->
+														</div><!-- app-front end -->
+													</div><!-- app-box end -->
+													<div class="app-box item">
+														<div class="app-front">
+															<div class="poster">
+																<div class="application-box">
+									                            	<img src="images/apps/app-3.png" alt=""/>
+									                            	<div class="star-box">
+											                            <span class="active">&nbsp;</span>
+											                            <span class="active">&nbsp;</span>
+											                            <span class="active">&nbsp;</span>
+											                            <span>&nbsp;</span>
+											                            <span>&nbsp;</span>
+											                        </div><!-- star-box end -->
+											                        <strong>بوم نقاشی</strong>
+											                        <i class="fab fa-android"></i>
+											                        <i class="fab fa-windows"></i>
+									                            </div><!-- application-box end -->
+															</div><!-- poster end -->
+															<div class="info">
+																<header style="background-image: url(images/specific/specific-image-3.jpg);"></header>
+																<div class="info-inner">
+																	<p>نبرد با دوستان یا انفرادی در سراسر حالت های مختلف بازی در کمتر از سه دقیقه. باز کردن و ارتقاء ده ها تن از Brawlers با توانایی های فوق العاده قدرتمند.</p>
+																	<a class="bttn" href="#">
+																		<span class="bttn-content">
+																		بیشتر بخوانید
+																		</span>
+																	</a>
+																</div><!-- info-inner end -->
+															</div><!-- info end -->
+														</div><!-- app-front end -->
+													</div><!-- app-box end -->
+													<div class="app-box item">
+														<div class="app-front">
+															<div class="poster">
+																<div class="application-box">
+									                            	<img src="images/apps/app-4.png" alt=""/>
+									                            	<div class="star-box">
+											                            <span class="active">&nbsp;</span>
+											                            <span class="active">&nbsp;</span>
+											                            <span class="active">&nbsp;</span>
+											                            <span class="active">&nbsp;</span>
+											                            <span class="active">&nbsp;</span>
+											                        </div><!-- star-box end -->
+											                        <strong>کارواش سیار</strong>
+											                        <i class="fab fa-android"></i>
+											                        <i class="fab fa-apple"></i>
+									                            </div><!-- application-box end -->
+															</div><!-- poster end -->
+															<div class="info">
+																<header style="background-image: url(images/specific/specific-image-4.jpg);"></header>
+																<div class="info-inner">
+																	<p>نبرد با دوستان یا انفرادی در سراسر حالت های مختلف بازی در کمتر از سه دقیقه. باز کردن و ارتقاء ده ها تن از Brawlers با توانایی های فوق العاده قدرتمند.</p>
+																	<a class="bttn" href="#">
+																		<span class="bttn-content">
+																		بیشتر بخوانید
+																		</span>
+																	</a>
+																</div><!-- info-inner end -->
+															</div><!-- info end -->
+														</div><!-- app-front end -->
+													</div><!-- app-box end -->
+													<div class="app-box item">
+														<div class="app-front">
+															<div class="poster">
+																<div class="application-box">
+									                            	<img src="images/apps/app-5.png" alt=""/>
+									                            	<div class="star-box">
+											                            <span class="active">&nbsp;</span>
+											                            <span class="active">&nbsp;</span>
+											                            <span class="active">&nbsp;</span>
+											                            <span class="active">&nbsp;</span>
+											                            <span>&nbsp;</span>
+											                        </div><!-- star-box end -->
+											                        <strong>Yahoo Weather</strong>
+											                        <i class="fab fa-android"></i>
+											                        <i class="fab fa-apple"></i>
+											                        <i class="fab fa-windows"></i>
+									                            </div><!-- application-box end -->
+															</div><!-- poster end -->
+															<div class="info">
+																<header style="background-image: url(images/specific/specific-image-5.jpg);"></header>
+																<div class="info-inner">
+																	<p>نبرد با دوستان یا انفرادی در سراسر حالت های مختلف بازی در کمتر از سه دقیقه. باز کردن و ارتقاء ده ها تن از Brawlers با توانایی های فوق العاده قدرتمند.</p>
+																	<a class="bttn" href="#">
+																		<span class="bttn-content">
+																		بیشتر بخوانید
+																		</span>
+																	</a>
+																</div><!-- info-inner end -->
+															</div><!-- info end -->
+														</div><!-- app-front end -->
+													</div><!-- app-box end -->
+													<div class="app-box item">
+														<div class="app-front">
+															<div class="poster">
+																<div class="application-box">
+									                            	<img src="images/apps/app-6.png" alt=""/>
+									                            	<div class="star-box">
+											                            <span class="active">&nbsp;</span>
+											                            <span>&nbsp;</span>
+											                            <span>&nbsp;</span>
+											                            <span>&nbsp;</span>
+											                            <span>&nbsp;</span>
+											                        </div><!-- star-box end -->
+											                        <strong>تعبیر خواب</strong>
+											                        <i class="fab fa-android"></i>
+									                            </div><!-- application-box end -->
+															</div><!-- poster end -->
+															<div class="info">
+																<header style="background-image: url(images/specific/specific-image-1.jpg);"></header>
+																<div class="info-inner">
+																	<p>نبرد با دوستان یا انفرادی در سراسر حالت های مختلف بازی در کمتر از سه دقیقه. باز کردن و ارتقاء ده ها تن از Brawlers با توانایی های فوق العاده قدرتمند.</p>
+																	<a class="bttn" href="#">
+																		<span class="bttn-content">
+																		بیشتر بخوانید
+																		</span>
+																	</a>
+																</div><!-- info-inner end -->
+															</div><!-- info end -->
+														</div><!-- app-front end -->
+													</div><!-- app-box end -->
+												</div><!-- app-boxes end -->
+											</div><!-- app-items-wrapper end -->
+										</div><!-- section-box-content end -->
+									</div><!-- section-box end -->
 
 		                            <div class="pagination">
 			                            <ul>
