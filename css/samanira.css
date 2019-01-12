@@ -858,7 +858,7 @@ a.close{
     height: 25px;
     background: url(../images/assets/remove.png) no-repeat center #ffffff;
     border-radius: 50%;
-    z-index: 10;
+    z-index: 12;
     -webkit-box-shadow: 0 0 5px #4a4a4a;
     -moz-box-shadow: 0 0 5px #4a4a4a;
     box-shadow: 0 0 5px #4a4a4a;
@@ -890,19 +890,19 @@ a.close:hover{
 #wrapper.login-register{padding:115px 0 150px 0;}
 
 .frame{
-	max-width: 1000px;
-	padding: 0 10px;
+	max-width: 1010px;
+	padding: 0 15px;
 	margin:auto;
 }
 
-.frame.xxlarge{max-width: 1470px;}
-.frame.xlarge{max-width: 1340px;}
-.frame.large{max-width: 1240px;}
-.frame.medium{max-width: 1120px;}
-.frame.small{max-width: 870px;}
-.frame.xsmall{max-width: 815px;}
-.frame.xxsmall{max-width: 430px;}
-.frame.vsmall{max-width: 370px;}
+.frame.xxlarge{max-width: 1480px;}
+.frame.xlarge{max-width: 1350px;}
+.frame.large{max-width: 1250px;}
+.frame.medium{max-width: 1130px;}
+.frame.small{max-width: 880px;}
+.frame.xsmall{max-width: 825px;}
+.frame.xxsmall{max-width: 440px;}
+.frame.vsmall{max-width: 380px;}
 
 .clear-fix{
 	display:block;
@@ -2207,20 +2207,20 @@ a.close:hover{
 
 						/*            Min 540 Screen End        */
 
-						/*            Max 1040 Screen Start        */
+						/*            Max 980 Screen Start        */
 
-@media only screen and (max-width:1040px){
+@media only screen and (max-width:980px){
 
 	.desktop-only{display: none !important;}
 
-	#wrapper{padding-top:80px;}
+	#wrapper{padding-top:64px;}
 
-	body{font-size: 14px;}
-	h1{font-size:37px;}
-	h2{font-size:29px;}
-	h3{font-size:24px;}
-	h4{font-size:20px;}
-	h5{font-size:17px;}
+	body{font-size: 12px;}
+	h1{font-size:40px;}
+	h2{font-size:24px;}
+	h3{font-size:20px;}
+	h4{font-size:18px;}
+	h5{font-size:16px;}
 	h6{font-size:15px;}
 	p{padding-top:12px;}
 
@@ -2242,8 +2242,8 @@ a.close:hover{
 
 	.bttn{
 		min-width: 130px;
-		font-size: 14px;
-		padding:10px;
+		line-height: 42px;
+		font-size: 12px;
 	}
 
 	.fixed-attachment{background-attachment: scroll !important;}
@@ -2431,7 +2431,7 @@ a.close:hover{
 	
 }
 
-						/*            Max 1040 Screen End        */
+						/*            Max 980 Screen End        */
 
 						/*            Max 740 Screen Start        */
 
@@ -2442,11 +2442,6 @@ a.close:hover{
 	select{font-size:16px !important;}
 
 	input[type="submit"]{margin-top:15px;}
-
-	::-webkit-input-placeholder{font-size:14px;}
-	:-moz-placeholder{font-size:14px;}
-	::-moz-placeholder{font-size:14px;}
-	:-ms-input-placeholder{font-size:14px;}
 
 	.has-vlarge-padding{padding:40px !important;}
 	.has-vlarge-top-padding{padding-top:40px !important;}
@@ -2623,11 +2618,11 @@ a.close:hover{
 @media only screen and (max-width:640px){
 
 	h1{font-size:30px;}
-	h2{font-size:24px;}
-	h3{font-size:20px;}
-	h4{font-size:17px;}
-	h5{font-size:15px;}
-	h6{font-size:14px;}
+	h2{font-size:22px;}
+	h3{font-size:18px;}
+	h4{font-size:16px;}
+	h5{font-size:14px;}
+	h6{font-size:13px;}
 
 	figcaption{
 		line-height: 1.7;
@@ -2709,6 +2704,8 @@ a.close:hover{
 		float: none !important;
 		width: 100% !important;
 	}
+
+	.section-box-content{padding:12px;}
 
 	.rspv.has-6-6-column > .section,
 	.rspv.has-4-4-4-column > .section{

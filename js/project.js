@@ -144,7 +144,7 @@ $('.carousel-slider').masterslider({
     width:232,
     height:280,
     speed:20,
-    autoplay:true,
+    autoplay:false,
     view:'flow',
     preload:0,
     space:10,
@@ -181,5 +181,31 @@ $('.blog-slider').masterslider({
         bullets: {autohide:false}
     }
 });
+
+// Mobile Functions
+
+if($(window).width() < 980){
+
+  $('.search-bttn').on('click', function(){
+    if($(this).hasClass('active')){
+      $(this).removeClass('active');
+      $('.search').removeClass('active');
+    } else{
+      $(this).addClass('active');
+      $('.search').addClass('active');
+    }
+  });
+
+  $('.has-carousel').owlCarousel({
+    responsive: true,
+    margin:4,
+    nav:false,
+    dots:true,
+    autoplay: false,
+    loop:true,
+    items:1
+  });
+
+}
 
 });
