@@ -2659,12 +2659,20 @@ a.close:hover{
 		margin-right: 0;
 	}
 
+	.pagination{padding:20px 0 10px 0;}
+	.pagination ul li{margin:0 1px;}
+	.pagination ul li.prev,
+	.pagination ul li.next{margin:0 4px;}
+
 	.pagination ul li a{
 		width: 30px;
 		height: 30px;
-		line-height: 27px;
-		font-size: 14px;
+		line-height: 33px;
+		font-size: 13px;
 	}
+
+	.pagination ul li.prev a,
+	.pagination ul li.next a{line-height: 35px;}
 
 	.message{
 		padding:12px 15px 13px 15px;
@@ -2732,12 +2740,6 @@ a.close:hover{
 						/*            Max 400 Screen Start        */
 
 @media only screen and (max-width:400px){
-
-	.pagination ul li a{
-		width: 30px;
-		height: 30px;
-		line-height: 27px;
-	}
 
 	.post-stats.type-2 span::after{margin:0 5px;}
 
