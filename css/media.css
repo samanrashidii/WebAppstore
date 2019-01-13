@@ -162,6 +162,8 @@
 		width:300px;
 		padding:20px;
 	}
+
+	.static-banner.specific-page{height: 450px;}
 	
 }
 
@@ -423,6 +425,14 @@
 
 	.search-banner{height: 150px;}
 	.search-banner h2{font-size: 20px;}
+
+	.static-banner.specific-page{height: 240px;}
+
+	.specific-layer{
+		font-size: 16px;
+		padding-bottom: 0;
+	}
+	.specific-layer h3{font-size: 24px;}
 
 }
 

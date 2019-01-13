@@ -2344,27 +2344,27 @@ a.close:hover{
 	.table th{padding:8px;}
 
 	.static-content h1{
-		font-size: 33px !important;
+		font-size: 24px !important;
 		margin-top:10px !important;
 	}
 
 	.static-content h2{
-		font-size: 26px !important;
+		font-size: 20px !important;
 		margin-top:10px !important;
 	}
 
 	.static-content h3{
-		font-size: 22px !important;
+		font-size: 18px !important;
 		margin-top:10px !important;
 	}
 
 	.static-content h4{
-		font-size: 19px !important;
+		font-size: 17px !important;
 		margin-top:10px !important;
 	}
 
 	.static-content h5{
-		font-size: 17px !important;
+		font-size: 16px !important;
 		margin-top:10px !important;
 	}
 
@@ -2377,13 +2377,19 @@ a.close:hover{
 	.static-content img{margin-top:10px !important;}
 
 	.static-content p{
-		font-size: 14px !important;
+		font-size: 13px !important;
 		padding-top:10px !important;
 	}
 
 	.static-content blockquote{
 		font-size: 15px !important;
 		margin-top: 10px !important;
+	}
+
+	.static-content ul,
+	.static-content ol{
+		padding-right: 12px;
+		margin-top:15px;
 	}
 
 	.double-quotes::before,
@@ -2554,7 +2560,10 @@ a.close:hover{
 	.overlay-box,
 	.inner-overlay-box{padding:18px;}
 
-	.web-tags a{padding:4px 10px;}
+	.web-tags a{
+		font-size: 12px;
+		padding:4px 10px;
+	}
 
 	.tag{
 		min-width: 40px;
