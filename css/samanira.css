@@ -1854,8 +1854,6 @@ a.close:hover{
 .table.scrollable{overflow-x:auto;}
 .table.scrollable table{min-width: 980px;}
 
-.table tr{border-bottom: 1px solid #f7f7f7;}
-
 .table td,
 .table th{
 	font-size: 13px;
@@ -2348,22 +2346,24 @@ a.close:hover{
 	.table.responsive table{
 		min-width: 0;
 		background-color: #ffffff;
+		border:1px solid #4a4a4a;
 	}
 	.table.responsive thead{display: none;}
 
 	.table.responsive tr{
 		display: block;
-		border-color:#e2e2e2;
+		border-bottom:1px solid #4a4a4a;
 	}
 	.table.responsive tr:last-child{border-bottom: none;}
 
 	.table.responsive td{
 		position: relative;
 		display: block;
-		font-size: 14px;
+		font-size: 12px;
 		color:#121212;
 		text-align: right !important;
-		padding-right: 100px;
+		padding-right: 80px !important;
+		border:none !important;
 	}
 
 	.table.responsive td::before{
@@ -2372,13 +2372,13 @@ a.close:hover{
 	    right: 0;
 	    top: 0;
 	    display: block;
-	    width: 90px;
+	    width: 70px;
 	    height: 100%;
 	    font-size: 12px;
-	    color: #121212;
+	    color: #ffffff;
 	    text-align: right;
-	    padding: 20px 15px 0 5px;
-	    background-color: #eaeaea;
+	    padding: 8px 10px 0 5px;
+	    background-color: #2e2e2e;
 	}
 
 	.static-content h1{

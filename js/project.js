@@ -259,4 +259,18 @@ if($(window).width() < 980){
 
 }
 
+if($(window).width() < 860){
+  setTimeout(function(){
+    $('.dashboard-tabs ul').animate({scrollLeft: 500}, 1000);
+    $('span.draggable').css('margin-left', '-70px');
+    setTimeout(function(){
+      $('.dashboard-tabs ul').animate({scrollLeft: 0}, 1000);
+      $('span.draggable').css('margin-left', '0');
+      setTimeout(function(){
+        $('span.draggable').addClass('is-hidden');
+      },500);
+    },1500);
+  },500);
+}
+
 });
