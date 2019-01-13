@@ -146,7 +146,7 @@
 		width:100%;
 	}
 
-	.news-text-box{padding:15px 15px 0 15px !important;}
+	.news-text-box{padding:15px 5px 0 15px !important;}
 	.news-box{padding-top:0;}
 
 }
@@ -164,6 +164,9 @@
 		margin-top:10px;
 	}
 
+	.top-box a.bttn{margin-top:20px;}
+	.top-box svg{margin-bottom: 15px;}
+
 	.title h3 svg{font-size: 24px;}
 
 	.application-box{width:200px;}
@@ -180,6 +183,9 @@
 		height: 40px;
 		background-size: 40px;
 	}
+
+	.ms-staff-carousel .ms-nav-prev,
+	.ms-staff-carousel .ms-nav-next{margin-top:20px;}
 
 	.owl-carousel .owl-stage-outer{padding:5px 0;}
 	.owl-carousel .owl-dots{padding:10px 0;}
@@ -272,6 +278,19 @@
 
 	.app-items-wrapper{padding:20px 0;}
 
+	#wrapper{padding-bottom: 0;}
+
+	.footer{
+		position: static;
+		text-align: center;
+		padding:25px 0 15px;
+	}
+
+	.footer ul{
+		float: none;
+		padding-top:25px;
+	}
+
 }
 
 						/*            560px Screen End        */
@@ -281,6 +300,11 @@
 @media only screen and (max-width:400px){
 
 	.app-box{margin:20px 30px;}
+
+	.footer ul li{
+		display: block;
+		margin:0 0 10px 0;
+	}
 
 }
 

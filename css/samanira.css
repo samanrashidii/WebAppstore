@@ -2242,8 +2242,10 @@ a.close:hover{
 
 	.bttn{
 		min-width: 130px;
-		line-height: 42px;
+		height: 40px;
+		line-height: 40px;
 		font-size: 12px;
+		padding:1px 5px 3px 5px;
 	}
 
 	.fixed-attachment{background-attachment: scroll !important;}
