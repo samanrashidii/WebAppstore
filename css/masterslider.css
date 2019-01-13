@@ -26,13 +26,13 @@
 
 .ms-loading-container .ms-loading,
 .ms-slide .ms-slide-loading {
-	width: 24px;
-	height: 24px;
+	width: 48px;
+	height: 48px;
 	background: url('../images/assets/loader.svg');
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	margin: -12px;
+	margin: -24px;
 	opacity: 0.9;
 }
 
@@ -80,7 +80,6 @@
 	position: absolute;
 	overflow:hidden;
 	width: 100%;
-	border-radius: 5px;
 }
 
 .ms-slide .ms-slide-bgvideocont{

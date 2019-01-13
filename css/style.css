@@ -12,6 +12,9 @@
     background: linear-gradient(to left, #f7941e , #f5bf3d);
 	background-color: #f7941e;
 	z-index: 99999999;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
 }
 
 .logo{
@@ -1158,7 +1161,7 @@ svg[data-icon="windows"]{color: #0078d7;}
 	float: none;
 	width:12px;
 	height: 12px;
-	margin:0 3px;
+	margin:0 4px !important;
 	background:rgba(10,10,10,.6);
 	border-radius: 50%;
 }
@@ -1185,6 +1188,7 @@ svg[data-icon="windows"]{color: #0078d7;}
 .blog-image a:hover{opacity: .85;}
 
 .blog-content{
+	height: 250px;
 	font-size: 13px;
 	padding:15px;
 	background-color: #ffffff;
@@ -1205,8 +1209,6 @@ svg[data-icon="windows"]{color: #0078d7;}
 	font-size: 13px;
 	margin-top:20px;
 }
-
-.blog-listing .pagination{padding:40px 0 10px 0;}
 
 span.date{
 	display: block;
