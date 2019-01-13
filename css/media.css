@@ -358,6 +358,25 @@
 		margin:15px 0;
 	}
 
+	.download-history table svg{font-size: 20px;}
+
+	.my-review-box{
+		padding-right: 0;
+		margin-bottom: 15px;
+	}
+
+	.my-review-box .application-box{display: none;}
+	.my-review-box .comment-content{font-size: 12px;}
+	.comment-box{padding:12px;}
+	.comment-options span{font-size: 11px;}
+
+	.comment-options a{
+		width:32px;
+		height: 32px;
+		line-height: 32px;
+		font-size: 13px;
+	}
+
 }
 
 						/*            640px Screen End        */											
@@ -479,11 +498,11 @@
 		margin-bottom: 10px;
 	}
 
-	.my-account-box div form > ul > li > span{display: block;}
+	.my-account-box form > ul > li > span{display: block;}
 
 	.my-account-box input,
 	.my-account-box select,
-	.my-account-box .ui-selectmenu-button{min-width: 100%;}
+	.my-account-box .ui-selectmenu-button{min-width: 0;}
 
 	.file-name{margin-top:5px;}
 
