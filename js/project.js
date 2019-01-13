@@ -251,6 +251,12 @@ if($(window).width() < 980){
     items:1
   });
 
+  // Static Sidebar
+
+  $('.static-sidebar ul li.active a').on('click', function(){
+    $(this).parents('.static-sidebar').toggleClass('active');
+  });
+
 }
 
 });
