@@ -2641,12 +2641,22 @@ a.close:hover{
 
 	input,
 	select{
-		height: 45px;
+		height: 42px;
 		line-height: 44px;
+		padding:0 15px 0 35px;
+	}
+
+	textarea{
+		height: 120px;
+		padding:15px;
 	}
 
 	.field-holder{margin:10px 0;}
-	.field-holder > svg{top:17px;}
+
+	.field-holder > svg{
+		top:15px;
+		left: 14px;
+	}
 
 	.checkbox-holder input[type="checkbox"] + label,
 	.radio-holder input[type="radio"] + label{font-size: 13px;}

@@ -145,6 +145,16 @@
 		height: 10px;
 		background:#000000;
 	}
+
+	.static-banner{height: 350px;}
+
+	.static-banner h1{
+		width:300px;
+		height: auto;
+		font-size: 32px;
+		padding-top:0;
+		background-size: 300px;
+	}
 	
 }
 
@@ -224,9 +234,59 @@
 		margin:0 !important;
 	}
 
-	.static-banner{margin-bottom: 0;}
+	.static-banner{
+		height: 240px;
+		margin-top:-4px;
+		margin-bottom: 0;
+	}
+
+	.static-banner::after{
+		height: 44px;
+		background-size: cover;
+	}
+
 	.static-banner.blog-page{margin-bottom: 25px;}
 	.static-banner.blog-page::after{display: none;}
+
+	.static-main{
+		float: none;
+		width:100%;
+	}
+
+	.static-sidebar{
+		position: relative;
+		float: none;
+		width:100%;
+		height: 46px;
+		overflow: hidden;
+		padding-top:52px;
+		margin:10px 0;
+	}
+
+	.static-sidebar.active{height: auto;}
+
+	.static-sidebar::after{
+		content:'';
+		position: absolute;
+		top:22px;
+		left:20px;
+		width:8px;
+		height: 5px;
+		background: url('../images/assets/arrow-bottom-black.png') no-repeat center;
+		z-index: 8;
+	}
+	.static-sidebar.active::after{background-image: url('../images/assets/arrow-top-black.png');}
+
+	.static-sidebar ul li.active{
+		position: absolute;
+		top:0;
+		right:0;
+		width:100%;
+		z-index: 7;
+	}
+
+	.contact-form p{font-size: 12px;}
+	.contact-form button.bttn{margin: 15px 0;}
 
 }
 
@@ -353,6 +413,11 @@
 	}
 
 	.blog-slider .ms-slide .ms-layer strong{font-size: 14px !important;}
+
+	.contact-options li a{
+		height: 88px;
+		padding:19px 5px;
+	}
 
 }
 
