@@ -209,6 +209,23 @@
 	.news-text-box{padding:15px 5px 0 15px !important;}
 	.news-box{padding-top:0;}
 
+	.developer-status > div{
+		width:140px;
+		height:140px;
+		padding-top:25px;
+		margin:5px;
+	}
+
+	.developer-status svg{font-size: 22px;}
+	.developer-status strong{font-size: 22px;}
+
+	.history-app-info a{font-size: 12px;}
+
+	.history-app-info img{
+		width:25px;
+		margin-left: 5px;
+	}
+
 }
 
 						/*            740px Screen End        */	
@@ -332,6 +349,34 @@
 
 	.add-credit p{font-size: 12px;}
 
+	.table a.bttn{float: none;}
+
+	.my-account-box .checkbox-holder input[type="checkbox"] + label{font-size: 12px;}
+
+	.add-application{
+		padding-top:25px;
+		margin:15px 0;
+	}
+
+	.download-history table svg{font-size: 20px;}
+
+	.my-review-box{
+		padding-right: 0;
+		margin-bottom: 15px;
+	}
+
+	.my-review-box .application-box{display: none;}
+	.my-review-box .comment-content{font-size: 12px;}
+	.comment-box{padding:12px;}
+	.comment-options span{font-size: 11px;}
+
+	.comment-options a{
+		width:32px;
+		height: 32px;
+		line-height: 32px;
+		font-size: 13px;
+	}
+
 }
 
 						/*            640px Screen End        */											
@@ -445,6 +490,26 @@
 	.add-credit input{
 		display: block;
 		margin:10px auto;
+	}
+
+	.my-account-box ul li > strong{
+		display: block;
+		width:100%;
+		margin-bottom: 10px;
+	}
+
+	.my-account-box form > ul > li > span{display: block;}
+
+	.my-account-box input,
+	.my-account-box select,
+	.my-account-box .ui-selectmenu-button{min-width: 0;}
+
+	.file-name{margin-top:5px;}
+
+	.permissions .checkbox-holder{
+		display: block;
+		width:100%;
+		margin:2px 0;
 	}
 
 }
