@@ -209,6 +209,23 @@
 	.news-text-box{padding:15px 5px 0 15px !important;}
 	.news-box{padding-top:0;}
 
+	.developer-status > div{
+		width:140px;
+		height:140px;
+		padding-top:25px;
+		margin:5px;
+	}
+
+	.developer-status svg{font-size: 22px;}
+	.developer-status strong{font-size: 22px;}
+
+	.history-app-info a{font-size: 12px;}
+
+	.history-app-info img{
+		width:25px;
+		margin-left: 5px;
+	}
+
 }
 
 						/*            740px Screen End        */	
@@ -332,6 +349,15 @@
 
 	.add-credit p{font-size: 12px;}
 
+	.table a.bttn{float: none;}
+
+	.my-account-box .checkbox-holder input[type="checkbox"] + label{font-size: 12px;}
+
+	.add-application{
+		padding-top:25px;
+		margin:15px 0;
+	}
+
 }
 
 						/*            640px Screen End        */											
@@ -445,6 +471,26 @@
 	.add-credit input{
 		display: block;
 		margin:10px auto;
+	}
+
+	.my-account-box ul li > strong{
+		display: block;
+		width:100%;
+		margin-bottom: 10px;
+	}
+
+	.my-account-box div form > ul > li > span{display: block;}
+
+	.my-account-box input,
+	.my-account-box select,
+	.my-account-box .ui-selectmenu-button{min-width: 100%;}
+
+	.file-name{margin-top:5px;}
+
+	.permissions .checkbox-holder{
+		display: block;
+		width:100%;
+		margin:2px 0;
 	}
 
 }

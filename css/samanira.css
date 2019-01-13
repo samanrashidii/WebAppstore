@@ -2343,44 +2343,6 @@ a.close:hover{
 	.table td,
 	.table th{padding:8px;}
 
-	.table.responsive table{
-		min-width: 0;
-		background-color: #ffffff;
-		border:1px solid #4a4a4a;
-	}
-	.table.responsive thead{display: none;}
-
-	.table.responsive tr{
-		display: block;
-		border-bottom:1px solid #4a4a4a;
-	}
-	.table.responsive tr:last-child{border-bottom: none;}
-
-	.table.responsive td{
-		position: relative;
-		display: block;
-		font-size: 12px;
-		color:#121212;
-		text-align: right !important;
-		padding-right: 80px !important;
-		border:none !important;
-	}
-
-	.table.responsive td::before{
-		content: attr(th-data);
-	    position: absolute;
-	    right: 0;
-	    top: 0;
-	    display: block;
-	    width: 70px;
-	    height: 100%;
-	    font-size: 12px;
-	    color: #ffffff;
-	    text-align: right;
-	    padding: 8px 10px 0 5px;
-	    background-color: #2e2e2e;
-	}
-
 	.static-content h1{
 		font-size: 33px !important;
 		margin-top:10px !important;
@@ -2589,7 +2551,8 @@ a.close:hover{
 	.has-xxsmall-x-margin{margin:0 5px !important;}
 	.has-xxsmall-y-margin{margin:5px 0 !important;}
 
-	.overlay-box{padding:15px;}
+	.overlay-box,
+	.inner-overlay-box{padding:18px;}
 
 	.web-tags a{padding:4px 10px;}
 
@@ -2639,6 +2602,8 @@ a.close:hover{
 		margin:3px 0 6px 0;
 	}
 
+	label a{font-size: 11px;}
+
 	input,
 	select{
 		height: 42px;
@@ -2659,7 +2624,7 @@ a.close:hover{
 	}
 
 	.checkbox-holder input[type="checkbox"] + label,
-	.radio-holder input[type="radio"] + label{font-size: 13px;}
+	.radio-holder input[type="radio"] + label{font-size: 12px;}
 
 	.has-3-3-3-3-column > .section,
 	.has-5x2o4-column > .section,
@@ -2709,6 +2674,44 @@ a.close:hover{
 	}
 
 	.post-stats.type-2 span::after{margin:0 8px;}
+
+	.table.responsive table{
+		min-width: 0;
+		background-color: #ffffff;
+		border:1px solid #4a4a4a;
+	}
+	.table.responsive thead{display: none;}
+
+	.table.responsive tr{
+		display: block;
+		border-bottom:1px solid #4a4a4a;
+	}
+	.table.responsive tr:last-child{border-bottom: none;}
+
+	.table.responsive td{
+		position: relative;
+		display: block;
+		font-size: 12px;
+		color:#121212;
+		text-align: right !important;
+		padding-right: 90px !important;
+		border:none !important;
+	}
+
+	.table.responsive td::before{
+		content: attr(th-data);
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    display: block;
+	    width: 80px;
+	    height: 100%;
+	    font-size: 12px;
+	    color: #ffffff;
+	    text-align: right;
+	    padding: 8px 10px 0 5px;
+	    background-color: #2e2e2e;
+	}
 
 }
 
