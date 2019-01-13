@@ -598,16 +598,10 @@ svg[data-icon="windows"]{color: #0078d7;}
 .categories-tab a:nth-child(1){border-top-right-radius: 7px;}
 .categories-tab a:nth-child(2){border-bottom-right-radius: 7px;}
 
-.categories-tab a:nth-child(1).active{
+.categories-tab a.active{
 	background: -webkit-linear-gradient(top, #f7941e , #f5bf3d);
     background: -moz-linear-gradient(bottom, #f7941e, #f5bf3d);
     background: linear-gradient(to bottom, #f7941e , #f5bf3d);
-}
-
-.categories-tab a:nth-child(2).active{
-	background: -webkit-linear-gradient(bottom, #365f95 , #5b8ed1);
-    background: -moz-linear-gradient(top, #365f95, #5b8ed1);
-    background: linear-gradient(to top, #365f95 , #5b8ed1);
 }
 
 .categories-tab a span{
@@ -642,8 +636,7 @@ svg[data-icon="windows"]{color: #0078d7;}
 
 .catogories-content > div{display: none;}
 
-#appTab li a:hover{color:#f7941e;}
-#gameTab li a:hover{color:#5b8ed1;}
+.catogories-content li a:hover{color:#f7941e;}
 
 .login-register{
 	position: absolute;
@@ -766,9 +759,9 @@ svg[data-icon="windows"]{color: #0078d7;}
 }
 
 .choose-radio li:last-child input:checked + label{
-	background:-webkit-linear-gradient(right, #365f95 , #5b8ed1);
-	background:-moz-linear-gradient(left, #365f95, #5b8ed1);
-	background:linear-gradient(to left, #365f95 , #5b8ed1);
+	background:-webkit-linear-gradient(right, #121212 , #4a4a4a);
+	background:-moz-linear-gradient(left, #121212, #4a4a4a);
+	background:linear-gradient(to left, #121212 , #4a4a4a);
 }
 
 .static-banner{
@@ -1024,7 +1017,29 @@ svg[data-icon="windows"]{color: #0078d7;}
 
 .my-account-box .app-items-wrapper{margin-top:-15px;}
 
+.filter-bttn{
+	position: fixed;
+	bottom:10px;
+	right: 10px;
+	display: none;
+	width:40px;
+	height: 40px;
+	line-height: 44px;
+	font-size: 16px;
+	color:#ffffff;
+	text-align: center;
+	background-color: #f7941e;
+	border:2px solid #212121;
+	border-radius: 50%;
+	z-index: 999999999;
+}
+
 .filter-box:not(:last-child){margin-bottom: 12px;}
+
+.filter-bttn.active{
+	right:auto;
+	left:10px;
+}
 
 .filter-title{
 	display: block;
@@ -1045,13 +1060,6 @@ svg[data-icon="windows"]{color: #0078d7;}
     border-color:#f7941e;
     -webkit-animation: scalingXY .4s ease-in-out;
 	animation: scalingXY .4s ease-in-out;
-}
-
-.category-listing.games-category .filter-title.active{
-	background: url('../images/assets/minus-small.png') no-repeat 10px center, -webkit-linear-gradient(right, #365f95 , #5b8ed1);
-    background: url('../images/assets/minus-small.png') no-repeat 10px center, -moz-linear-gradient(left, #365f95, #5b8ed1);
-    background: url('../images/assets/minus-small.png') no-repeat 10px center, linear-gradient(to left, #365f95 , #5b8ed1);
-    border-color:#365f95;
 }
 
 .filter-inner-box{
@@ -1125,9 +1133,6 @@ svg[data-icon="windows"]{color: #0078d7;}
 
 .category-listing ul li.active a,
 .category-listing ul li a:hover{color:#f7941e;}
-
-.category-listing.games-category ul li.active a,
-.category-listing.games-category ul li a:hover{color:#365f95;}
 
 .category-listing ul li svg{width:22px !important;}
 
