@@ -1,5 +1,21 @@
 $(document).ready(function(){
 
+// Site Types
+
+var siteType2 = function(){
+  $('body').attr('id', 'siteType2');
+}
+
+var siteType3 = function(){
+  $('body').attr('id', 'siteType3');
+}
+
+var siteType4 = function(){
+  $('body').attr('id', 'siteType4');
+}
+
+siteType2();
+
 // Categories
 
 $('.categories-bttn').on('click', function(){
