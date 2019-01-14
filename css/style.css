@@ -10,7 +10,6 @@
 	background: -webkit-linear-gradient(right, #f7941e , #f5bf3d);
     background: -moz-linear-gradient(left, #f7941e, #f5bf3d);
     background: linear-gradient(to left, #f7941e , #f5bf3d);
-	background-color: #f7941e;
 	z-index: 99999999;
 	-webkit-transition:all .2s ease-in-out;
 	-moz-transition:all .2s ease-in-out;
@@ -25,6 +24,7 @@
 .logo img{
 	width:110px;
 	margin:0;
+	background-color:#ffffff;
 	border:4px solid #f6f6f6;
 	border-radius: 50%;
 }
@@ -811,7 +811,6 @@ svg[data-icon="windows"]{color: #0078d7;}
 	font-size: 19px;
 	color:#f7941e;
 	padding-bottom: 40px;
-	text-shadow: 0 0 1px #000000;
 }
 
 .specific-layer h2{
@@ -1336,21 +1335,21 @@ span.date{
 }
 
 .download-app a.bttn.android:hover{
-	background: -webkit-linear-gradient(right, #bad85a , #a4c639);
-    background: -moz-linear-gradient(left, #bad85a, #a4c639);
-    background: linear-gradient(to left, #bad85a , #a4c639);
+	background: -webkit-linear-gradient(right, #bad85a , #a4c639) !important;
+    background: -moz-linear-gradient(left, #bad85a, #a4c639) !important;
+    background: linear-gradient(to left, #bad85a , #a4c639) !important;
 }
 
 .download-app a.bttn.apple:hover{
-	background: -webkit-linear-gradient(right, #4a4a4a , #121212);
-    background: -moz-linear-gradient(left, #4a4a4a, #121212);
-    background: linear-gradient(to left, #4a4a4a , #121212);
+	background: -webkit-linear-gradient(right, #4a4a4a , #121212) !important;
+    background: -moz-linear-gradient(left, #4a4a4a, #121212) !important;
+    background: linear-gradient(to left, #4a4a4a , #121212) !important;
 }
 
 .download-app a.bttn.windows:hover{
-	background: -webkit-linear-gradient(right, #46a3ec , #0078d7);
-    background: -moz-linear-gradient(left, #46a3ec, #0078d7);
-    background: linear-gradient(to left, #46a3ec , #0078d7);
+	background: -webkit-linear-gradient(right, #46a3ec , #0078d7) !important;
+    background: -moz-linear-gradient(left, #46a3ec, #0078d7) !important;
+    background: linear-gradient(to left, #46a3ec , #0078d7) !important;
 }
 
 .app-details{
@@ -1582,6 +1581,7 @@ span.date{
 	font-size: 44px;
 	color:#ffffff;
 	margin:auto;
+	user-select: none;
 	background: -webkit-linear-gradient(right, #f7941e , #f5bf3d);
     background: -moz-linear-gradient(left, #f7941e, #f5bf3d);
     background: linear-gradient(to left, #f7941e , #f5bf3d);
@@ -2125,6 +2125,104 @@ a.remove-file:hover{
 }
 
 .add-application a.bttn svg{margin:0 0 0 7px;}
+
+
+/* Site Types */
+
+	/* Color Mix */
+
+#siteType2 .header,
+#siteType2 .site-bg,
+#siteType2 .pagination ul li.active a,
+#siteType2 .static-sidebar li.active a,
+#siteType2 .add-to-wishlist.active,
+#siteType2 .ui-accordion .ui-accordion-header.ui-state-active,
+#siteType2 .choose-radio li:first-child input:checked + label,
+#siteType2 .product-stats h2,
+#siteType2 .web-tags a:hover{
+	background: -webkit-linear-gradient(right, #182e3a , #507488);
+    background: -moz-linear-gradient(left, #182e3a, #507488);
+    background: linear-gradient(to left, #182e3a , #507488);
+}
+
+#siteType2 .filter-title.active{
+	background: url('../images/assets/minus-small.png') no-repeat 10px center, -webkit-linear-gradient(right, #182e3a , #507488);
+    background: url('../images/assets/minus-small.png') no-repeat 10px center, -moz-linear-gradient(left, #182e3a, #507488);
+    background: url('../images/assets/minus-small.png') no-repeat 10px center, linear-gradient(to left, #182e3a , #507488);
+    border-color:#507488;
+}
+
+#siteType2 .display-count strong{
+	color:#ffffff !important;
+	background-color: #507488;
+}
+
+#siteType2 .static-content u{
+	color:#507488 !important;
+	border-bottom:1px solid #507488 !important;
+}
+
+#siteType2 .static-content p a{color:#507488 !important;}
+
+	/* Color 1 */
+
+#siteType2 .title h3 svg,
+#siteType2 .breadcrumb ul li a:hover,
+#siteType2 .dashboard-tabs ul li a:hover,
+#siteType2 .dashboard-tabs ul li.active a,
+#siteType2 .static-sidebar li:not(.active) a:hover,
+#siteType2 .footer ul li a:hover,
+#siteType2 label a,
+#siteType2 p a,
+#siteType2 .search-banner strong,
+#siteType2 .app-permissions ul li svg,
+#siteType2 .static-content ol li::before,
+#siteType2 .category-listing ul li.active a,
+#siteType2 .category-listing ul li a:hover,
+#siteType2 .specific-layer{color:#507488;}
+
+#siteType2 .bttn:hover,
+#siteType2 .bttn:hover::before,
+#siteType2 .bttn:hover::after,
+#siteType2 .bttn:hover .bttn-content::before,
+#siteType2 .bttn:hover .bttn-content::after{background:#507488;}
+
+#siteType2 .master-slider .application-box a:hover strong,
+#siteType2 .ms-staff-carousel .ms-nav-prev:hover,
+#siteType2 .ms-staff-carousel .ms-nav-next:hover,
+#siteType2 .owl-carousel .owl-nav .owl-prev:hover,
+#siteType2 .owl-carousel .owl-nav .owl-next:hover,
+#siteType2 .owl-carousel .owl-dot.active,
+#siteType2 .table th,
+#siteType2 .my-review-box .application-box a:hover strong,
+#siteType2 .radio-holder input[type="radio"]:checked + label::before,
+#siteType2 .checkbox-holder input[type="checkbox"] + label::after,
+#siteType2 .upload-bttn label:hover,
+#siteType2 .st-wrapper nav span:hover,
+#siteType2 .static-content ul li::before{background-color:#507488;}
+
+#siteType2 .master-slider .application-box a:hover,
+#siteType2 .my-review-box .application-box a:hover,
+#siteType2 .checkbox-holder input[type="checkbox"]:checked + label::before,
+#siteType2 .ui-accordion .ui-accordion-header.ui-state-active{border-color:#507488;}
+
+#siteType2 .static-banner h1{background-image: url('../images/assets/title-shape-type-2.png');}
+
+	/* Color 2 */
+
+#siteType2 .text-box i,
+#siteType2 .text-box strong{color:#ffffff;}	
+
+#siteType2 .header-items a{
+	color:#ffffff;
+	border-color:#ffffff;
+}
+
+
+
+
+
+
 
 
 /*   Added Styles by Back-end   */
