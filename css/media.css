@@ -166,6 +166,18 @@
 	.static-banner.specific-page{height: 450px;}
 
 	#onlyScroll{display: none !important;}
+
+	.app-gallery{margin-top:20px;}
+
+	.st-wrapper .st-item{
+		top:30px !important;
+		width: 300px !important;
+	}
+	.st-wrapper{height: 340px !important;}
+
+	.show-content{height: 270px;}
+
+	.add-to-wishlist{right: -30px;}
 	
 }
 
@@ -202,6 +214,19 @@
     }
 
     span.draggable{display: block;}
+
+	.specific-app-header{padding:0;}
+    .app-details{
+    	float: none;
+    	width:430px;
+    	clear: both;
+    }
+
+    .app-info{
+    	width:100%;
+    	padding-right: 150px;
+    	margin-bottom:40px;
+    }
 
 }
 
@@ -271,6 +296,10 @@
 		visibility: visible;
 		opacity: 1;
 	}
+
+	.st-stack{display: none !important;}
+	.st-wrapper nav{bottom: 5px !important;}
+	.st-wrapper{margin-bottom: 40px !important;}
 
 }
 
@@ -462,6 +491,55 @@
 	.divider{margin:7px auto;}
 	.divider.large{margin:15px auto;}
 
+	.app-info{
+		float: none;
+		text-align: center;
+		padding-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.app-specific-logo{
+		position: static;
+		margin-bottom: 5px;
+	}
+
+	.app-details{
+		width:280px;
+		margin:auto;
+	}
+
+	.specific-app{padding:15px;}
+
+	.add-to-wishlist{
+		top:-38px;
+		right: -24px;
+	}
+
+	.app-permissions ul{
+		float: none;
+		width:100%;
+		margin:0;
+	}
+	.app-permissions ul:first-of-type{margin-top:25px;}
+
+	.product-stats{
+		min-height: 0;
+		padding:0;
+		margin-bottom: 25px;
+	}
+
+	.total-stars{
+		position: static;
+		margin:auto;
+	}
+
+	.stars-stats{padding-right: 75px;}
+	.stats-title{width:65px;}
+	.stats-title .star-box span{margin:0 -3px;}
+
+	.comment-content{font-size: 13px;}
+	.write-review{padding-top:20px;}
+
 }
 
 						/*            640px Screen End        */											
@@ -599,6 +677,10 @@
 
 	.filters{padding: 20px 20px 60px 20px;}
 
+	.textarea-word-tracker textarea{height: 170px;}
+
+	.dashboard-tabs a.exit{font-size: 12px;}
+
 }
 
 						/*            560px Screen End        */
@@ -619,6 +701,21 @@
 	.contact-options li a{
 		height: 88px;
 		padding:19px 5px;
+	}
+
+	.st-wrapper .st-item{width:280px !important;}
+
+	.comment-options span{
+		display: block;
+		text-align: center;
+		padding-bottom: 7px;
+	}
+
+	.app-details{width:260px;}
+
+	.download-app a.bttn{
+		min-width: 82px;
+		font-size: 11px;
 	}
 
 }
