@@ -1863,7 +1863,7 @@ a.close:hover{
 }
 
 .table a:not(.bttn){color:#2e2e2e;}
-.table td a(.bttn):hover{color:#f7941e;}
+.table td a:not(.bttn):hover{color:#f7941e;}
 
 .table a.bttn{
 	float: left;

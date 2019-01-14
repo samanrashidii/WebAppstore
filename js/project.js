@@ -14,8 +14,6 @@ var siteType4 = function(){
   $('body').attr('id', 'siteType4');
 }
 
-siteType2();
-
 // Categories
 
 $('.categories-bttn').on('click', function(){

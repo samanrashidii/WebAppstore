@@ -2129,99 +2129,315 @@ a.remove-file:hover{
 
 /* Site Types */
 
-	/* Color Mix */
+	/* Site Type 1 */
 
-#siteType2 .header,
-#siteType2 .site-bg,
-#siteType2 .pagination ul li.active a,
-#siteType2 .static-sidebar li.active a,
-#siteType2 .add-to-wishlist.active,
-#siteType2 .ui-accordion .ui-accordion-header.ui-state-active,
-#siteType2 .choose-radio li:first-child input:checked + label,
-#siteType2 .product-stats h2,
-#siteType2 .web-tags a:hover{
-	background: -webkit-linear-gradient(right, #182e3a , #507488);
-    background: -moz-linear-gradient(left, #182e3a, #507488);
-    background: linear-gradient(to left, #182e3a , #507488);
-}
+		#siteType2 .header,
+		#siteType2 .site-bg,
+		#siteType2 .pagination ul li.active a,
+		#siteType2 .static-sidebar li.active a,
+		#siteType2 .add-to-wishlist.active,
+		#siteType2 .ui-accordion .ui-accordion-header.ui-state-active,
+		#siteType2 .choose-radio li:first-child input:checked + label,
+		#siteType2 .product-stats h2,
+		#siteType2 .web-tags a:hover{
+			background: -webkit-linear-gradient(right, #182e3a , #507488);
+		    background: -moz-linear-gradient(left, #182e3a, #507488);
+		    background: linear-gradient(to left, #182e3a , #507488);
+		}
 
-#siteType2 .filter-title.active{
-	background: url('../images/assets/minus-small.png') no-repeat 10px center, -webkit-linear-gradient(right, #182e3a , #507488);
-    background: url('../images/assets/minus-small.png') no-repeat 10px center, -moz-linear-gradient(left, #182e3a, #507488);
-    background: url('../images/assets/minus-small.png') no-repeat 10px center, linear-gradient(to left, #182e3a , #507488);
-    border-color:#507488;
-}
+		#siteType2 .categories-tab a.active{
+			background: -webkit-linear-gradient(top, #182e3a , #507488);
+		    background: -moz-linear-gradient(bottom, #182e3a, #507488);
+		    background: linear-gradient(to bottom, #182e3a , #507488);
+		}
 
-#siteType2 .display-count strong{
-	color:#ffffff !important;
-	background-color: #507488;
-}
+		#siteType2 .filter-title.active{
+			background: url('../images/assets/minus-small.png') no-repeat 10px center, -webkit-linear-gradient(right, #182e3a , #507488);
+		    background: url('../images/assets/minus-small.png') no-repeat 10px center, -moz-linear-gradient(left, #182e3a, #507488);
+		    background: url('../images/assets/minus-small.png') no-repeat 10px center, linear-gradient(to left, #182e3a , #507488);
+		    border-color:#507488;
+		}
 
-#siteType2 .static-content u{
-	color:#507488 !important;
-	border-bottom:1px solid #507488 !important;
-}
+		#siteType2 .display-count strong{
+			color:#ffffff !important;
+			background-color: #507488;
+		}
 
-#siteType2 .static-content p a{color:#507488 !important;}
+		#siteType2 .static-content u{
+			color:#507488 !important;
+			border-bottom:1px solid #507488 !important;
+		}
 
-	/* Color 1 */
+		#siteType2 .static-content h1,
+		#siteType2 .static-content p a,
+		#siteType2 .site-color{color:#507488 !important;}
 
-#siteType2 .title h3 svg,
-#siteType2 .breadcrumb ul li a:hover,
-#siteType2 .dashboard-tabs ul li a:hover,
-#siteType2 .dashboard-tabs ul li.active a,
-#siteType2 .static-sidebar li:not(.active) a:hover,
-#siteType2 .footer ul li a:hover,
-#siteType2 label a,
-#siteType2 p a,
-#siteType2 .search-banner strong,
-#siteType2 .app-permissions ul li svg,
-#siteType2 .static-content ol li::before,
-#siteType2 .category-listing ul li.active a,
-#siteType2 .category-listing ul li a:hover,
-#siteType2 .specific-layer{color:#507488;}
+		#siteType2 .title h3 svg,
+		#siteType2 .breadcrumb ul li a:hover,
+		#siteType2 .dashboard-tabs ul li a:hover,
+		#siteType2 .dashboard-tabs ul li.active a,
+		#siteType2 .static-sidebar li:not(.active) a:hover,
+		#siteType2 .footer ul li a:hover,
+		#siteType2 label a,
+		#siteType2 p a,
+		#siteType2 .search-banner strong,
+		#siteType2 .app-permissions ul li svg,
+		#siteType2 .static-content ol li::before,
+		#siteType2 .category-listing ul li.active a,
+		#siteType2 .category-listing ul li a:hover,
+		#siteType2 .specific-layer,
+		#siteType2 .catogories-content ul li a:hover,
+		#siteType2 .show-more,
+		#siteType2 h1 a:hover,
+		#siteType2 h2 a:hover,
+		#siteType2 h3 a:hover,
+		#siteType2 h4 a:hover,
+		#siteType2 h5 a:hover,
+		#siteType2 h6 a:hover,
+		#siteType2 .table td a:not(.bttn):hover,
+		#siteType2 .number-bullet li::before,
+		#siteType2 .tick-bullet li,
+		#siteType3 .post-stats.type-2 span a:hover{color:#507488;}
 
-#siteType2 .bttn:hover,
-#siteType2 .bttn:hover::before,
-#siteType2 .bttn:hover::after,
-#siteType2 .bttn:hover .bttn-content::before,
-#siteType2 .bttn:hover .bttn-content::after{background:#507488;}
+		#siteType2 .bttn:hover,
+		#siteType2 .bttn:hover::before,
+		#siteType2 .bttn:hover::after,
+		#siteType2 .bttn:hover .bttn-content::before,
+		#siteType2 .bttn:hover .bttn-content::after{background:#507488;}
 
-#siteType2 .master-slider .application-box a:hover strong,
-#siteType2 .ms-staff-carousel .ms-nav-prev:hover,
-#siteType2 .ms-staff-carousel .ms-nav-next:hover,
-#siteType2 .owl-carousel .owl-nav .owl-prev:hover,
-#siteType2 .owl-carousel .owl-nav .owl-next:hover,
-#siteType2 .owl-carousel .owl-dot.active,
-#siteType2 .table th,
-#siteType2 .my-review-box .application-box a:hover strong,
-#siteType2 .radio-holder input[type="radio"]:checked + label::before,
-#siteType2 .checkbox-holder input[type="checkbox"] + label::after,
-#siteType2 .upload-bttn label:hover,
-#siteType2 .st-wrapper nav span:hover,
-#siteType2 .static-content ul li::before{background-color:#507488;}
+		#siteType2 .master-slider .application-box a:hover strong,
+		#siteType2 .ms-staff-carousel .ms-nav-prev:hover,
+		#siteType2 .ms-staff-carousel .ms-nav-next:hover,
+		#siteType2 .owl-carousel .owl-nav .owl-prev:hover,
+		#siteType2 .owl-carousel .owl-nav .owl-next:hover,
+		#siteType2 .owl-carousel .owl-dot.active,
+		#siteType2 .table th,
+		#siteType2 .my-review-box .application-box a:hover strong,
+		#siteType2 .radio-holder input[type="radio"]:checked + label::before,
+		#siteType2 .checkbox-holder input[type="checkbox"] + label::after,
+		#siteType2 .upload-bttn label:hover,
+		#siteType2 .st-wrapper nav span:hover,
+		#siteType2 .static-content ul li::before,
+		#siteType2 .filter-bttn,
+		#siteType2 .blog-slider .ms-bullet.ms-bullet-selected,
+		#siteType2 input[type="submit"]{background-color:#507488;}
 
-#siteType2 .master-slider .application-box a:hover,
-#siteType2 .my-review-box .application-box a:hover,
-#siteType2 .checkbox-holder input[type="checkbox"]:checked + label::before,
-#siteType2 .ui-accordion .ui-accordion-header.ui-state-active{border-color:#507488;}
+		#siteType2 .master-slider .application-box a:hover,
+		#siteType2 .my-review-box .application-box a:hover,
+		#siteType2 .checkbox-holder input[type="checkbox"]:checked + label::before,
+		#siteType2 .ui-accordion .ui-accordion-header.ui-state-active{border-color:#507488;}
 
-#siteType2 .static-banner h1{background-image: url('../images/assets/title-shape-type-2.png');}
+		#siteType2 .static-banner h1{background-image: url('../images/assets/title-shape-type-2.png');}
 
-	/* Color 2 */
+		#siteType2 .text-box i,
+		#siteType2 .text-box strong{color:#ffffff;}	
 
-#siteType2 .text-box i,
-#siteType2 .text-box strong{color:#ffffff;}	
+		#siteType2 .header-items a{
+			color:#ffffff;
+			border-color:#ffffff;
+		}
 
-#siteType2 .header-items a{
-	color:#ffffff;
-	border-color:#ffffff;
-}
+	
+	/* Site Type 3 */
+
+		#siteType3 .header,
+		#siteType3 .site-bg,
+		#siteType3 .pagination ul li.active a,
+		#siteType3 .static-sidebar li.active a,
+		#siteType3 .add-to-wishlist.active,
+		#siteType3 .ui-accordion .ui-accordion-header.ui-state-active,
+		#siteType3 .choose-radio li:first-child input:checked + label,
+		#siteType3 .product-stats h2,
+		#siteType3 .web-tags a:hover{
+			background: -webkit-linear-gradient(right, #18a689 , #66dcc4);
+		    background: -moz-linear-gradient(left, #18a689, #66dcc4);
+		    background: linear-gradient(to left, #18a689 , #66dcc4);
+		}
+
+		#siteType3 .categories-tab a.active{
+			background: -webkit-linear-gradient(top, #18a689 , #66dcc4);
+		    background: -moz-linear-gradient(bottom, #18a689, #66dcc4);
+		    background: linear-gradient(to bottom, #18a689 , #66dcc4);
+		}
+
+		#siteType3 .filter-title.active{
+			background: url('../images/assets/minus-small.png') no-repeat 10px center, -webkit-linear-gradient(right, #18a689 , #66dcc4);
+		    background: url('../images/assets/minus-small.png') no-repeat 10px center, -moz-linear-gradient(left, #18a689, #66dcc4);
+		    background: url('../images/assets/minus-small.png') no-repeat 10px center, linear-gradient(to left, #18a689 , #66dcc4);
+		    border-color:#18a689;
+		}
+
+		#siteType3 .display-count strong{
+			color:#ffffff !important;
+			background-color: #18a689;
+		}
+
+		#siteType3 .static-content u{
+			color:#18a689 !important;
+			border-bottom:1px solid #18a689 !important;
+		}
+
+		#siteType3 .static-content h1,
+		#siteType3 .static-content p a,
+		#siteType3 .site-color{color:#18a689 !important;}
+
+		#siteType3 .title h3 svg,
+		#siteType3 .breadcrumb ul li a:hover,
+		#siteType3 .dashboard-tabs ul li a:hover,
+		#siteType3 .dashboard-tabs ul li.active a,
+		#siteType3 .static-sidebar li:not(.active) a:hover,
+		#siteType3 .footer ul li a:hover,
+		#siteType3 label a,
+		#siteType3 p a,
+		#siteType3 .search-banner strong,
+		#siteType3 .app-permissions ul li svg,
+		#siteType3 .static-content ol li::before,
+		#siteType3 .category-listing ul li.active a,
+		#siteType3 .category-listing ul li a:hover,
+		#siteType3 .specific-layer,
+		#siteType3 .catogories-content ul li a:hover,
+		#siteType3 .show-more,
+		#siteType3 h1 a:hover,
+		#siteType3 h2 a:hover,
+		#siteType3 h3 a:hover,
+		#siteType3 h4 a:hover,
+		#siteType3 h5 a:hover,
+		#siteType3 h6 a:hover,
+		#siteType3 .table td a:not(.bttn):hover,
+		#siteType3 .number-bullet li::before,
+		#siteType3 .tick-bullet li,
+		#siteType3 .post-stats.type-2 span a:hover{color:#18a689;}
+
+		#siteType3 .bttn:hover,
+		#siteType3 .bttn:hover::before,
+		#siteType3 .bttn:hover::after,
+		#siteType3 .bttn:hover .bttn-content::before,
+		#siteType3 .bttn:hover .bttn-content::after{background:#18a689;}
+
+		#siteType3 .master-slider .application-box a:hover strong,
+		#siteType3 .ms-staff-carousel .ms-nav-prev:hover,
+		#siteType3 .ms-staff-carousel .ms-nav-next:hover,
+		#siteType3 .owl-carousel .owl-nav .owl-prev:hover,
+		#siteType3 .owl-carousel .owl-nav .owl-next:hover,
+		#siteType3 .owl-carousel .owl-dot.active,
+		#siteType3 .table th,
+		#siteType3 .my-review-box .application-box a:hover strong,
+		#siteType3 .radio-holder input[type="radio"]:checked + label::before,
+		#siteType3 .checkbox-holder input[type="checkbox"] + label::after,
+		#siteType3 .upload-bttn label:hover,
+		#siteType3 .st-wrapper nav span:hover,
+		#siteType3 .static-content ul li::before,
+		#siteType3 .filter-bttn,
+		#siteType3 .blog-slider .ms-bullet.ms-bullet-selected,
+		#siteType3 input[type="submit"]{background-color:#18a689;}
+
+		#siteType3 .master-slider .application-box a:hover,
+		#siteType3 .my-review-box .application-box a:hover,
+		#siteType3 .checkbox-holder input[type="checkbox"]:checked + label::before,
+		#siteType3 .ui-accordion .ui-accordion-header.ui-state-active{border-color:#18a689;}
+
+		#siteType3 .static-banner h1{background-image: url('../images/assets/title-shape-type-3.png');}
 
 
+		/* Site Type 4 */
 
+		#siteType4 .header,
+		#siteType4 .site-bg,
+		#siteType4 .pagination ul li.active a,
+		#siteType4 .static-sidebar li.active a,
+		#siteType4 .add-to-wishlist.active,
+		#siteType4 .ui-accordion .ui-accordion-header.ui-state-active,
+		#siteType4 .choose-radio li:first-child input:checked + label,
+		#siteType4 .product-stats h2,
+		#siteType4 .web-tags a:hover{
+			background: -webkit-linear-gradient(right, #4a89dc , #96bbeb);
+		    background: -moz-linear-gradient(left, #4a89dc, #96bbeb);
+		    background: linear-gradient(to left, #4a89dc , #96bbeb);
+		}
 
+		#siteType4 .categories-tab a.active{
+			background: -webkit-linear-gradient(top, #4a89dc , #96bbeb);
+		    background: -moz-linear-gradient(bottom, #4a89dc, #96bbeb);
+		    background: linear-gradient(to bottom, #4a89dc , #96bbeb);
+		}
 
+		#siteType4 .filter-title.active{
+			background: url('../images/assets/minus-small.png') no-repeat 10px center, -webkit-linear-gradient(right, #4a89dc , #96bbeb);
+		    background: url('../images/assets/minus-small.png') no-repeat 10px center, -moz-linear-gradient(left, #4a89dc, #96bbeb);
+		    background: url('../images/assets/minus-small.png') no-repeat 10px center, linear-gradient(to left, #4a89dc , #96bbeb);
+		    border-color:#4a89dc;
+		}
+
+		#siteType4 .display-count strong{
+			color:#ffffff !important;
+			background-color: #4a89dc;
+		}
+
+		#siteType4 .static-content u{
+			color:#4a89dc !important;
+			border-bottom:1px solid #4a89dc !important;
+		}
+
+		#siteType4 .static-content h1,
+		#siteType4 .static-content p a,
+		#siteType4 .site-color{color:#4a89dc !important;}
+
+		#siteType4 .title h3 svg,
+		#siteType4 .breadcrumb ul li a:hover,
+		#siteType4 .dashboard-tabs ul li a:hover,
+		#siteType4 .dashboard-tabs ul li.active a,
+		#siteType4 .static-sidebar li:not(.active) a:hover,
+		#siteType4 .footer ul li a:hover,
+		#siteType4 label a,
+		#siteType4 p a,
+		#siteType4 .search-banner strong,
+		#siteType4 .app-permissions ul li svg,
+		#siteType4 .static-content ol li::before,
+		#siteType4 .category-listing ul li.active a,
+		#siteType4 .category-listing ul li a:hover,
+		#siteType4 .specific-layer,
+		#siteType4 .catogories-content ul li a:hover,
+		#siteType4 .show-more,
+		#siteType4 h1 a:hover,
+		#siteType4 h2 a:hover,
+		#siteType4 h3 a:hover,
+		#siteType4 h4 a:hover,
+		#siteType4 h5 a:hover,
+		#siteType4 h6 a:hover,
+		#siteType4 .table td a:not(.bttn):hover,
+		#siteType4 .number-bullet li::before,
+		#siteType4 .tick-bullet li,
+		#siteType4 .post-stats.type-2 span a:hover{color:#4a89dc;}
+
+		#siteType4 .bttn:hover,
+		#siteType4 .bttn:hover::before,
+		#siteType4 .bttn:hover::after,
+		#siteType4 .bttn:hover .bttn-content::before,
+		#siteType4 .bttn:hover .bttn-content::after{background:#4a89dc;}
+
+		#siteType4 .master-slider .application-box a:hover strong,
+		#siteType4 .ms-staff-carousel .ms-nav-prev:hover,
+		#siteType4 .ms-staff-carousel .ms-nav-next:hover,
+		#siteType4 .owl-carousel .owl-nav .owl-prev:hover,
+		#siteType4 .owl-carousel .owl-nav .owl-next:hover,
+		#siteType4 .owl-carousel .owl-dot.active,
+		#siteType4 .table th,
+		#siteType4 .my-review-box .application-box a:hover strong,
+		#siteType4 .radio-holder input[type="radio"]:checked + label::before,
+		#siteType4 .checkbox-holder input[type="checkbox"] + label::after,
+		#siteType4 .upload-bttn label:hover,
+		#siteType4 .st-wrapper nav span:hover,
+		#siteType4 .static-content ul li::before,
+		#siteType4 .filter-bttn,
+		#siteType4 .blog-slider .ms-bullet.ms-bullet-selected,
+		#siteType4 input[type="submit"]{background-color:#4a89dc;}
+
+		#siteType4 .master-slider .application-box a:hover,
+		#siteType4 .my-review-box .application-box a:hover,
+		#siteType4 .checkbox-holder input[type="checkbox"]:checked + label::before,
+		#siteType4 .ui-accordion .ui-accordion-header.ui-state-active{border-color:#4a89dc;}
+
+		#siteType4 .static-banner h1{background-image: url('../images/assets/title-shape-type-4.png');}
 
 
 
