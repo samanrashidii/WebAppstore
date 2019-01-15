@@ -349,7 +349,6 @@
 
 	.static-banner{
 		height: 240px;
-		margin-top:-4px;
 		margin-bottom: 0;
 	}
 
@@ -716,6 +715,8 @@
 		min-width: 82px;
 		font-size: 11px;
 	}
+
+	.developer-status > div:last-child{margin-top:-10px;}
 
 }
 
