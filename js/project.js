@@ -30,8 +30,7 @@ var siteType8 = function(){
   $('body').attr('id', 'siteType8');
 }
 
-siteType8();
-
+// siteType8();
 
 // Categories
 
