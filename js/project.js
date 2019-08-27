@@ -14,6 +14,25 @@ var siteType4 = function(){
   $('body').attr('id', 'siteType4');
 }
 
+var siteType5 = function(){
+  $('body').attr('id', 'siteType5');
+}
+
+var siteType6 = function(){
+  $('body').attr('id', 'siteType6');
+}
+
+var siteType7 = function(){
+  $('body').attr('id', 'siteType7');
+}
+
+var siteType8 = function(){
+  $('body').attr('id', 'siteType8');
+}
+
+siteType8();
+
+
 // Categories
 
 $('.categories-bttn').on('click', function(){
