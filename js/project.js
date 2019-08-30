@@ -2,32 +2,39 @@ $(document).ready(function(){
 
 // Site Types
 
+// Cloud Blue
 var siteType2 = function(){
-  $('body').attr('id', 'siteType2');
+	$('body').attr('id', 'siteType2');
 }
 
+// Light Green
 var siteType3 = function(){
-  $('body').attr('id', 'siteType3');
+	$('body').attr('id', 'siteType3');
 }
 
+// Steady Blue
 var siteType4 = function(){
-  $('body').attr('id', 'siteType4');
+	$('body').attr('id', 'siteType4');
 }
 
+// Red - Black
 var siteType5 = function(){
-  $('body').attr('id', 'siteType5');
+	$('body').attr('id', 'siteType5');
 }
 
+// Green
 var siteType6 = function(){
-  $('body').attr('id', 'siteType6');
+	$('body').attr('id', 'siteType6');
 }
 
+// Purple
 var siteType7 = function(){
-  $('body').attr('id', 'siteType7');
+	$('body').attr('id', 'siteType7');
 }
 
+// Dark Blue - Brown
 var siteType8 = function(){
-  $('body').attr('id', 'siteType8');
+	$('body').attr('id', 'siteType8');
 }
 
 // siteType8();
