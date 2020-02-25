@@ -2,6 +2,10 @@
 
 Webappstore is an app/software store template developed step-by-step from scratch and completed by using some plugins.
 
+## Language
+
+Persian - RTL
+
 ## Demo Version
 
 You can see the demo version by clicking below link :
